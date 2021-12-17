@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Вирус on </title>
+    <link>/tags/%D0%B2%D0%B8%D1%80%D1%83%D1%81/</link>
+    <description>Recent content in Вирус on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Fri, 25 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%D0%B2%D0%B8%D1%80%D1%83%D1%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Вирус Crackonosh позволил хакерам добыть Monero на сумму 2 миллиона долларов США</title>
+      <link>/post/2021-06-25-crackonosh-virus-mined-2-million-usd-on-monero/</link>
+      <pubDate>Fri, 25 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021-06-25-crackonosh-virus-mined-2-million-usd-on-monero/</guid>
+      <description>Вредоносное ПО под названием Cracknosh распространялось посредством взломанных копий популярной программы и использовалось для отключения антивирусов, установленных на компьютеры с последующей установкой майнера XMRig, который скрытно использовал ресурсы взломанной машины для майнинга Monero.
+Согласно заявлению, сделанному представителями чешской компании в четверг, в период с 1 января 2018 по 23 ноября 2020 было выявлено, по крайней мере, 30 различных версий вредоносной программы, а большинство жертв находилось при этом в США, Бразилии, Индии, Польше и на Филиппинах.</description>
+    </item>
+    
+  </channel>
+</rss>

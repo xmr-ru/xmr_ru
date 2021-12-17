@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Взлом on </title>
+    <link>/tags/%D0%B2%D0%B7%D0%BB%D0%BE%D0%BC/</link>
+    <description>Recent content in Взлом on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Fri, 09 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%D0%B2%D0%B7%D0%BB%D0%BE%D0%BC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Сервер Confluence проекта Jenkins был взломан злоумышленниками с целью майнинга Monero</title>
+      <link>/post/2021-09-07-jenkins-projects-confluence-server-hacked-to-mine-monero/</link>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021-09-07-jenkins-projects-confluence-server-hacked-to-mine-monero/</guid>
+      <description>Несмотря на то, что факт атаки вызывает некоторую озабоченность, поскольку Jenkins является популярным открытым сервером для автоматизированной разработки частей программного обеспечения, нет никаких причин, по которым бы данная атака каким-либо образом могла отразиться на работе версий проекта, соответствующих плагинов или самого кода.
+Администраторы предупреждают об опасности Как сообщили на прошлой неделе BleepingComputer, после публикации информации об эксплойте доказательства концепции CVE-2021-26084, злоумышленники занялись поиском уязвимых серверов Atlassian Confluence с целью установки на них криптовалютных майнеров.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,45 @@
+baseurl = "/"
+title = ""
+languageCode = "ru"
+paginate = "5"
+theme = "mainroad"
+
+[Params]
+  description = "Информационно-новостной сайт русскоязычного сообщества Monero."
+  opengraph = true
+  schema = true
+  twitter_cards = true
+  readmore = false
+  authorbox = false
+  pager = false
+  post_meta = ["author", "date", "categories", "translations"]
+  mainSections = ["post", "blog", "news"]
+  dateformat = "2006-01-02"
+  mathjax = true
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js"
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML"
+  googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"
+  customCSS = ["css/custom.css"]
+  customJS = ["js/custom.js"]
+
+[Params.style.vars]
+  highlightColor = "#ff6600"
+  fontFamilyPrimary = "'Open Sans', Helvetica, Arial, sans-serif"
+  fontFamilySecondary = "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+
+[Params.logo]
+  image = "img/logo.png"
+  title = ""
+  subtitle = "img/logo-small.png"
+
+[Params.thumbnail]
+  visibility = ["list", "post"]
+
+[Params.sidebar]
+  home = "right"
+  list = "right"
+  single = false
+  widgets = ["recent", "categories", "taglist", "social"]
+
+[Params.widgets]
+  recent_num = 5

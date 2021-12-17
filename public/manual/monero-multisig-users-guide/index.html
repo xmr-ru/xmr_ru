@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Номиналы в Monero - </title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Номиналы в Monero" />
+<meta property="og:description" content="Полного руководства по использованию M/N multisig-кошельков Monero пока не существует, так как это довольно новая схема. Данное руководство призвано собрать воедино всю информацию, необходимую для использования схемы M/N мультиподписей (multisig).
+Multisig-кошельки очень важны для тех людей и организаций, которым необходима возможность безопасного хранения криптовалют. Такие кошельки защищены приватными ключами от кражи, а на случай потери предусмотрено резервирование. Multisig-кошельки являются стандартным средством обеспечения безопасности, используемым множеством бирж, сетевых кошельков, криптофондов, обычных фондовых организаций и других финансовых институтов, которым приходится иметь дело с большими объёмами криптовалюты." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/manual/monero-multisig-users-guide/" /><meta property="article:section" content="manual" />
+
+
+
+
+		<meta itemprop="name" content="Номиналы в Monero">
+<meta itemprop="description" content="Полного руководства по использованию M/N multisig-кошельков Monero пока не существует, так как это довольно новая схема. Данное руководство призвано собрать воедино всю информацию, необходимую для использования схемы M/N мультиподписей (multisig).
+Multisig-кошельки очень важны для тех людей и организаций, которым необходима возможность безопасного хранения криптовалют. Такие кошельки защищены приватными ключами от кражи, а на случай потери предусмотрено резервирование. Multisig-кошельки являются стандартным средством обеспечения безопасности, используемым множеством бирж, сетевых кошельков, криптофондов, обычных фондовых организаций и других финансовых институтов, которым приходится иметь дело с большими объёмами криптовалюты.">
+
+<meta itemprop="wordCount" content="1220">
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Номиналы в Monero"/>
+<meta name="twitter:description" content="Полного руководства по использованию M/N multisig-кошельков Monero пока не существует, так как это довольно новая схема. Данное руководство призвано собрать воедино всю информацию, необходимую для использования схемы M/N мультиподписей (multisig).
+Multisig-кошельки очень важны для тех людей и организаций, которым необходима возможность безопасного хранения криптовалют. Такие кошельки защищены приватными ключами от кражи, а на случай потери предусмотрено резервирование. Multisig-кошельки являются стандартным средством обеспечения безопасности, используемым множеством бирж, сетевых кошельков, криптофондов, обычных фондовых организаций и других финансовых институтов, которым приходится иметь дело с большими объёмами криптовалюты."/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/logo.png">
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Меню</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">Что такое Monero (XMR)?</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/news/">
+				
+				<span class="menu__text">Новости</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/articles/">
+				
+				<span class="menu__text">Статьи</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/library/">
+				
+				<span class="menu__text">Библиотека</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/manuals/">
+				
+				<span class="menu__text">Руководства и инструкции</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/services/">
+				
+				<span class="menu__text">Полезные ссылки и сервисы</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Номиналы в Monero</h1>
+			<div class="post__meta meta"><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0/" rel="category">Руководства</a>
+	</span>
+</div></div>
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">Содержимое страницы</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#_настройка-multisig-кошелька-monero_"><em>Настройка multisig-кошелька Monero​</em></a></li>
+    <li><a href="#_настройка-кошелька-по-схеме-mn_"><em>Настройка кошелька по схеме M/N​</em></a>
+      <ul>
+        <li><a href="#_подробности-настройки-по-схеме-mn_"><em>Подробности настройки по схеме M/N</em></a></li>
+        <li><a href="#_трата-средств-с-ваших-кошельков_"><em>Трата средств с ваших кошельков​</em></a></li>
+      </ul>
+    </li>
+    <li><a href="#_заключение_"><em>Заключение​</em></a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>Полного руководства по использованию M/N multisig-кошельков Monero пока не существует, так как это довольно новая схема. Данное руководство призвано собрать воедино всю информацию, необходимую для использования схемы M/N мультиподписей (multisig).</p>
+<p>Multisig-кошельки очень важны для тех людей и организаций, которым необходима возможность безопасного хранения криптовалют. Такие кошельки защищены приватными ключами от кражи, а на случай потери предусмотрено резервирование. Multisig-кошельки являются стандартным средством обеспечения безопасности, используемым множеством бирж, сетевых кошельков, криптофондов, обычных фондовых организаций и других финансовых институтов, которым приходится иметь дело с большими объёмами криптовалюты.</p>
+<p>Этот пост будет посвящён Monero, хотя большинство людей, вероятно, впервые столкнулось с multisig-адресами, когда речь заходила о Bitcoin. Механизм работы Monero сильно отличается от механизма Bitcoin, поэтому разработчиками Moneroбыла предложена новая система реализации мультиподписей. Такая система не должна была зависеть от языка описания Bitcoin и должна была достаточно хорошо взаимодействовать с криптосистемами, которые использует Moneroдля обеспечения анонимности своих пользователей.</p>
+<p>Реализация мультиподписейMoneroпроисходила в два этапа. Сначала, в конце 2017 года, были предложены N/N и N-1/N мультиподписи, которые позволили использовать мультиподписи кошельков по схемам «2 из 2» и «2 из 3». Затем, в конце 2018 года, были предложены кошельки Monero, использующие схему M/N, в которой произвольное значение M должно быть меньше N. Сюда относятся схемы «3 из 5».</p>
+<p>Давайте начнём с первоначальной настройки multisig-кошелька Monero.</p>
+<h2 id="_настройка-multisig-кошелька-monero_"><em>Настройка multisig-кошелька Monero​</em></h2>
+<p><em>Отказ от ответственности</em>. В одной из версий реализации схемы мультиподписей M/N был обнаружен <a href="https://github.com/monero-project/monero/issues/4793">баг</a>, который иногда не позволял тратить с кошельков, использующих схему M/N. Ошибка была исправлена после выхода последней версии Monero (v0.13.0.4), поэтому следует проверить последовательность выполнения операций вашим кошельком перед тем, как сохранять в нём значительные средства. Надёжность процесса, описанного в данном руководстве, была проверена на главной ветви разработки Monero.</p>
+<p>Ручная настройка multisig-кошелька в случае с Moneroявляется трудоёмким процессом, поскольку кошелькам, принимающим в нём участие, необходимо в несколько заходов обменяться друг с другом данными, чтобы создать multisig-ключи, которые необходимы для того, чтобы видеть и подписывать транзакции. Для каждого из трёх типов кошельков есть свой процесс настройки: N/N, N-1/N и M/N. Из этих трёх M/N является самым сложным, так как настройка по схеме «3 из 5» требует совершения кошельком 25 операций. Я считаю, что с точки зрения экономии времени и во избежание ошибок, проще всего было бы автоматизировать процесс.</p>
+<p>При любой настройке мультиподписей среди программ Monero с поддержкой командной строки будет утилита для генерирования кошельков с названием monero-gen-trusted-multisig. Если вы хотите сгенерировать все участвующие multisig-кошельки на одной проверенной машине, программа сделает всё за вас. Утилиту, настраивающую нужную вам схему, можно вызвать следующим образом:</p>
+<p><code>$ monero-gen-trusted-multisig --scheme=3/5 --filename-base=wallet</code></p>
+<p>Если это не подходит для вашего случая, то процесс настройки несколько усложнится. В этом документе нами предлагается краткий обзор процесса для каждого типа схемы, но подробно мы рассматриваем только схему для M/N кошельков (для схемы N/N и N-1/N кошельков уже имеется <a href="https://monero.stackexchange.com/questions/5646/how-to-use-monero-multisignature-wallets-2-2-2-3">хорошее руководство</a>).</p>
+<p>Ниже приводятся команды, необходимые, чтобы сгенерировать multisig-кошелёк каждого типа. Эти команды можно вводить либо используя командную строку программы monero-wallet-cli, либо при помощи JSON-RPC сервера monero-wallet-rpc. Каждая команда запускается единожды для каждого участвующего в процессе кошелька. Параметры каждой команды указаны в <a href="https://www.getmonero.org/resources/developer-guides/wallet-rpc.html">Руководстве по RPC кошелька Monero</a>.</p>
+<p>Следует убедиться в том, что для создания multisig-кошелька используются новые или пустые кошельки. Если вы преобразуете использующий одну подпись кошелёк с имеющимися в нём средствами в multisig-кошелёк, средства будут потеряны.</p>
+<p><em>Настройка кошелька по схеме N/N</em>:</p>
+<ol>
+<li>create_wallet</li>
+<li>prepare_multisig</li>
+<li>make_multisig</li>
+</ol>
+<p><em>Настройка кошелька по схеме N-1/N</em>:</p>
+<ol>
+<li>create_wallet</li>
+<li>prepare_multisig</li>
+<li>make_multisig</li>
+<li>finalize_multisig</li>
+</ol>
+<h2 id="_настройка-кошелька-по-схеме-mn_"><em>Настройка кошелька по схеме M/N​</em></h2>
+<ol>
+<li>create_wallet</li>
+<li>prepare_multisig</li>
+<li>make_multisig</li>
+<li>exchange_multisig_data (множество раундов)</li>
+</ol>
+<h3 id="_подробности-настройки-по-схеме-mn_"><em>Подробности настройки по схеме M/N</em></h3>
+<p>Так как настройка по схеме M/N предполагает наличие множества шагов, нами будут указаны команды, использующие JSON-RPC API, которые позволят автоматизировать процесс при помощи скрипта. Если вы производите операции с кошельком, используя monero-wallet-rpc, то при запуске вам придётся пройти опцию —wallet-dir.</p>
+<ol>
+<li>create_wallet (N раз)</li>
+<li>prepare_wallet (N раз для каждого кошелька)</li>
+<li>make_multisig (N раз для каждого кошелька)</li>
+<li>exchange_multisig_data (M-Nраундов по N раз для каждого кошелька)</li>
+<li>[опционально] is_multisig</li>
+</ol>
+<h4 id="_1-создание-кошельков_"><em>1. Создание кошельков​</em></h4>
+<p>Сначала следует создать N-кошельков, которые станут участниками multisig-кошелька.</p>
+<p><em>Запрос</em>:</p>
+<pre tabindex="0"><code>{
+   &quot;jsonrpc&quot;: &quot;2.0&quot;,
+   &quot;id&quot;: &quot;0&quot;,
+   &quot;method&quot;: &quot;create_wallet&quot;,
+   &quot;params&quot;: {
+       &quot;filename&quot;: &quot;wallet_0&quot;,
+       &quot;password&quot;: &quot;&quot;,
+       &quot;language&quot;: &quot;English&quot;
+   }
+}
+</code></pre><p><em>Ответ</em>:</p>
+<pre tabindex="0"><code>{
+   &quot;id&quot;: &quot;0&quot;,
+   &quot;jsonrpc&quot;: &quot;2.0&quot;,
+   &quot;result&quot;: {}
+}
+</code></pre><h4 id="_2-подготовка-multisig-кошелька_"><em>2. Подготовка multisig-кошелька​</em></h4>
+<p>Затем необходимо собрать multisig-данные первого раунда для каждого кошелька. Понадобится сохранить поле возврата данных multisig_info. Примечание: если процесс будет полностью автоматизирован при помощи API, перед каждым очередным вызовом prepare_multisig также может понадобиться ввод команд close_wallet и open_wallet. В данном случае мы опускаем их из соображений краткости изложения.</p>
+<p><em>Запрос</em>:</p>
+<pre tabindex="0"><code>{
+   &quot;jsonrpc&quot;: &quot;2.0&quot;,
+   &quot;id&quot;: &quot;0&quot;,
+   &quot;method&quot;: &quot;prepare_multisig&quot;
+}
+</code></pre><p><em>Ответ</em>:</p>
+<pre tabindex="0"><code>{
+   &quot;id&quot;: &quot;0&quot;,
+   &quot;jsonrpc&quot;: &quot;2.0&quot;,
+   &quot;result&quot;: {
+       &quot;multisig_info&quot;: &quot;MultisigV1aFJ22AwxbBW6YkJH9…&quot;
+   }
+}
+</code></pre><h4 id="_3-реализация-multisig-кошелька_"><em>3. Реализация multisig-кошелька​</em></h4>
+<p>Команда make_multisig изменяет каждый кошелёк, делая его multisig-кошельком. Она применяется к каждому кошельку-участнику схемы multisig. Команда make_multisig использует два параметра:</p>
+<ol>
+<li>multisig_info, который является матрицей возврата данных multisig_info прошлого этапа для всех остальных кошельков, за исключением того кошелька, на котором производится операция.</li>
+<li>Порог, являющийся тем количеством кошельков, которое необходимо для подписания и отправки транзакции (значение M в схеме «M из N»).</li>
+</ol>
+<p>Как и в случае с командой prepare_multisig, make_multisig также возвращает данные, которые необходимо сохранить и использовать при выполнении последующих шагов.</p>
+<p><em>Запрос</em>:</p>
+<pre tabindex="0"><code>{
+   &quot;jsonrpc&quot;: &quot;2.0&quot;,
+   &quot;id&quot;: &quot;0&quot;,
+   &quot;method&quot;: &quot;make_multisig&quot;,
+   &quot;params&quot;: {
+       &quot;multisig_info&quot;: [
+           &quot;MultisigV1E1s9eCf4kWDa282j9f…&quot;,
+           &quot;MultisigV1NahETBVSqVtdbfZ4hz…&quot;,
+           &quot;MultisigV1SQWPjeNuJKyHT88KA2…&quot;,
+           &quot;MultisigV1i1UZiz3KtxQSwWReGR…&quot;
+       ],
+       &quot;threshold&quot;: 3
+   }
+}
+</code></pre><p><em>Ответ</em>:</p>
+<pre tabindex="0"><code>{
+   &quot;id&quot;: &quot;0&quot;,
+   &quot;jsonrpc&quot;: &quot;2.0&quot;,
+   &quot;result&quot;: {
+       &quot;address&quot;: &quot;41fJjQDhryD11111111111111111111111…...&quot;,
+       &quot;multisig_info&quot;: &quot;MultisigxV1KUADv8n3GBJCrpDu…...&quot;
+   }
+}
+</code></pre><h4 id="_4-обмен-multisig-ключами_"><em>4. Обмен multisig-ключами​</em></h4>
+<p>Последний этап создания multisig-кошелька запускается командой exchange_multisig_keys. Команда в качестве параметра использует multisig_info, который является матрицей возвращённых значений multisig_info прошлого этапа для всех остальных кошельков. Возвращённое значение также включает в себя ещё одно поле multisig_info, которое необходимо сохранить для использования в будущем.</p>
+<p>В зависимости от настройки вашего кошелька, понадобится множество раундов обмена ключами (exchange_multisig_keys). Для схемы мультиподписей M/N понадобится от N до M раундов. Так, например, если вы настраиваете кошелёк по схеме «3 из 5», то понадобится 5−3 = 2 раунда. В каждом раунде возвращённые значения multisig_info других кошельков должны использоваться в качестве параметров. В последнем раунде возвращённое значение будет multisig_info представлено пустой строкой.</p>
+<p><em>Запрос</em>:</p>
+<pre tabindex="0"><code>{
+   &quot;jsonrpc&quot;: &quot;2.0&quot;,
+   &quot;id&quot;: &quot;0&quot;,
+   &quot;method&quot;: &quot;exchange_multisig_keys&quot;,
+   &quot;params&quot;: {
+       &quot;multisig_info&quot;: [
+           &quot;MultisigxV1KUADv8n3GBJCrpDuavNpaPT…&quot;,
+           &quot;MultisigxV1TJyJjqRwEuPePPE8PuNBLmB…&quot;,
+           &quot;MultisigxV1jZvNKUnrGsSS85qQiSCs6i3…&quot;,
+           &quot;MultisigxV16KauRuvCPekZEHdDgjP8Jhf…&quot;
+       ]
+   }
+}
+</code></pre><p><em>Ответ</em>:</p>
+<pre tabindex="0"><code>{
+   &quot;id&quot;: &quot;0&quot;,
+   &quot;jsonrpc&quot;: &quot;2.0&quot;,
+   &quot;result&quot;: {
+       &quot;address&quot;: &quot;&quot;,
+       &quot;multisig_info&quot;: &quot;MultisigxV1dXxJPiqpUNSU2DjLmX8Ct…&quot;
+   }
+}
+</code></pre><h4 id="_5-проверка-multisig-статуса-кошелька-опционально_"><em>5. Проверка multisig-статуса кошелька (опционально)​</em></h4>
+<p>В конце процесса настройки можно запустить выполнение команды is_multisig, предназначенной для проверки правильности настройки. Команда вернёт объект JSON, а затем сообщит multisig-статус кошелька.</p>
+<p><em>Запрос</em>:</p>
+<pre tabindex="0"><code>{
+   &quot;jsonrpc&quot;: &quot;2.0&quot;,
+   &quot;id&quot;: &quot;0&quot;,
+   &quot;method&quot;: &quot;is_multisig&quot;
+}
+</code></pre><p><em>Ответ</em>:</p>
+<pre tabindex="0"><code>{
+   &quot;id&quot;: &quot;0&quot;,
+   &quot;jsonrpc&quot;: &quot;2.0&quot;,
+   &quot;result&quot;: {
+       &quot;multisig&quot;: true,
+       &quot;ready&quot;: true,
+       &quot;threshold&quot;: 3,
+       &quot;total&quot;: 5
+   }
+}
+</code></pre><h3 id="_трата-средств-с-ваших-кошельков_"><em>Трата средств с ваших кошельков​</em></h3>
+<p>Надеюсь, команда is_multisig порадовала вас, сообщив, что все ваши кошельки настроены и готовы к использованию. Пришло время использовать их.</p>
+<p>Процесс траты средств с M/N multisig-кошелька такой же, как в случае с multisig-кошельками другого типа. Поэтому вы можете воспользоваться <a href="https://monero.stackexchange.com/questions/5646/how-to-use-monero-multisignature-wallets-2-2-2-3">руководством для N/N и N-1/N</a>.</p>
+<p>Единственной особенностью траты при помощи JSON-API является возможная ошибка отсутствия LRдля достаточного количества участников. В этом случае кошелькам, участвующим в транзакции, необходимо использовать команду refresh до вызова export_multisig_info. Если же вы использовали программу с командной строкой, она сообщит вам о необходимости ввода refresh, когда понадобится. В случае использования JSON-API необходимо знать, что для устранения этой ошибки требуется refresh.</p>
+<h2 id="_заключение_"><em>Заключение​</em></h2>
+<p>Ну, вот и всё! Возможно, вас немного напугало количество шагов, описанных здесь, особенно, если вы попытаетесь координировать обмен данными между несколькими различными машинами. К счастью, члены сообщества Moneroработают над программным обеспечением, которое упростит процесс настройки multisig-кошельков. MoneroMessagingSystem (MMS), которая в настоящее время тестируется, повысит уровень автоматизации такой настройки и обеспечит безопасность передачи данных мультиподписей между машинами.</p>
+<p>Я надеюсь, что это руководство поможет вам использовать мультиподписи с Monero.</p>
+
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/manual/monero-wallet-gui-linux/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Назад</span>
+			<p class="pager__title">Руководство пользователя кошелька Monero GUI Linux</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/manual/monero-denominations/" rel="next">
+			<span class="pager__subtitle">Вперед&thinsp;»</span>
+			<p class="pager__title">Номиналы в Monero</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar">
+<div class="widget-recent widget">
+	<h4 class="widget__title">Недавние публикации</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/2021-12-06-vulnerability-multisig/">В коде multisig-кошелька Monero обнаружена ошибка</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-12-04-monero-gui-0.17.3.0-released/">Доработанная версия Monero GUI 0.17.3.0 Oxygen Orion</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-12-04-monero-0.17.3.0-released/">Доработанная промежуточная версия Monero 0.17.3.0 Oxygen Orion</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-11-19-kraken-delist-monero-for-uk-customers/">Kraken планирует исключить Monero из списка поддерживаемых в Великобритании валют уже к концу ноября</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-11-05-p2pool-1.3.1-released/">Релиз P2Pool v1.3.1</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Категории</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B8/">Журнал встречи</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8/">Новости</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0/">Руководства</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/">Статьи</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Теги</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/breaking-monero/" title="Breaking Monero">Breaking Monero</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cake-wallet/" title="Cake Wallet">Cake Wallet</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ccs/" title="CCS">CCS</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cdc-36c3/" title="CDC 36c3">CDC 36c3</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ciphertrace/" title="CipherTrace">CipherTrace</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/def-con-2021/" title="DEF CON 2021">DEF CON 2021</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/farcaster/" title="Farcaster">Farcaster</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/feather-wallet/" title="Feather Wallet">Feather Wallet</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/haveno/" title="Haveno">Haveno</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/konferenco/" title="Konferenco">Konferenco</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/monero-gui/" title="Monero GUI">Monero GUI</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/monero-outreach/" title="Monero Outreach">Monero Outreach</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/monerujo/" title="Monerujo">Monerujo</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mpwg/" title="MPWG">MPWG</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/p2pool/" title="P2Pool">P2Pool</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B0%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D1%81%D0%B2%D0%BE%D0%BF%D1%8B/" title="Атомарные свопы">Атомарные свопы</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B2%D0%B7%D0%BB%D0%BE%D0%BC/" title="Взлом">Взлом</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B2%D0%B8%D1%80%D1%83%D1%81/" title="Вирус">Вирус</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B8/" title="Журнал встречи">Журнал встречи</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D0%BE-%D1%84%D0%B0%D0%BD%D1%82%D0%B0%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D1%80%D0%B0%D1%81%D1%81%D0%BA%D0%B0%D0%B7/" title="Научно-фантастический рассказ">Научно-фантастический рассказ</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0/" title="Ошибка">Ошибка</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 .
+			<span class="footer__copyright-credits">Информационно-новостной сайт русскоязычного сообщества Monero. <a href="/services/#_поддержать-xmrru_" rel="nofollow noopener" target="_blank">Пожертвовать</a>  на развитие проекта XMR.RU.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

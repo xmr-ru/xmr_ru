@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Атомарные свопы on </title>
+    <link>/tags/%D0%B0%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D1%81%D0%B2%D0%BE%D0%BF%D1%8B/</link>
+    <description>Recent content in Атомарные свопы on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Thu, 08 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%D0%B0%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D1%81%D0%B2%D0%BE%D0%BF%D1%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Свопы XMR-BTC - это успех! (продолжение следует)</title>
+      <link>/copyright/2021-07-08-xmr-btc-project-hibernation/</link>
+      <pubDate>Thu, 08 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/copyright/2021-07-08-xmr-btc-project-hibernation/</guid>
+      <description>Немного истории В июне 2020 года мы предложили реализовать возможность проведения атомных свопов в Monero. В основу проекта лёг протокол h4sh3d, который изначально был представлен на 36C3.
+После этого прошёл почти год, и теперь, оглядываясь назад, мы можем утверждать, что это была очень удачная идея!
+6 октября 2020 года после успешного завершения работы над доказательством концепции свопов XMR-BTC Лукас опубликовал первый пост, в котором разъяснялась суть таких свопов. Суть протокола, которая была изложена в этом посте, по сей день остаётся той же.</description>
+    </item>
+    
+    <item>
+      <title>Атомные свопы Bitcoin-Monero уже доступны каждому!</title>
+      <link>/post/2021-08-20-atomic-swaps/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021-08-20-atomic-swaps/</guid>
+      <description>Опубликовано: ErCiccione
+20 августа 2021 г.
+Сегодня мейкеры покупают Bitcoin, а тейкеры покупают Monero, но абсолютно любой может быть как мейкером, так и тейкером. На данный момент проще продать Bitcoin за Monero, чем наоборот. Чтобы попробовать самостоятельно провести своп, скачайте программное обеспечение asb, разработанное командой COMIT, а затем следуйте инструкциям и сообщите им, если обнаружите какие-либо проблемы (программное обеспечение также работает и под Tor). Не забывайте, что это совершенно новая технология, и в ней могут присутствовать совершенно неожиданные ошибки.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Запуск и майнинг с помощью узла P2Pool - </title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Запуск и майнинг с помощью узла P2Pool" />
+<meta property="og:description" content="Введение​ Примечание: Значительная часть в начале данного руководства взята из другого руководства, написанного мной, «Запуск узла Monero», но это было необходимо, поскольку для использования P2Pool, как правило, требуется наличие собственного узла.​
+Настоящее руководство призвано предельно упростить для вас создание и запуск собственного узла Monero, а также узла P2Pool для децентрализованного майнинга Monero без комиссий. P2Pool является серьёзным прорывом, позволяющим отдельным майнерам полностью контролировать процесс майнинга. При этом исчезает необходимость в доверии к пулам и операторам пулов, и абсолютно любой теперь может заниматься децентрализованным майнингом, стабильно получая выплаты в отличие от соло-майнинга." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/manual/how-run-and-mining-p2pool/" /><meta property="article:section" content="manual" />
+
+
+
+
+		<meta itemprop="name" content="Запуск и майнинг с помощью узла P2Pool">
+<meta itemprop="description" content="Введение​ Примечание: Значительная часть в начале данного руководства взята из другого руководства, написанного мной, «Запуск узла Monero», но это было необходимо, поскольку для использования P2Pool, как правило, требуется наличие собственного узла.​
+Настоящее руководство призвано предельно упростить для вас создание и запуск собственного узла Monero, а также узла P2Pool для децентрализованного майнинга Monero без комиссий. P2Pool является серьёзным прорывом, позволяющим отдельным майнерам полностью контролировать процесс майнинга. При этом исчезает необходимость в доверии к пулам и операторам пулов, и абсолютно любой теперь может заниматься децентрализованным майнингом, стабильно получая выплаты в отличие от соло-майнинга.">
+
+<meta itemprop="wordCount" content="2572">
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Запуск и майнинг с помощью узла P2Pool"/>
+<meta name="twitter:description" content="Введение​ Примечание: Значительная часть в начале данного руководства взята из другого руководства, написанного мной, «Запуск узла Monero», но это было необходимо, поскольку для использования P2Pool, как правило, требуется наличие собственного узла.​
+Настоящее руководство призвано предельно упростить для вас создание и запуск собственного узла Monero, а также узла P2Pool для децентрализованного майнинга Monero без комиссий. P2Pool является серьёзным прорывом, позволяющим отдельным майнерам полностью контролировать процесс майнинга. При этом исчезает необходимость в доверии к пулам и операторам пулов, и абсолютно любой теперь может заниматься децентрализованным майнингом, стабильно получая выплаты в отличие от соло-майнинга."/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/logo.png">
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Меню</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">Что такое Monero (XMR)?</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/news/">
+				
+				<span class="menu__text">Новости</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/articles/">
+				
+				<span class="menu__text">Статьи</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/library/">
+				
+				<span class="menu__text">Библиотека</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/manuals/">
+				
+				<span class="menu__text">Руководства и инструкции</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/services/">
+				
+				<span class="menu__text">Полезные ссылки и сервисы</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Запуск и майнинг с помощью узла P2Pool</h1>
+			<div class="post__meta meta"><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0/" rel="category">Руководства</a>
+	</span>
+</div></div>
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">Содержимое страницы</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#_введение_"><em>Введение​</em></a></li>
+    <li><a href="#_требования_"><em>Требования​</em></a></li>
+    <li><a href="#_рекомендуемые-параметры-аппаратного-обеспечения_"><em>Рекомендуемые параметры аппаратного обеспечения​</em></a></li>
+    <li><a href="#_зачем-запускать-собственный-узел-monero_"><em>Зачем запускать собственный узел Monero?​</em></a></li>
+    <li><a href="#_почему-лучше-настроить-p2pool-и-использовать-его-для-майнинга-вместо-обычного-пула-monero_"><em>Почему лучше настроить P2Pool и использовать его для майнинга вместо «обычного» пула Monero?​</em></a></li>
+    <li><a href="#_обновление-и-установка-необходимых-пакетов_"><em>Обновление и установка необходимых пакетов​</em></a></li>
+    <li><a href="#_начальное-усиление-защиты-посредством-ufw_"><em>Начальное усиление защиты посредством UFW​</em></a></li>
+    <li><a href="#_скачивание-и-запуск-monerod-и-p2pool-посредством-docker_"><em>Скачивание и запуск monerod и P2Pool посредством Docker​</em></a></li>
+    <li><a href="#_если-вы-уже-запустили-и-используете-узел-monero_"><em>Если вы уже запустили и используете узел Monero​</em></a></li>
+    <li><a href="#_соединение-ваших-майнеров-с-p2pool_"><em>Соединение ваших майнеров с p2pool</em></a></li>
+    <li><a href="#_просмотр-вашей-статистики-майнинга_"><em>Просмотр вашей статистики майнинга</em></a></li>
+    <li><a href="#_проверка-выплат_"><em>Проверка выплат​</em></a></li>
+    <li><a href="#_решение-проблем_"><em>Решение проблем</em></a></li>
+    <li><a href="#_альтернативные-способы-запуска-p2pool_"><em>Альтернативные способы запуска p2pool​</em></a></li>
+    <li><a href="#_отказ-от-ответственности_"><em>Отказ от ответственности</em></a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h2 id="_введение_"><em>Введение​</em></h2>
+<p><em><strong>Примечание:</strong> Значительная часть в начале данного руководства взята из другого руководства, написанного мной, «Запуск узла Monero», но это было необходимо, поскольку для использования P2Pool, как правило, требуется наличие собственного узла.​</em></p>
+<p>Настоящее руководство призвано предельно упростить для вас создание и запуск собственного узла Monero, а также узла P2Pool для децентрализованного майнинга Monero без комиссий. P2Pool является серьёзным прорывом, позволяющим отдельным майнерам полностью контролировать процесс майнинга. При этом исчезает необходимость в доверии к пулам и операторам пулов, и абсолютно любой теперь может заниматься децентрализованным майнингом, стабильно получая выплаты в отличие от соло-майнинга.</p>
+<p>Обратите внимание, что как только вы запустите узел на VPS или другом оборудовании, вероятно, что вы захотите использовать свой p2pool узел в качестве «пула» в своей конфигурации майнинга. Для получения дополнительной информации о майнинге Monero в целом, включая настройку XMRig, см. моё другое руководство «<a href="https://blog.sethforprivacy.com/guides/mining-monero/">Майнинг Monero</a>».</p>
+<p>Дополнительную информацию, разъясняющую, чем P2Pool лучше обычного майнинг-пула, можно найти в данном разделе: «<a href="/manual/how-to-run-monero-node-advanced/#_%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%BB%D1%83%D1%87%D1%88%D0%B5-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D1%8C-p2pool-%D0%B8-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D0%B5%D0%B3%D0%BE-%D0%B4%D0%BB%D1%8F-%D0%BC%D0%B0%D0%B9%D0%BD%D0%B8%D0%BD%D0%B3%D0%B0-%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BE-%D0%BE%D0%B1%D1%8B%D1%87%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BF%D1%83%D0%BB%D0%B0-monero_">Почему лучше настроить P2Pool и использовать его для майнинга вместо обычного пула Monero?</a>»</p>
+<p><em><strong>Примечание:</strong> Если вы пытаетесь запустить p2pool на Windows, см. Следующие два руководства / видео о том, как это сделать. В этом руководстве основное внимание уделяется Linux..​</em></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=yfbvTksF9ic">Майнинг Monero с помощью P2Pool - Краткое руководство пользователя Windows</a></li>
+<li><a href="https://github.com/WeebDataHoarder/p2pool-nsis/releases/latest">Установщик p2pool для Windows</a></li>
+</ul>
+<h2 id="_требования_"><em>Требования​</em></h2>
+<p>Данное руководство предполагает, что вы купили и применили SSH к выбранному вами VPS/хосту. Тем не менее, если вам требуется помощь, чтобы начать, вот несколько хороших ссылок, которые помогут вам:</p>
+<p>Также в этом руководстве допускается, что вы купили и применили SSH к выбранному вами VPS/хосту. Тем не менее, если вам требуется помощь, чтобы начать, вот несколько хороших ссылок, которые помогут вам:</p>
+<ul>
+<li><a href="https://www.getmonero.org/community/merchants/#hosting">Хостинг сервисов, принимающих Monero</a>
+<ul>
+<li>Возможные опции хостинга VPS при сохранении возможности оплаты в Monero с указанием всех «за» и «против» для каждой такой опции</li>
+</ul>
+</li>
+<li><a href="https://www.hetzner.com/dedicated-rootserver">Выделенные серверы Hetzner</a>
+<ul>
+<li>Надёжный и недорогой сервер в Германии. Провайдер (пока что!) не принимает Monero, но предлагает широкий выбор быстрых узлов.</li>
+</ul>
+</li>
+<li><a href="https://www.pragmaticlinux.com/2020/07/setup-a-minimal-debian-10-buster-server-as-a-linode-vps/">Простое руководство по развёртыванию Linode</a>
+<ul>
+<li>Если вы используете Linode, пожалуйста, воспользуйтесь моей <a href="https://www.linode.com/?r=c956dbb75d14063251557a0e5003efb5ceacc74d">реферальной ссылкой</a>, и мы вместе получим соответствующий бонус.</li>
+</ul>
+</li>
+</ul>
+<p>Если вы пользуетесь собственным домашним оборудованием, это руководство в целом касается и вас, если на этом оборудовании установлена Ubuntu/Debian.</p>
+<h2 id="_рекомендуемые-параметры-аппаратного-обеспечения_"><em>Рекомендуемые параметры аппаратного обеспечения​</em></h2>
+<p>Полный узел:</p>
+<ul>
+<li>2+ vCPU/ядра;</li>
+<li>4GB+ RAM;</li>
+<li>175GB+ SSD.</li>
+</ul>
+<h2 id="_зачем-запускать-собственный-узел-monero_"><em>Зачем запускать собственный узел Monero?​</em></h2>
+<p>В основе сети Monero лежит распределённая сеть узлов Monero, каждый из которых подтверждает транзакции и транслирует их остальным участникам сети, а также помогает новым узлам просто и быстро синхронизироваться согласно текущему состоянию сети.</p>
+<p>Запуск собственного узла Monero помогает не только усилить гарантии своей приватности на сетевом уровне, но также и повысить уровень децентрализации, стабильность и скорость сети Monero.</p>
+<p>Каждый узел может реализовывать два разных сервиса, каждый из которых уникальным образом положительно влияет на работу сети:</p>
+<ul>
+<li>одноранговый (p2p) порт (18080 по умолчанию): этот порт позволяет другим узлам сети соединяться с вашим узлом, чтобы скачать блокчейн и отправить вам транзакции, которые прошли валидацию и которых у вас ещё нет. Это также повышает уровень приватности сети, так как узел участвует в трансляции транзакции в соответствии с протоколом <a href="https://www.monerooutreach.org/stories/dandelion.html">Dandelion++</a>;</li>
+<li>порт удаленного вызова процедур (RPC) (18089 по умолчанию с ограниченным доступом): доступ к этому порту (особенно с аргументом публичного узла) позволяет другим пользователям сети, особенно тем, которые используют мобильные кошельки или GUI-кошелёк в «простом» режиме, подключаться к вашему узлу, чтобы синхронизировать свои кошельки, не запуская при этом собственный полный узел локально.</li>
+</ul>
+<p>Вы можете настроить узел через systemd и двоичные файлы, либо развернуть <code>monerod</code> в качестве контейнера Docker.</p>
+<p>Развёртывание контейнера через Docker имеет несколько ключевых преимуществ, а именно предполагает простую установку, подходящую для разных ОС, и автоматическое обновление через <a href="https://containrrr.dev/watchtower/">Watchtower</a>.</p>
+<h2 id="_почему-лучше-настроить-p2pool-и-использовать-его-для-майнинга-вместо-обычного-пула-monero_"><em>Почему лучше настроить P2Pool и использовать его для майнинга вместо «обычного» пула Monero?​</em></h2>
+<p>Майнинг Monero всегда происходил в одной из самых децентрализованных PoW сетей в криптовалютном пространстве. Но досадная проблема, характерная для Monero (и всех других криптовалют, использующих алгоритм PoW), всегда состояла в том, что даже при большом количестве и географическом разнообразии майнеров пулы, которые использовались этими майнерами, в целом оставались немногочисленными, были близко расположены географически и, по сути, являлись централизованными.</p>
+<p>Оператор пула, обычного майнинг-пула, контролирует шаблон блоков, производимых всеми майнерами, ссылающимися на него, что позволяет им повысить хешрейт в бесчестных целях, если они того пожелают. Обычные пулы также занимаются кастодиальным хранением средств, поскольку все добываемые средства сперва отправляются пулам, которые затем (при условии честности пула) выплачивают их майнерам в зависимости от работы последних.</p>
+<p>Пулы и их операторы представляют собой один из самых уязвимых аспектов майнинга Monero, но, к счастью, сообществом Monero (в частности, sech1, также известным как <a href="https://github.com/SChernykh">SChernykh</a>) с нуля создало P2Pool, и в этом варианте реализации присутствует множество улучшений, если сравнивать с P2Pool, разработанного для Bitcoin и других блокчейнов.</p>
+<p>P2Pool позволяет участвовать в работе второго блокчейна, используемого для децентрализации нормального функционирования пула, способствуя при этом работе основной сети Monero в целом.</p>
+<p>Подробную информацию, касательно того, что такое P2Pool, и почему стоит пользоваться им, можно найти в официальном репозитории на GitHub: <a href="https://github.com/SChernykh/p2pool">https://github.com/SChernykh/p2pool</a>.</p>
+<h2 id="_обновление-и-установка-необходимых-пакетов_"><em>Обновление и установка необходимых пакетов​</em></h2>
+<p>Прежде всего нам потребуется установить несколько инструментов, которые понадобятся нам позже:</p>
+<ol>
+<li>Следует установить несколько инструментов, которые понадобятся нам впоследствии:</li>
+</ol>
+<pre tabindex="0"><code>sudo apt-get update &amp;&amp; sudo apt-get upgrade -y
+sudo apt-get install -y ufw curl
+</code></pre><ol start="2">
+<li>Затем необходимо установить Docker:</li>
+</ol>
+<pre tabindex="0"><code>curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker $USER
+su - $USER
+</code></pre><ol start="3">
+<li>После этого устанавливается Docker Compose:</li>
+</ol>
+<pre tabindex="0"><code>sudo curl -L &quot;https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+</code></pre><p><em><strong>Примечание:</strong> Эта команда загружает скрипт и запускается от имени пользователя root, прямо из Docker. Следует быть уверенным в том, что у вас получится сделать это, и осторожным, если используется персональный компьютер. Если вы не хотите делать этого, следуйте официальной документации, которую можно найти здесь, чтобы установить всё непосредственно из репозитория.​</em></p>
+<h2 id="_начальное-усиление-защиты-посредством-ufw_"><em>Начальное усиление защиты посредством UFW​</em></h2>
+<p>Мы гарантируем простую защиту системы, ограничивая брандмауэр доступом только к тем портам, что необходимы для SSH и <code>monerod</code>, используя UFW.</p>
+<p>Отличная инструкция, которая поможет начать работу с UFW, опубликована на сайте <a href="https://www.digitalocean.com/community/tutorials/how-to-setup-a-firewall-with-ufw-on-an-ubuntu-and-debian-cloud-server">DigitalOcean</a>.</p>
+<p>Чтобы добавить некоторые основные правила UFW и включить брандмауэр, выполните следующие команды:</p>
+<pre tabindex="0"><code># Отключение всех не обозначенных в качестве разрешённых портов
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+
+# Открытие доступа SSH
+sudo ufw allow ssh
+
+# Открытие доступа к p2p порту monerod
+sudo ufw allow 18080/tcp
+
+# Открытие ограниченного доступа к RPC порту monerod
+sudo ufw allow 18089/tcp
+
+# Открытие доступа к p2p порту p2pool
+sudo ufw allow 37889/tcp
+
+# Открытие доступа к stratum порту p2pool
+sudo ufw allow 3333/tcp
+
+# Включение UFW
+sudo ufw enable
+</code></pre><h2 id="_скачивание-и-запуск-monerod-и-p2pool-посредством-docker_"><em>Скачивание и запуск monerod и P2Pool посредством Docker​</em></h2>
+<p>В данном разделе подразумевается, что используется простой конфигурационный файл <a href="https://docs.docker.com/compose/">Docker Compose</a>, который точно указывает Docker, как должна быть конфигурирована каждая из частей, и как они должны быть соединены.</p>
+<p>Это позволяет запустить <code>monerod</code> и <code>P2Pool</code> при помощи нескольких простых команд.</p>
+<p>Если вы хотите проверить исходный код используемого здесь образа или создать его самостоятельно, воспользуйтесь приведенными ниже ссылками:</p>
+<ul>
+<li><a href="https://hub.docker.com/r/sethsimmons/simple-monerod">Образ monerod на Docker Hub</a></li>
+<li><a href="https://github.com/sethforprivacy/simple-monerod-docker">Исходный репозиторий monerod</a></li>
+<li><a href="https://hub.docker.com/r/sethsimmons/p2pool">Образ p2pool на Docker</a></li>
+<li><a href="https://github.com/sethforprivacy/p2pool-docker">Исходный репозиторий p2pool</a></li>
+</ul>
+<ol>
+<li>Скопируйте и вставьте приведённый ниже конфигурационный файл в любое место на VPS. В данном случае я использовал <code>~/p2pool</code>:</li>
+</ol>
+<pre tabindex="0"><code>mkdir ~/p2pool
+nano ~/p2pool/docker-compose.yml
+</code></pre><p><em><strong>Примечание:</strong> Чтобы выйти из оболочки nano и сохранить файл, нажмите <code>ctrl+x</code>.​</em></p>
+<pre tabindex="0"><code>version: '3.5'
+services:
+ monerod:
+   image: sethsimmons/simple-monerod:p2pool-api-v0.17
+   restart: unless-stopped
+   container_name: monerod
+   volumes:
+     - bitmonero:/home/monero
+   ports:
+     - 18080:18080
+     - 18083:18083
+     - 18089:18089
+   command: &gt;-
+     --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089
+     --public-node --no-igd --enable-dns-blocklist --prune-blockchain
+     --zmq-pub=tcp://0.0.0.0:18083 --in-peers=50 --out-peers=50
+
+ p2pool:
+   image: sethsimmons/p2pool:latest
+   restart: unless-stopped
+   container_name: p2pool
+   tty: true
+   stdin_open: true
+   volumes:
+     - p2pool-data:/home/p2pool
+     - /dev/hugepages:/dev/hugepages:rw
+   ports:
+     - 3333:3333
+     - 37889:37889
+   command: &gt;-
+     --wallet &quot;468ydghFfthE3UTc53eF5MP9UyrMcUiAHP5kizVYJsej5XGaXBoAAEzUHCcUF7t3E3RrYAX8Rs1ujhBdcvMpZSbH8qkb55R&quot;
+     --stratum &quot;0.0.0.0:3333&quot; --p2p &quot;0.0.0.0:37889&quot;
+     --addpeers &quot;65.21.227.114:37889,node.sethforprivacy.com:37889&quot; --host &quot;monerod&quot; --rpc-port &quot;18089&quot;
+
+ tor:
+   image: goldy/tor-hidden-service:latest
+   container_name: tor
+   restart: unless-stopped
+   links:
+     - monerod
+     - p2pool
+   environment:
+     MONEROD_TOR_SERVICE_HOSTS: 18089:monerod:18089
+     MONEROD_TOR_SERVICE_VERSION: '3'
+     P2POOL_TOR_SERVICE_HOSTS: 3333:p2pool:3333
+     P2POOL_TOR_SERVICE_VERSION: '3'
+   volumes:
+     - tor-keys:/var/lib/tor/hidden_service/
+
+ watchtower:
+   image: containrrr/watchtower:latest
+   container_name: watchtower
+   restart: unless-stopped
+   volumes:
+     - &quot;/var/run/docker.sock:/var/run/docker.sock&quot;
+
+volumes:
+   bitmonero:
+   tor-keys:
+   p2pool-data:
+</code></pre><p><em><strong>Примечание:</strong> Не забудьте заменить адрес Monero (468y…b55R) на ваш собственный (начинается с цифры 4). В противном случае я получу от вас щедрое пожертвование в виде хешрейта!​</em></p>
+<p>Подробная информация по контейнерам, используемым в приведённом выше файле <code>docker-compose.yml</code>:</p>
+<ul>
+<li><code>monerod</code>: демон Monero, реализующий процессы соединения с блокчейном Monero, синхронизации с другими узлами сети, а также валидации и отслеживания транзакций, проводимых в блокчейне Monero.</li>
+<li><code>p2pool</code>: демон p2pool отвечает за соединение с <code>monerod</code>, который отвечает за получение данных блокчейна Monero, необходимых для майнинга, а также за соединение с блокчейном p2pool с целью синхронизации и публикации данных работы, проделанной во время майнинга.</li>
+<li><code>tor</code>: этот контейнер отвечает за публикацию демонов <code>monerod</code> и <code>p2pool</code> в качестве скрытых сервисов Tor, если вы желаете соединиться с ними напрямую через Tor. Вы можете удалить этот раздел, если вам этого не нужно.</li>
+<li><code>watchover</code>: этот контейнер следит за появлением новых образов всех остальных работающих контейнеров, обновляя эти образы по мере их появления. Также данный контейнер гарантирует, что вам никогда не придётся обновлять <code>monerod</code> или <code>p2pool</code> вручную, и что у вас всегда будет установлена их последняя версия.</li>
+</ul>
+<ol start="2">
+<li>Установите большие страницы для <code>monerod</code> и <code>p2pool</code>.</li>
+</ol>
+<pre tabindex="0"><code>sudo sysctl vm.nr_hugepages=3072
+sudo bash -c &quot;echo vm.nr_hugepages=3072 &gt;&gt; /etc/sysctl.conf&quot;
+</code></pre><p><em><strong>Примечание:</strong> Если у вас хост с небольшим объемом оперативной памяти или возникли проблемы с загрузкой после применения вышеуказанной команды, попробуйте заменить 3072 на 1168, чтобы уменьшить размер больших страниц.​</em></p>
+<ol start="3">
+<li>Запустите <code>monerod</code> и позвольте ему полностью синхронизироваться:</li>
+</ol>
+<pre tabindex="0"><code>cd ~/p2pool
+docker-compose up -d monerod
+</code></pre><p>Полная синхронизация <code>monerod</code> может занять от 4 до 6 дней. Всё будет зависеть от используемого вами аппаратного обеспечения.</p>
+<p><em><strong>Примечание:</strong> Если у вас возникнут какие-либо дополнительные вопросы, связанные с monerod, ознакомьтесь с моим руководством «<a href="https://blog.sethforprivacy.com/guides/run-a-monero-node/">Запуск узла Monero</a>».</em></p>
+<ol start="4">
+<li>В <code>docker-compose.yml</code> замените <code>--wallet address</code> на ваш собственный адрес.</li>
+</ol>
+<p><em><strong>Примечание:</strong> Убедитесь в том, что вы действительно создали новый кошелёк для использования с p2pool. Это защитит вашу приватность. Также следует использовать только «стандартный» адрес, начинающийся с 4. Подадреса пока не поддерживаются.​</em></p>
+<ol start="5">
+<li>Как только <code>monerod</code> будет полностью синхронизирован, следует запустить другие сервисы:</li>
+</ol>
+<pre tabindex="0"><code>cd ~/p2pool
+docker-compose up -d
+</code></pre><ol start="6">
+<li>Необходимо следить за файлами журнала p2pool. Это гарантирует надлежащую синхронизацию:</li>
+</ol>
+<pre tabindex="0"><code>cd ~/p2pool
+docker-compose logs --follow p2pool
+</code></pre><p>Вы должны видеть такие строки, как строка верификации блоков (<code>SideChain verified block</code>). А через несколько минут после синхронизации вы должны увидеть такую строку, как строка начала новой цепочки SideСhain (<code>SideChain new chain tip</code>).</p>
+<h2 id="_если-вы-уже-запустили-и-используете-узел-monero_"><em>Если вы уже запустили и используете узел Monero​</em></h2>
+<p>Если вы уже запустили и используете узел и не хотите переходить к указанным настройкам Docker Compose, просто добавьте флаг <code>--zmq-pub tcp://0.0.0.0:18083</code> в вашу копию <code>monerod</code> и перезапустите её, укажите номер порта <code>18083/tcp</code>, а затем используйте нижеуказанный файл docker-compose и замените значение <code>--host</code> на IP-адрес или адрес DNS вашего существующего узла:</p>
+<pre tabindex="0"><code>mkdir ~/p2pool
+nano ~/p2pool/docker-compose.yml
+</code></pre><p><em><strong>Примечание:</strong> Чтобы выйти из оболочки nano и сохранить файл, нажмите <code>ctrl+x</code>.​</em></p>
+<p><em><strong>docker-compose.yml</strong></em></p>
+<pre tabindex="0"><code>version: '3.5'
+services:
+  p2pool:
+    image: sethsimmons/p2pool:latest
+    restart: unless-stopped
+    container_name: p2pool
+    tty: true
+    stdin_open: true
+    volumes:
+    - p2pool-data:/home/p2pool
+    - /dev/hugepages:/dev/hugepages:rw
+    ports:
+    - 3333:3333
+    - 37889:37889
+    command: &gt;-
+      --wallet &quot;468ydghFfthE3UTc53eF5MP9UyrMcUiAHP5kizVYJsej5XGaXBoAAEzUHCcUF7t3E3RrYAX8Rs1ujhBdcvMpZSbH8qkb55R&quot;
+      --stratum &quot;0.0.0.0:3333&quot; --p2p &quot;0.0.0.0:37889&quot;
+      --loglevel &quot;0&quot; --addpeers &quot;65.21.227.114:37889,node.sethforprivacy.com:37889&quot;
+      --host &quot;monerod&quot; --rpc-port &quot;18089&quot;
+
+  tor:
+    image: goldy/tor-hidden-service:latest
+    container_name: tor
+    restart: unless-stopped
+    links:
+        - p2pool
+    environment:
+        P2POOL_TOR_SERVICE_HOSTS: 3333:p2pool:3333
+        P2POOL_TOR_SERVICE_VERSION: '3'
+    volumes:
+        - tor-keys:/var/lib/tor/hidden_service/
+
+  watchtower:
+    image: containrrr/watchtower:latest
+    container_name: watchtower
+    restart: unless-stopped
+    volumes:
+        - &quot;/var/run/docker.sock:/var/run/docker.sock&quot;
+
+volumes:
+  tor-keys:
+  p2pool-data:
+</code></pre><p><em><strong>Примечание:</strong> Не забудьте заменить адрес Monero (468y…b55R) на ваш собственный (начинается с цифры 4). В противном случае я получу от вас щедрое пожертвование в виде хешрейта!​</em></p>
+<p>Как только вышеуказанный файл будет создан, начните с выполнения шага 4 из раздела выше.</p>
+<h2 id="_соединение-ваших-майнеров-с-p2pool_"><em>Соединение ваших майнеров с p2pool</em></h2>
+<p>Теперь, когда <code>monerod</code> и <code>p2pool</code> настроены и работают, вам остаётся только направить ваши майнеры на новый сервер <code>p2pool</code>, соединение с которым только что было установлено!</p>
+<p>Для того, чтобы сделать это в XMRig достаточно просто ввести следующую команду, заменив адрес <code>127.0.0.1</code> на IP-адрес / адрес DNS узла <code>p2pool</code> / VPS, с которым вы работаете:</p>
+<pre tabindex="0"><code>./xmrig -o 127.0.0.1:3333
+</code></pre><p>Если вы хотите использовать с XMRig конфигурационный файл, то вы можете воспользоваться конфигурационным файлом, приведённым ниже, заменив адрес <code>127.0.0.1</code> на IP-адрес / адрес DNS узла <code>p2pool</code> / VPS, с которым вы работаете:</p>
+<pre tabindex="0"><code>{
+
+    &quot;autosave&quot;: true,
+    &quot;donate-level&quot;: 5,
+    &quot;cpu&quot;: true,
+    &quot;opencl&quot;: false,
+    &quot;cuda&quot;: false,
+    &quot;pools&quot;: [
+        {
+            &quot;coin&quot;: &quot;monero&quot;,
+            &quot;algo&quot;: null,
+            &quot;url&quot;: &quot;127.0.0.1:3333&quot;,
+            &quot;user&quot;: &quot;&quot;,
+            &quot;pass&quot;: &quot;&quot;,
+            &quot;tls&quot;: false,
+            &quot;keepalive&quot;: true,
+            &quot;nicehash&quot;: false
+        }
+    ]
+}
+</code></pre><p>Более подробную информацию по конфигурации майнера можно найти в моём руководстве «<a href="https://blog.sethforprivacy.com/guides/mining-monero/">Майнинг Monero</a>».</p>
+<h2 id="_просмотр-вашей-статистики-майнинга_"><em>Просмотр вашей статистики майнинга</em></h2>
+<p>Поскольку стандартного пула для проверки вашей статистики не существует, вас может озадачить, как можно увидеть общий хешрейт пула, найденные доли, примерный совокупный размер вознаграждения и так далее.</p>
+<p>Самый простой способ проверить свою статистику - использовать веб-сайт <a href="https://p2pool.observer/">p2pool.observer</a>, управляемый сообществом, и ввести свой адрес, чтобы просмотреть статистику, хеши, выплаты и т. д.</p>
+<p>Если вы не хотите вводить свой адрес на веб-сайте, вы можете использовать сам p2pool узел для проверки статистики.</p>
+<p>Хочется выразить благодарность DataHoarder за подсказку по этому вопросу, размещённую через Matrix/IRC.</p>
+<p>К счастью в p2pool предусмотрена команда, позволяющая делать всё это! Чтобы проверить свою текущую статистику, необходимо просто подсоединиться к командной строке контейнеров, ввести команду <code>status</code> и получить результат:</p>
+<pre tabindex="0"><code>docker attach p2pool
+status
+</code></pre><p>На экране появится подобная информация:</p>
+<pre tabindex="0"><code>2021-09-10 13:36:14.9805 SideChain status
+Main chain height         = 2446358
+Main chain hashrate       = 2.689 GH/s
+Side chain height         = 87443
+Side chain hashrate       = 50.160 MH/s
+Your hashrate (pool-side) = 12.831 KH/s
+PPLNS window              = 2160 blocks (+67 uncles, 2 orphans)
+Your shares               = 2 blocks (+0 uncles, 0 orphans)
+Block reward share        = 0.091% (0.000796295367 XMR)
+2021-09-10 13:36:14.9805 StratumServer status
+Hashrate (15m est) = 12.046 KH/s
+Hashrate (1h  est) = 12.046 KH/s
+Hashrate (24h est) = 12.046 KH/s
+Total hashes       = 6770128
+Shares found       = 5
+Average effort     = 40.000%
+Current effort     = 1.310%
+Connections        = 2 (2 incoming)
+2021-09-10 13:36:14.9805 P2PServer status
+Connections    = 9 (1 incoming)
+Peer list size = 99
+</code></pre><p>Для выхода из командной строки необходимо посредством клавиатуры ввести две команды в следующем порядке:</p>
+<pre tabindex="0"><code>Control + P
+Control + Q
+</code></pre><p>Это будет командой для Docker, означающей, что вы хотите отключиться, не прерывая процесса <code>p2pool</code>.</p>
+<h2 id="_проверка-выплат_"><em>Проверка выплат​</em></h2>
+<p>Самый простой способ проверить свою статистику - использовать веб-сайт <a href="https://p2pool.observer/">p2pool.observer</a>, управляемый сообществом, и ввести свой адрес, чтобы просмотреть статистику, хеши, выплаты и т. д.</p>
+<p>Чтобы увидеть выплаты, полученные в результате майнинга, просто проверьте свой любимый кошелёк Monero (<a href="https://cakewallet.com/">Cake Wallet</a>, <a href="https://www.monerujo.io/">Monerujo</a> или Monero GUI / CLI).</p>
+<p>Чтобы ознакомиться с общей статистикой пула для текущей тестовой версии p2pool основной сети, перейдите по следующей ссылке: <a href="https://p2pool.io/">https://p2pool.io/</a>.</p>
+<h2 id="_решение-проблем_"><em>Решение проблем</em></h2>
+<p>Хотя monerod очень стабилен и редко вызывает какие-либо проблемы, иногда p2pool может зависать и не работать должным образом. Если вы столкнулись с проблемами, когда p2pool не позволяет вам запустить процесс майнинга или вообще не отвечает, просто выполните следующую команду, чтобы перезапустить его и позволить ему синхронизироваться с резервной копией:</p>
+<pre tabindex="0"><code>cd ~/p2pool
+docker-compose restart p2pool
+</code></pre><p>Если у вас все еще возникают проблемы, вы можете отключить p2pool и запустить синхронизацию p2pool с нуля с помощью следующих команд:</p>
+<pre tabindex="0"><code>cd ~/p2pool
+docker rm --force p2pool
+docker-compose up -d
+</code></pre><p>Если ни один из этих команд не решает вашей проблемы, сообщите о проблеме в <a href="https://github.com/SChernykh/p2pool/issues">Github</a> или обратитесь за помощью в Matrix (<code>#monero-pow:matrix.org</code>).</p>
+<h2 id="_альтернативные-способы-запуска-p2pool_"><em>Альтернативные способы запуска p2pool​</em></h2>
+<p>Если вам не нравится данный подход, или же вы хотите построить всё самостоятельно на основе исходного кода, попробуйте следующие два подхода:</p>
+<ul>
+<li>построение на основе исходного кода и запуск двоичных файлов напрямую: <a href="https://github.com/SChernykh/p2pool#build-instructions;">https://github.com/SChernykh/p2pool#build-instructions;</a></li>
+<li>использование других настроек Docker Compose, позволяющих создавать образы локально, исключая фактор доверия к образам Docker: <a href="https://github.com/WeebDataHoarder/p2pool-compose">https://github.com/WeebDataHoarder/p2pool-compose</a>.</li>
+</ul>
+<p>Существует множество способов запустить всё самостоятельно, но в данном руководстве я попытался изложить подход, упрощающий данный процесс с точки зрения пользователей. Вы можете использовать наиболее удобный для вас подход, который также будет подходить для вашей модели угрозы!</p>
+<h2 id="_отказ-от-ответственности_"><em>Отказ от ответственности</em></h2>
+<p>Несмотря на то, что данный вариант программного обеспечения хорошо показал себя при работе в основной сети, он, безусловно, не защищён от неумелого обращения и по-прежнему находится на стадии активной разработки. Следует помнить о возможности наличия в нём ошибок, и что p2pool пока находится на раннем этапе использования.</p>
+<p>Я не несу никакой ответственности за потерю каких-либо средств и проблемы. Которые могут возникнуть у вас в связи с конфигурацией или использованием p2pool. Тем не менее я окажу посильную помощь в решении возможных проблем.</p>
+
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/manual/how-to-run-monero-node-advanced/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Назад</span>
+			<p class="pager__title">Запуск узла Monero (продвинутая версия руководства)</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/manual/introduction-to-mining/" rel="next">
+			<span class="pager__subtitle">Вперед&thinsp;»</span>
+			<p class="pager__title">Введение в майнинг</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar">
+<div class="widget-recent widget">
+	<h4 class="widget__title">Недавние публикации</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/2021-12-06-vulnerability-multisig/">В коде multisig-кошелька Monero обнаружена ошибка</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-12-04-monero-gui-0.17.3.0-released/">Доработанная версия Monero GUI 0.17.3.0 Oxygen Orion</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-12-04-monero-0.17.3.0-released/">Доработанная промежуточная версия Monero 0.17.3.0 Oxygen Orion</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-11-19-kraken-delist-monero-for-uk-customers/">Kraken планирует исключить Monero из списка поддерживаемых в Великобритании валют уже к концу ноября</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-11-05-p2pool-1.3.1-released/">Релиз P2Pool v1.3.1</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Категории</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B8/">Журнал встречи</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8/">Новости</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0/">Руководства</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/">Статьи</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Теги</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/breaking-monero/" title="Breaking Monero">Breaking Monero</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cake-wallet/" title="Cake Wallet">Cake Wallet</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ccs/" title="CCS">CCS</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cdc-36c3/" title="CDC 36c3">CDC 36c3</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ciphertrace/" title="CipherTrace">CipherTrace</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/def-con-2021/" title="DEF CON 2021">DEF CON 2021</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/farcaster/" title="Farcaster">Farcaster</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/feather-wallet/" title="Feather Wallet">Feather Wallet</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/haveno/" title="Haveno">Haveno</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/konferenco/" title="Konferenco">Konferenco</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/monero-gui/" title="Monero GUI">Monero GUI</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/monero-outreach/" title="Monero Outreach">Monero Outreach</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/monerujo/" title="Monerujo">Monerujo</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mpwg/" title="MPWG">MPWG</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/p2pool/" title="P2Pool">P2Pool</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B0%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D1%81%D0%B2%D0%BE%D0%BF%D1%8B/" title="Атомарные свопы">Атомарные свопы</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B2%D0%B7%D0%BB%D0%BE%D0%BC/" title="Взлом">Взлом</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B2%D0%B8%D1%80%D1%83%D1%81/" title="Вирус">Вирус</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B8/" title="Журнал встречи">Журнал встречи</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D0%BE-%D1%84%D0%B0%D0%BD%D1%82%D0%B0%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D1%80%D0%B0%D1%81%D1%81%D0%BA%D0%B0%D0%B7/" title="Научно-фантастический рассказ">Научно-фантастический рассказ</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0/" title="Ошибка">Ошибка</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 .
+			<span class="footer__copyright-credits">Информационно-новостной сайт русскоязычного сообщества Monero. <a href="/services/#_поддержать-xmrru_" rel="nofollow noopener" target="_blank">Пожертвовать</a>  на развитие проекта XMR.RU.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

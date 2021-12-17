@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Monero GUI on </title>
+    <link>/tags/monero-gui/</link>
+    <description>Recent content in Monero GUI on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Sat, 04 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/monero-gui/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Доработанная версия Monero GUI 0.17.3.0 Oxygen Orion</title>
+      <link>/post/2021-12-04-monero-gui-0.17.3.0-released/</link>
+      <pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021-12-04-monero-gui-0.17.3.0-released/</guid>
+      <description>Обзор Описание последней версии CLI содержится в предыдущем посте.
+Вот некоторые особенности этой промежуточной версии:
+ Добавлена функция импорта / экспорта выходов (#3435) Добавлена функция экспорта всех образов ключей (#3282) Обновление переводов (#3773) Добавлена возможность оставить комментарий при экспорте CSV файла (#3572) Добавление цветовой шкалы надежности задаваемого пароля (#3682) Добавлены функциональные кнопки Вырезать, Копировать, Удалить и Выбрать все в контекстное меню кошелька(#3689) Исправлено переполнение буфера в библиотеке zxcvbn (#3735) Исправлена проблема со шрифтами в Arch Linux (#3753) Исправлена компиляция для Apple ARM (#3697, #3723, #3731) Переработка дизайна страницы Майнинг (#3742)  Полный список изменений выложен на GitHub вместе с исходным кодом.</description>
+    </item>
+    
+  </channel>
+</rss>

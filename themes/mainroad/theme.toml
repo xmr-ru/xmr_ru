@@ -1,0 +1,9 @@
+name = "Mainroad"
+license = "GPLv2"
+licenselink = "https://github.com/vimux/mainroad/blob/master/LICENSE.md"
+description = "Mainroad is a responsive, clean and content-focused Hugo theme."
+homepage = "https://github.com/vimux/mainroad/"
+demosite = "https://mainroad-demo.netlify.app/"
+tags = ["blog", "responsive", "light", "multilingual", "customizable", "widgets", "wordpress"]
+features = ["blog", "responsive", "multilingual", "widgets", "rss", "disqus", "google analytics", "wordpress"]
+min_version = "0.48"

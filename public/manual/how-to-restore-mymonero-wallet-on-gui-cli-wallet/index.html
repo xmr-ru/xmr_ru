@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Как восстановить аккаунт MyMonero в локальном кошельке CLI / GUI - </title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Как восстановить аккаунт MyMonero в локальном кошельке CLI / GUI" />
+<meta property="og:description" content="Веб-кошельки не являются безопасным местом для хранения ваших средств, и MyMonero.com не исключение. В этом мануале рассмотрим как восстановить аккаунт MyMonero.com в локальном кошельке.
+MyMonero-кошельки используют другой тип мнемонической фразы - 13 слов (вместо 25-ти), которые не поддерживаются в Monero Core. Есть вариант с импортированием ключей в локальный кошелек.
+Зайдя в свой MyMonero-аккаунт, в правом верхнем углу жмите на Account → Account Details.
+Появится окно с ключами от вашего аккаунта:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/manual/how-to-restore-mymonero-wallet-on-gui-cli-wallet/" /><meta property="article:section" content="manual" />
+
+
+
+
+		<meta itemprop="name" content="Как восстановить аккаунт MyMonero в локальном кошельке CLI / GUI">
+<meta itemprop="description" content="Веб-кошельки не являются безопасным местом для хранения ваших средств, и MyMonero.com не исключение. В этом мануале рассмотрим как восстановить аккаунт MyMonero.com в локальном кошельке.
+MyMonero-кошельки используют другой тип мнемонической фразы - 13 слов (вместо 25-ти), которые не поддерживаются в Monero Core. Есть вариант с импортированием ключей в локальный кошелек.
+Зайдя в свой MyMonero-аккаунт, в правом верхнем углу жмите на Account → Account Details.
+Появится окно с ключами от вашего аккаунта:">
+
+<meta itemprop="wordCount" content="328">
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Как восстановить аккаунт MyMonero в локальном кошельке CLI / GUI"/>
+<meta name="twitter:description" content="Веб-кошельки не являются безопасным местом для хранения ваших средств, и MyMonero.com не исключение. В этом мануале рассмотрим как восстановить аккаунт MyMonero.com в локальном кошельке.
+MyMonero-кошельки используют другой тип мнемонической фразы - 13 слов (вместо 25-ти), которые не поддерживаются в Monero Core. Есть вариант с импортированием ключей в локальный кошелек.
+Зайдя в свой MyMonero-аккаунт, в правом верхнем углу жмите на Account → Account Details.
+Появится окно с ключами от вашего аккаунта:"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/logo.png">
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Меню</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">Что такое Monero (XMR)?</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/news/">
+				
+				<span class="menu__text">Новости</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/articles/">
+				
+				<span class="menu__text">Статьи</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/library/">
+				
+				<span class="menu__text">Библиотека</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/manuals/">
+				
+				<span class="menu__text">Руководства и инструкции</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/services/">
+				
+				<span class="menu__text">Полезные ссылки и сервисы</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Как восстановить аккаунт MyMonero в локальном кошельке CLI / GUI</h1>
+			<div class="post__meta meta"><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0/" rel="category">Руководства</a>
+	</span>
+</div></div>
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">Содержимое страницы</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#_cli_"><em>CLI</em></a></li>
+    <li><a href="#_gui_"><em>GUI</em></a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>Веб-кошельки не являются безопасным местом для хранения ваших средств, и MyMonero.com не исключение. В этом мануале рассмотрим как восстановить аккаунт MyMonero.com в локальном кошельке.</p>
+<p>MyMonero-кошельки используют другой тип мнемонической фразы - 13 слов (вместо 25-ти), которые не поддерживаются в Monero Core. Есть вариант с импортированием ключей в локальный кошелек.</p>
+<p>Зайдя в свой MyMonero-аккаунт, в правом верхнем углу жмите на <code>Account → Account Details</code>.</p>
+<p><img src="/img/manuals/how-to-restore-mymonero-wallet-on-gui-cli-wallet/01.png" alt="01"></p>
+<p>Появится окно с ключами от вашего аккаунта:</p>
+<p><img src="/img/manuals/how-to-restore-mymonero-wallet-on-gui-cli-wallet/02.png" alt="02"></p>
+<h2 id="_cli_"><em>CLI</em></h2>
+<p>Для того чтобы начать процесс импорта ключей, достаточно запустить <strong>monero-wallet-cli</strong> с ключом <code>--generate-from keys</code> и дать имя новому файлу кошелька, пример:</p>
+<pre tabindex="0"><code>./monero-wallet-cli --generate-from-keys MyMonero.XMR.RU
+</code></pre><p><em><strong>Примечание</strong>: Если вы используете удаленную ноду, тогда поле название кошелька вам нужно указать саму ноду, пример</em>:</p>
+<pre tabindex="0"><code>./monero-wallet-cli --generate-from-keys MyMonero.XMR.RU --daemon-address node.moneroworld.com:18089
+</code></pre><p>Кошелек попросит ввести по очереди <strong>Standard address</strong>;<strong>Secret spend key</strong>; <strong>Secret view key</strong>, а также создать пароль для кошелька.</p>
+<p><code>Restore from specific blockchain height (optional, default 0), or alternatively from specific date (YYYY-MM-DD)</code> - здесь можно указать высоту блокчейна (или дату), с которой начнется синхронизация кошелька. Если вы не знаете точной или приблизительной высоты блокчейна, когда вы получили средства, тогда просто нажмите клавишу Enter, кошелек начнет синхронизацию с первого блока.</p>
+<p>В этом примере, я указал дату 10 сентября 2017 года. Кошелек показал мне высоту блокчейна 1394200 и попросил подтверждения.</p>
+<p><img src="/img/manuals/how-to-restore-mymonero-wallet-on-gui-cli-wallet/03.png" alt="03"></p>
+<p>На скриншоте трудно не заметить сообщение после команды seed:</p>
+<p><strong>Error: wallet is non-deterministic and has no seed</strong></p>
+<p>Вспомните начало данного мануала - Monero Core не поддерживает восстановление по мнемонической фразе из MyMonero.com. Поэтому рекомендуется создать новый кошелек, и переслать туда свои XMR. Тогда у вас будет мнемоническая фраза из 25 слов, которую проще и безопаснее хранить, чем три ключа с MyMonero.com</p>
+<h2 id="_gui_"><em>GUI</em></h2>
+<p>С импортированием ключей в Monero Core GUI тоже не должно возникнуть проблем.</p>
+<p>Открываете кошелек и выбираете язык:</p>
+<p><img src="/img/manuals/how-to-restore-mymonero-wallet-on-gui-cli-wallet/04.png" alt="04"></p>
+<p>Выбираете <strong>Restore wallet from keys or mnemonic seed</strong> (Восстановить кошелек с помощью ключей или мнемонической фразы):</p>
+<p><img src="/img/manuals/how-to-restore-mymonero-wallet-on-gui-cli-wallet/05.png" alt="05"></p>
+<p>В следующем окне нужно выбрать <strong>Restore from keys</strong> (Восстановить с помощью ключей) и собственно ввести ключи от MyMonero-аккаунта:</p>
+<p><img src="/img/manuals/how-to-restore-mymonero-wallet-on-gui-cli-wallet/06.png" alt="06"></p>
+<p><img src="/img/manuals/how-to-restore-mymonero-wallet-on-gui-cli-wallet/07.png" alt="07"></p>
+<p>Вот и все. Надеюсь что этот мануал будет кому то полезен.</p>
+
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/manual/how-to-run-remote-node-on-vps/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Назад</span>
+			<p class="pager__title">Как запустить собственный удаленный узел Monero на VPS</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/manual/how-to-run-monero-node-over-i2p-with-i2p-zero/" rel="next">
+			<span class="pager__subtitle">Вперед&thinsp;»</span>
+			<p class="pager__title">Запуск узла Monero через I2P при помощи I2P-zero</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar">
+<div class="widget-recent widget">
+	<h4 class="widget__title">Недавние публикации</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/2021-12-06-vulnerability-multisig/">В коде multisig-кошелька Monero обнаружена ошибка</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-12-04-monero-gui-0.17.3.0-released/">Доработанная версия Monero GUI 0.17.3.0 Oxygen Orion</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-12-04-monero-0.17.3.0-released/">Доработанная промежуточная версия Monero 0.17.3.0 Oxygen Orion</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-11-19-kraken-delist-monero-for-uk-customers/">Kraken планирует исключить Monero из списка поддерживаемых в Великобритании валют уже к концу ноября</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-11-05-p2pool-1.3.1-released/">Релиз P2Pool v1.3.1</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Категории</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B8/">Журнал встречи</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8/">Новости</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0/">Руководства</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/">Статьи</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Теги</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/breaking-monero/" title="Breaking Monero">Breaking Monero</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cake-wallet/" title="Cake Wallet">Cake Wallet</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ccs/" title="CCS">CCS</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cdc-36c3/" title="CDC 36c3">CDC 36c3</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ciphertrace/" title="CipherTrace">CipherTrace</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/def-con-2021/" title="DEF CON 2021">DEF CON 2021</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/farcaster/" title="Farcaster">Farcaster</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/feather-wallet/" title="Feather Wallet">Feather Wallet</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/haveno/" title="Haveno">Haveno</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/konferenco/" title="Konferenco">Konferenco</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/monero-gui/" title="Monero GUI">Monero GUI</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/monero-outreach/" title="Monero Outreach">Monero Outreach</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/monerujo/" title="Monerujo">Monerujo</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mpwg/" title="MPWG">MPWG</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/p2pool/" title="P2Pool">P2Pool</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B0%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D1%81%D0%B2%D0%BE%D0%BF%D1%8B/" title="Атомарные свопы">Атомарные свопы</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B2%D0%B7%D0%BB%D0%BE%D0%BC/" title="Взлом">Взлом</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B2%D0%B8%D1%80%D1%83%D1%81/" title="Вирус">Вирус</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B8/" title="Журнал встречи">Журнал встречи</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D0%BE-%D1%84%D0%B0%D0%BD%D1%82%D0%B0%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D1%80%D0%B0%D1%81%D1%81%D0%BA%D0%B0%D0%B7/" title="Научно-фантастический рассказ">Научно-фантастический рассказ</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0/" title="Ошибка">Ошибка</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 .
+			<span class="footer__copyright-credits">Информационно-новостной сайт русскоязычного сообщества Monero. <a href="/services/#_поддержать-xmrru_" rel="nofollow noopener" target="_blank">Пожертвовать</a>  на развитие проекта XMR.RU.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

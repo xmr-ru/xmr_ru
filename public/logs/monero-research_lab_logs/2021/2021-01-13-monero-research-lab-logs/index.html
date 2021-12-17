@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Журнал встречи Исследовательской лаборатории Monero от 13.01.2021 - </title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Журнал встречи Исследовательской лаборатории Monero от 13.01.2021" />
+<meta property="og:description" content="Журнал встречи: &lt;sgp_&gt; Время встречи исследовательской лаборатории Monero
+&lt;sgp_&gt; Приветствия
+&lt;sgp_&gt; отдельно пропингую: sarang, moneromooo, SerHack, ArticMine, binaryFate
+&lt;sgp_&gt; knaccc
+&lt;sarang&gt; hi
+&lt;sgp_&gt; dEBRUYNE
+&lt;sgp_&gt; needmoney90
+&lt;sgp_&gt; прошло довольного много времени с последней встречи, надеюсь, что у всех все в порядке :)
+&lt;sgp_&gt; https://github.com/monero-project/meta/issues/542
+&lt;sgp_&gt; ну, я собираюсь продолжить и надеюсь, что другие воспрянут духом уже по ходу данной встречи
+&lt;sgp_&gt; 1. Аудит Bulletproofs&#43;
+&lt;sgp_&gt; это самый важный момент сегодняшней встречи" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/logs/monero-research_lab_logs/2021/2021-01-13-monero-research-lab-logs/" /><meta property="article:section" content="logs" />
+<meta property="article:published_time" content="2021-01-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-01-13T00:00:00+00:00" />
+
+
+		<meta itemprop="name" content="Журнал встречи Исследовательской лаборатории Monero от 13.01.2021">
+<meta itemprop="description" content="Журнал встречи: &lt;sgp_&gt; Время встречи исследовательской лаборатории Monero
+&lt;sgp_&gt; Приветствия
+&lt;sgp_&gt; отдельно пропингую: sarang, moneromooo, SerHack, ArticMine, binaryFate
+&lt;sgp_&gt; knaccc
+&lt;sarang&gt; hi
+&lt;sgp_&gt; dEBRUYNE
+&lt;sgp_&gt; needmoney90
+&lt;sgp_&gt; прошло довольного много времени с последней встречи, надеюсь, что у всех все в порядке :)
+&lt;sgp_&gt; https://github.com/monero-project/meta/issues/542
+&lt;sgp_&gt; ну, я собираюсь продолжить и надеюсь, что другие воспрянут духом уже по ходу данной встречи
+&lt;sgp_&gt; 1. Аудит Bulletproofs&#43;
+&lt;sgp_&gt; это самый важный момент сегодняшней встречи"><meta itemprop="datePublished" content="2021-01-13T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-01-13T00:00:00+00:00" />
+<meta itemprop="wordCount" content="2709">
+<meta itemprop="keywords" content="Журнал встречи," />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Журнал встречи Исследовательской лаборатории Monero от 13.01.2021"/>
+<meta name="twitter:description" content="Журнал встречи: &lt;sgp_&gt; Время встречи исследовательской лаборатории Monero
+&lt;sgp_&gt; Приветствия
+&lt;sgp_&gt; отдельно пропингую: sarang, moneromooo, SerHack, ArticMine, binaryFate
+&lt;sgp_&gt; knaccc
+&lt;sarang&gt; hi
+&lt;sgp_&gt; dEBRUYNE
+&lt;sgp_&gt; needmoney90
+&lt;sgp_&gt; прошло довольного много времени с последней встречи, надеюсь, что у всех все в порядке :)
+&lt;sgp_&gt; https://github.com/monero-project/meta/issues/542
+&lt;sgp_&gt; ну, я собираюсь продолжить и надеюсь, что другие воспрянут духом уже по ходу данной встречи
+&lt;sgp_&gt; 1. Аудит Bulletproofs&#43;
+&lt;sgp_&gt; это самый важный момент сегодняшней встречи"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/logo.png">
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Меню</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">Что такое Monero (XMR)?</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/news/">
+				
+				<span class="menu__text">Новости</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/articles/">
+				
+				<span class="menu__text">Статьи</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/library/">
+				
+				<span class="menu__text">Библиотека</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/manuals/">
+				
+				<span class="menu__text">Руководства и инструкции</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/services/">
+				
+				<span class="menu__text">Полезные ссылки и сервисы</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Журнал встречи Исследовательской лаборатории Monero от 13.01.2021</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-01-13T00:00:00Z">2021-01-13</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B8/" rel="category">Журнал встречи</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<h1 id="журнал-встречи">Журнал встречи:</h1>
+<p>&lt;sgp_&gt; Время встречи исследовательской лаборатории Monero<br>
+&lt;sgp_&gt; Приветствия<br>
+&lt;sgp_&gt; отдельно пропингую: sarang, moneromooo, SerHack, ArticMine, binaryFate<br>
+&lt;sgp_&gt; knaccc<br>
+&lt;sarang&gt; hi<br>
+&lt;sgp_&gt; dEBRUYNE<br>
+&lt;sgp_&gt; needmoney90<br>
+&lt;sgp_&gt; прошло довольного много времени с последней встречи, надеюсь, что у всех все в порядке :)<br>
+&lt;sgp_&gt; <a href="https://github.com/monero-project/meta/issues/542">https://github.com/monero-project/meta/issues/542</a><br>
+&lt;sgp_&gt; ну, я собираюсь продолжить и надеюсь, что другие воспрянут духом уже по ходу данной встречи<br>
+&lt;sgp_&gt; 1. Аудит Bulletproofs+<br>
+&lt;sgp_&gt; это самый важный момент сегодняшней встречи<br>
+&lt;sgp_&gt; <a href="https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/197">https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/197</a><br>
+&lt;sgp_&gt; прошло 3 недели с тех пор, как они открыли предложение<br>
+&lt;sgp_&gt; sarang: у вас были какие-то вопросы, они ответили на них?<br>
+&lt;sarang&gt; Было дело! Сфера применения очень широка, и всё сводится к воспринимаемой общественной ценности<br>
+&lt;sgp_&gt; на последнем собрании рабочих групп Monero они пришли к выводу, что перед перемещением предложения им нужно услышать ваши замечания<br>
+&lt;sgp_&gt; sarang: Что вы подразумеваете под «сферой применения»?<br>
+&lt;sarang&gt; Они намерены сделать обзор препринта, обзор кода и затем сравнить его с некоторыми другими реализациями<br>
+&lt;sarang&gt; И это весьма отличный подход к аудиту<br>
+&lt;sarang&gt; также я думаю, что цена вполне уместна<br>
+&lt;sgp_&gt; а что за сравнение? Насколько оно нужно в ключе данного аудита?<br>
+&lt;sarang&gt; Как минимум, не думаю, что это будет лишним<br>
+&lt;sarang&gt; и если бы нам нужно было выбрать что-то, что нужно исключить, я бы сказал, что мы можем отказаться от данной части их предложения<br>
+&lt;sgp_&gt; понял<br>
+&lt;sarang&gt; просто я считаю, что сравнение не будет лишним<br>
+&lt;sgp_&gt; они обещают управиться с аудитом за месяц<br>
+&lt;sgp_&gt; хорошо, давайте оставим сравнение<br>
+&lt;sgp_&gt; что насчёт дополнительного аудита?<br>
+&lt;sarang&gt; sgp_: да, за данную цену это вполне разумный срок<br>
+&lt;sarang&gt; Если бы сравнение повышало общую цену предложения, тогда да, от него можно было бы отказаться<br>
+&lt;sgp_&gt; вы считаете, что аудиторы достаточно компетентны для проведения подобного анализа?<br>
+&lt;sarang&gt; Я не могу за них поручиться лично, однако у них есть предыдущие работы, которые были весьма лояльно восприняты<br>
+&lt;sgp_&gt; значит, перемещаем предложение как есть<br>
+&lt;Isthmus&gt; +1<br>
+&lt;sarang&gt; думаю, что проблем не должно возникнуть<br>
+&lt;Isthmus&gt; В лучшем случае мы получаем отличный аудит. Если рассматривать второй негативный вариант – мы ищем новых аудиторов и считаем первый аудит фиктивным :- )<br>
+&lt;dEBRUYNE&gt; Я бы сказал, что ошибочное чувство безопасности — это недостаток<br>
+&lt;sgp_&gt; в худшем случае они просто представляют аудит, который мы не будем учитывать<br>
+&lt;dEBRUYNE&gt; (если это действительно плохой аудит)<br>
+&lt;dEBRUYNE&gt; я по-прежнему голосую за привлечение второй команды аудиторов<br>
+&lt;dEBRUYNE&gt; Тем более, что мы касаемся деликатных частей кода<br>
+&lt;sgp_&gt; следует ли нам начать искать других аудиторов уже сейчас или этим можно заняться после окончания первого аудита?<br>
+&lt;sarang&gt; Возможно, стоит провести еще один аудит, который затронет только код?<br>
+&lt;dEBRUYNE&gt; Думаю, что уже пора начинать<br>
+&lt;sarang&gt; Думаю, что остальные части аудита можно опустить<br>
+&lt;sgp_&gt; не вижу никаких препятствий<br>
+&lt;dEBRUYNE&gt; да, мне нравится идея с аудитом только кодовой базы<br>
+&lt;Isthmus&gt; +1 sgp<br>
+&lt;ErCiccione[m]&gt; дополнительная проверка кода — это хорошая идея<br>
+&lt;sgp_&gt; dEBRUYNE, sarang, Isthmus: у вас есть кто-то на примете?<br>
+&lt;sgp_&gt; возможно, стоит написать письмо Quarkslab или Kudelski, что думаете?<br>
+&lt;dEBRUYNE&gt; как насчёт OSTIF?<br>
+&lt;gingeropolous&gt; +1 за дополнительный аудит<br>
+&lt;dEBRUYNE&gt; В прошлом они уже выступали посредниками для проведения аудита<br>
+&lt;Isthmus&gt; С кем мы уже взаимодействовали раньше? Подходят ли они для данного аудита?<br>
+&lt;sgp_&gt; рабочая группа по проведению аудитов не была впечатлена их работой в прошлый раз<br>
+&lt;hyc&gt; в предыдущий раз нам не понравился аудит от OSTIF<br>
+&lt;dEBRUYNE&gt; sgp_: вы имеете в виду OSTIF?<br>
+&lt;sgp_&gt; Да<br>
+&lt;dEBRUYNE&gt; Я полагаю, что поиск аудиторов через OSTIF побуждает чувство доброй воли, но, как правило, это также увеличивает и цену за аудит<br>
+&lt;hyc&gt; а какие были проблемы с OSTIF? Как по мне, аудит randomx получился отличным<br>
+&lt;sgp_&gt; 1) мы не получили вариант с дешевыми тарифными ставками, 2) все разговоры с ними приводили к большей путанице<br>
+&lt;sgp_&gt; и они просят 10% за оказание своих услуг<br>
+&lt;hyc&gt; понял<br>
+&lt;sgp_&gt; sarang, у вас контакты тех, с кем мы уже работали в прошлом?<br>
+&lt;sarang&gt; думаю, что да<br>
+&lt;dEBRUYNE&gt; думаю, что как минимум стоит проконсультироваться с OSTIF<br>
+&lt;sgp_&gt; хорошо, кто-то еще считает, что нам нужно связаться с OSTIF? Кстати, Саранг, вы можете ставить меня в копию всех электронных писем<br>
+&lt;gingeropolous&gt; я думал, что OSTIF был обязательным фактором, потому что аудиторы должны работать через какую-то некоммерческую организацию<br>
+&lt;sgp_&gt; gingeropolous: Не уверен, что это всё именно так работает. Хотя….<br>
+&lt;dEBRUYNE&gt; Это было связано с налогами и прочей бюрократией<br>
+&lt;sgp_&gt; часть с налогами можно исключить, так как это будут пожертвования<br>
+&lt;gingeropolous&gt; Понял вас. Что могу сказать, это хорошая отправная точка<br>
+&lt;sgp_&gt; Хорошо, значит, мы пришли к консенсусу<br>
+&lt;sgp_&gt; Любые дополнительные комментарии?<br>
+&lt;sgp_&gt; Подводя итог: мы перемещаем открытый CCS запрос на стадию финансирования, а уже затем приступаем к поиску дополнительных аудиторов<br>
+&lt;sarang&gt; Отлично<br>
+&lt;sarang&gt; Мы можем ограничить объем кода для аудита<br>
+&lt;sgp_&gt; sarang, пожалуйста, свяжитесь со мной после встречи, мне нужно кое-что обсудить с вами<br>
+&lt;sgp_&gt; если кто-то хочет помочь с организационными моментами нашей рабочей группы по проведению аудита, пожалуйста, напишите мне тоже<br>
+&lt;sarang&gt; да, конечно<br>
+&lt;sgp_&gt; Окей, двигаемся дальше<br>
+&lt;sgp_&gt; Triptych / Arcturus<br>
+&lt;sgp_&gt; У меня есть довольно важный вопрос:<br>
+&lt;sgp_&gt; как обстоят дела с Arcturus? Были ли какие-то изменения за время последнего обсуждения?<br>
+&lt;sarang&gt; Ну, появилась реализация на Rust, которая показывает себя намного лучше, чем стандартная<br>
+&lt;sarang&gt; ну а так, ничего нового<br>
+&lt;sgp_&gt; (прощу прощения, мне нужно ненадолго отойти)<br>
+&lt;dEBRUYNE&gt; Теоретически мы уже сейчас можем приступить к интеграции Triptych<br>
+&lt;dEBRUYNE&gt; думаю, что люди уже смирились с тем, что multisig потребует более сложной реализации<br>
+&lt;Isthmus&gt; sgp, окей<br>
+&lt;Isthmus&gt; @sarang, реализация на rust уже общедоступна?<br>
+-&gt; Isthmus отправился проверять репозиторий<br>
+&lt;sarang&gt; да, конечно!<br>
+&lt;sarang&gt; <a href="https://github.com/cargodog/arcturus">https://github.com/cargodog/arcturus</a><br>
+&lt;sgp_&gt; я почти вернулся<br>
+&lt;Isthmus&gt; спасибо, @sarang<br>
+&lt;sgp_&gt; есть ли у нас какой-то запасной вариант?<br>
+&lt;sgp_&gt; есть еще одно предположение<br>
+&lt;sarang&gt; Arcturus по своей природе более рискованный вариант, учитывая его новую структуру<br>
+&lt;Isthmus&gt; Что за запасной вариант? Не совсем понимаю<br>
+&lt;sgp_&gt; как снизить риски?<br>
+&lt;sgp_&gt; или это невозможно?<br>
+&lt;sarang&gt; Требуется время и экспертная оценка<br>
+&lt;dEBRUYNE&gt; да, риски несут в себе катастрофические последствия<br>
+&lt;sarang&gt; Проверка предположения сильно отличается от проверки самой реализации<br>
+&lt;sarang&gt; всё верно<br>
+&lt;dEBRUYNE&gt; Я считаю, что было бы разумно «перестраховаться» и остановиться на Triptych<br>
+&lt;gingeropolous&gt; угу<br>
+&lt;dEBRUYNE&gt; Различия недостаточно велики, чтобы гарантировать выбор реализации, основанной(основываясь?) на новом предположении<br>
+&lt;gingeropolous&gt; двойное угу<br>
+&lt;sgp_&gt; Кто-нибудь из присутствующих вообще в курсе, как сейчас обстоят дела с arctutus?<br>
+&lt;sgp_&gt; или можно прекратить тратить время на разговоры об этом?<br>
+&lt;sgp_&gt; я бы вернулся к рассмотрению arcturus после появления квалифицированных аудитов<br>
+&lt;ArticMine&gt; Извините, я опоздал. Мое мнение заключается в том, что мы можем рассмотреть Аrcturus позже, после внедрения Triptych<br>
+&lt;Isthmus&gt; Все это кажется разумным<br>
+-&gt; Isthmus кивает в поддержку предложения от ArticMine<br>
+&lt;sgp_&gt; хорошо, кто-то против того, чтобы мы сосредоточились только на triptych?<br>
+&lt;moneromooo&gt; Количество правок в коде одинаковое для двух вариантов?<br>
+&lt;sarang&gt; В принципе, они идентичны в этом плане<br>
+&lt;sgp_&gt; sarang: ^<br>
+&lt;sarang&gt; Но все же есть существенные внутренние различия<br>
+&lt;sgp_&gt; для журнала встречи: кто за то, чтобы полностью сосредоточиться на triptych?<br>
+&lt;ArticMine&gt; Я<br>
+&lt;sethsimmons&gt; &lt;sgp_ &ldquo;кто за то, чтобы полностью сосредоточиться на triptych?&quot;&gt; я<br>
+&lt;moneromooo&gt; пожалуй, я тоже выберу этот вариант<br>
+&lt;dEBRUYNE&gt; мой выбор Triptych<br>
+&lt;dEBRUYNE&gt; я скоро вернусь, нужно отойти<br>
+&lt;sethsimmons&gt; Отлично, давайте сосредоточимся на triptych, а потом, если потребуется, мы подумаем об Arcturus<br>
+&lt;sethsimmons&gt; В Arcturus нет явных плюсов, особенно если учитывать потенциальные риски<br>
+&lt;sgp_&gt; я предполагаю, что нам не потребуется рассматривать вариант с Arcuturus, так как через несколько лет будет что-то еще лучше<br>
+&lt;sarang&gt; образы ключей идентичны для этих вариантов<br>
+&lt;sethsimmons&gt; Да, думаю, что есть такие шансы<br>
+&lt;sarang&gt; и миграция выходов не требуется<br>
+&lt;sarang&gt; это очень похоже на то, как мы делали в случае перехода от MLSAG к CLSAG<br>
+&lt;sethsimmons&gt; Triptych — это большой шаг вперед, и он позволит выиграть много времени для следующей гонки вооружений<br>
+&lt;sarang&gt; миграция потребуется в случае CLSAG-&gt;{Arcturus,Triptych}<br>
+&lt;sgp_&gt; Окей, с этим определились. Каков наш следующий шаг?<br>
+&lt;sgp_&gt; Финансирование работы Саранга?<br>
+&lt;sarang&gt; Насколько важны мультиподписи?<br>
+&lt;sgp_&gt; хм, хороший вопрос&hellip;<br>
+&lt;sgp_&gt; так, проведём быстрое голосование<br>
+&lt;sarang&gt; Важными проблемами остаются такие моменты, как группирование / алгоритм выбора / представление выходных наборов данных и проблемы миграции выходных данных и multisig<br>
+&lt;ArticMine&gt; Я говорю «да»<br>
+&lt;moneromooo&gt; Конечно, да<br>
+&lt;sethsimmons&gt; &lt;sarang &ldquo;Насколько важны мультиподписи?&quot;&gt; Разве в Arcturus не те же самые проблемы с мультиподписью, что и в Triptych?<br>
+&lt;sarang&gt; Код проверки / верификации уже работает<br>
+&lt;ErCiccione[m]&gt; я голосую за<br>
+&lt;sarang&gt; а вот код мультиподписи отсутствует, и его реализация весьма нетривиальна<br>
+&lt;sgp_&gt; Является ли отсутствие мульподписи препятствием для реализации обновления в аппаратные кошельки?<br>
+&lt;moneromooo&gt; Нет.<br>
+&lt;ArticMine&gt; Нет<br>
+&lt;sethsimmons&gt; Неа<br>
+&lt;sgp_&gt; Понятно, значит, нет<br>
+&lt;sethsimmons&gt; ими пользуется очень крошечный процент пользователей<br>
+&lt;sethsimmons&gt; как по мне, лучше улучшить предположения о конфиденциальности по умолчанию<br>
+&lt;sarang&gt; Чтобы внести ясность: у нас есть способ обрабатывать мультиподписи, но для этого потребуется дополнительный код и добавление библиотеки для общих структурных групп (группы RSA).<br>
+&lt;sarang&gt; Я не могу сказать, насколько это реализуемо в аппаратных кошельках<br>
+&lt;sethsimmons&gt; А это вообще им нужно?<br>
+&lt;sarang&gt; Мультиподписи? Не думаю<br>
+&lt;sethsimmons&gt; или мы можем добавить поддержку мультиподписей уже после реализации?<br>
+&lt;sarang&gt; мы не можем с полной уверенностью сказать, что это ненужный функционал<br>
+&lt;sethsimmons&gt; ну, это явно лучше, чем ничего<br>
+&lt;ArticMine&gt; Я предлагаю следующий путь действий — добиться полноценной работы мультиподписей в triptych и уже затем перейти к этапу с его реализацией<br>
+&lt;sethsimmons&gt; мы можем вернуться к этой проблеме уже после этапа реализации<br>
+&lt;sarang&gt; Как быть в случае, если мультиподписи в Triptych не смогут корректно работать на аппаратных кошельках<br>
+&lt;sethsimmons&gt; или, как вариант, работать над этой проблемой параллельно<br>
+&lt;sgp_&gt; ну, это не должно быть помехой для его реализации<br>
+&lt;sarang&gt; Хорошо, просто хотел прояснить, что может случиться так, что мультиподпись не будут работать на аппаратных кошельках<br>
+&lt;ArticMine&gt; С другой стороны, мы не должны препятствовать реализации данного функционала<br>
+&lt;sarang&gt; Я недостаточно знаю, чтобы сказать что-то наверняка<br>
+&lt;sgp_&gt; достойный компромисс<br>
+&lt;Lyza&gt; Мы просто можем наверстать этот момент в будущем, если на данном этапе появятся проблемы<br>
+&lt;sarang&gt; Обратите внимание, что подход с мультиподписями основан на уже известных методах, но потребует дополнительного изучения и анализа<br>
+&lt;sarang&gt; У меня есть рабочий код на Python<br>
+&lt;sarang&gt; (хочу предупредить, что это не более чем исследовательский вариант реализации данного функционала)<br>
+&lt;sgp_&gt; хорошо, что дальше?<br>
+&lt;ArticMine&gt; Хорошо, будем относиться к нему с должным скептицизмом<br>
+&lt;sarang&gt; <a href="https://github.com/SarangNoether/skunkworks/tree/inverse-mpc">https://github.com/SarangNoether/skunkworks/tree/inverse-mpc</a><br>
+&lt;sarang&gt; ^ это код и описание алгоритма<br>
+&lt;dEBRUYNE&gt; ArticMine: Я думаю, что sarang имеет в виду, что мультиподписи для «обычных» устройств возможны, хоть и более сложные в плане реализации<br>
+&lt;dEBRUYNE&gt; но это исключено в случае аппаратных кошельков (устройств)<br>
+&lt;dEBRUYNE&gt;Ledger и Trezor<br>
+&lt;ArticMine&gt; Я понял, спасибо<br>
+&lt;sarang&gt; Не обязательно исключено&hellip; Просто потребуется дополнительная работа<br>
+&lt;sarang&gt; Повторюсь, что у меня нет опыта, чтобы сказать это наверняка<br>
+&lt;ArticMine&gt; Опять же, не все пользователи используют аппаратные кошельки<br>
+&lt;dEBRUYNE&gt; В настоящее время я не вижу какой-то выгоды от использования мультиподписи в аппаратных кошельках<br>
+&lt;dEBRUYNE&gt; ArticMine: Они всегда смогут использовать «стандартный» кошелек Monero <!-- raw HTML omitted --> Но, опять же, это моя точка зрения<br>
+&lt;moneromooo&gt; Не думаю, что нам нужно беспокоиться об этом. Просто реализуйте triptych и требуемое программное обеспечение, а уже затем инженеры из ledger/trezor сделают всё, что в их силах<br>
+&lt;sgp_&gt; звучит разумно<br>
+&lt;Lyza&gt; +1<br>
+&lt;sgp_&gt; итак, что нам потребуется для реализации triptych<br>
+&lt;sgp_&gt; что нужно сделать в первую очередь<br>
+&lt;sarang&gt; Провести анализ и прийти к решению о выборе выходных данных и их представлению и пакетированию<br>
+&lt;sarang&gt; Аудит консенсусных частей кода<br>
+&lt;sarang&gt; реализация мультиподписи (по желанию)<br>
+&lt;moneromooo&gt; А как насчёт того, чтобы поговорить с ledger/trezor напрямую, насколько это трудная реализация<br>
+&lt;sgp_&gt; Выбор выходных данных — это область для потенциальных улучшений, верно?<br>
+&lt;ArticMine&gt; А как начёт мульиподписи для стандартных кошельков<br>
+&lt;sarang&gt; Если вы используете большие выходные наборы, использование пакетирования предоставляет много преимуществ<br>
+&lt;sarang&gt; Следует полагать, что вы не хотите делать индивидуальные представления для каждого выхода&hellip;<br>
+&lt;dEBRUYNE&gt; sarang: не стоит упускать из виду момент с финансированием данной работы<br>
+&lt;sgp_&gt; sarang: Я рассматриваю выбор выходных данных как побочный проект для оптимизации<br>
+&lt;sgp_&gt; это не столь критично<br>
+&lt;moneromooo&gt; Я был бы заинтересован в частичном кэшировании криптографических операций на этапе пакетирования, чтобы избавиться от константы O(N) на этапе проверки<br>
+&lt;moneromooo&gt; конечно, если это возможно<br>
+&lt;sarang&gt; Зависит от того, как именно вы планируете выполнять пакетирование этих данных<br>
+&lt;sarang&gt; и насколько важно будет использовать выходные наборы между разными доказательствами в одной транзакции<br>
+&lt;sgp_&gt; когда вы говорите «аудит», вы имеете в виду аудит документа или аудит кода? Или оба этих варианта?<br>
+&lt;sarang&gt; Оба<br>
+&lt;sarang&gt; Экспертная оценка в дополнение к академической оценке обеспечивает более высокую уверенность в качестве продукта<br>
+&lt;sarang&gt; Особенно для чего-то нового (как наш вариант)<br>
+&lt;sgp_&gt; код консенсусных частей и выбора выходов — это отдельные области кода, правильно?<br>
+&lt;dEBRUYNE&gt; Мы можем подключить независимую аудиторскую группу<br>
+&lt;sarang&gt; sgp_: наверное :D<br>
+&lt;sgp_&gt; Я думаю, что это очень важная деталь, которую нужно знать :)<br>
+&lt;sarang&gt; Я имею в виду, что в некоторых случаях пакетирование должно иметь элементы, пересекающиеся с общим консенсусом, чтобы избежать проблем с майнерами<br>
+&lt;sgp_&gt; если так, то мы можем начать с именно с этой части кода<br>
+&lt;gingeropolous&gt; есть ли какая-то возможность перехода на triptych с сохранением потенциальной возможности миграции пользователям, у которых уже есть существующая настройка мультиподписи?<br>
+&lt;sarang&gt; gingeropolous: к сожалению, нет<br>
+&lt;sarang&gt; это важный момент в отношении мультиподписей<br>
+&lt;ArticMine&gt; Нам нужно взять в расчёт период для возможности переноса существующих настроек мультиподписей<br>
+&lt;sgp_&gt; Хм<br>
+&lt;sgp_&gt; переход на новую схему не затронет уже существующие кошельки с мультиподписью<br>
+&lt;sgp_&gt; им просто придётся перевести средства на новый кошелек с мультиподписью<br>
+&lt;sarang&gt; все существующие кошельки с мультиподписью продолжат работать<br>
+&lt;dEBRUYNE&gt; Да, это как в случае с переходом к RCT<br>
+&lt;sgp_&gt; О, у меня есть еще один вопрос о совместимости<br>
+&lt;sgp_&gt; Предположим, я сегодня создаю кошелек с мультиподписью и стандартным адресом<br>
+&lt;sgp_&gt; Что будет, если кто-то попытается перевести средства на этот кошелёк после перехода на tripytch<br>
+&lt;sgp_&gt; это будет возможно?<br>
+&lt;sarang&gt; Думаю, что вам нужно, чтобы все стороны использовали для этого надежную итерацию (да, это будет возможно)<br>
+&lt;sarang&gt; Это, скорее, вопрос доверия<br>
+&lt;sarang&gt; Новая итерация с уже несколькими подписями не требует такого доверия<br>
+&lt;sarang&gt; В ближайшее время я займусь проверкой данной мысли<br>
+&lt;ArticMine&gt; Вот именно поэтому я и предлагаю предоставить время для перехода<br>
+&lt;sgp_&gt; предположим, что это кошелек с мультиподписью 2/3<br>
+&lt;sgp_&gt; и вам требуется согласие как минимум двух участников<br>
+&lt;sarang&gt; да, вам нужно всего 2 человека, но они не смогут потратить их(средства?) без доверенной итерации<br>
+&lt;sgp_&gt; ArticMine: это не поможет в ряде случаев<br>
+&lt;sgp_&gt; что за доверенная итерация?<br>
+&lt;sarang&gt; Им нужно будет восстановить приватный ключ таким образом, чтобы они оба знали его<br>
+&lt;sarang&gt; В отличие от ненадежного метода, в котором они не знают долю другой стороны<br>
+&lt;sarang&gt; Это всё из-за операции инверсии, которая является причиной всего этого баловства с несколькими подписями<br>
+&lt;sarang&gt; И от этого никак не избавиться (это присутствует в других конструкциях, таких как Arcturus, RCT3, Omniring)<br>
+&lt;sarang&gt; Это всё из-за того, что им нужно создать образ ключа, который использует именно эту инверсию<br>
+&lt;ArticMine&gt; Итак, вот и нарисовалась первая проблема<br>
+&lt;sgp_&gt; позвольте мне повторить это еще раз, чтобы убедиться, что я всё правильно понимаю<br>
+&lt;sarang&gt; Да, конечно<br>
+&lt;sgp_&gt; чтобы вернуть средства, отправленные в кошелёк с мультиподписью до момента реализации triptych, им потребуется реконструировать приватный ключ таким образом, чтобы все участвующие стороны знали уникальный ключ траты. И уже затем они смогут вывести все средства из этого кошелька<br>
+&lt;sgp_&gt; Если проще, то<br>
+&lt;sarang&gt; Да<br>
+&lt;sgp_&gt; кошелек необходимо «преобразовать» из кошелька с мультиподписью в кошелек без мультиподписи<br>
+&lt;sarang&gt; Это отличная формулировка, да<br>
+&lt;sgp_&gt; Окей, теперь я понял :D<br>
+&lt;sarang&gt; Знаю, что это может быть очень проблематично для ряда пользователей<br>
+&lt;ArticMine&gt; для преобразования требуется аналогичное количество подписей, что и в случае подписи транзакции?<br>
+&lt;ArticMine&gt; Верно?<br>
+&lt;sarang&gt; ArticMine: угу<br>
+&lt;sarang&gt; Я много думал о способах избежать этой инверсии, но для подобных конструкций это довольно сильно завязано на применяемой математике<br>
+&lt;sgp_&gt; думаю, что к этому нужно подходить очень осторожно<br>
+&lt;sgp_&gt; вот почему переходный период не решает данную проблему, ArticMine<br>
+&lt;sgp_&gt; кошельки смогут работать либо с выходами clsag, либо с выходами triptych<br>
+&lt;sgp_&gt; и это «преобразование» необходимо произвести до получения первого выхода triptych<br>
+&lt;sgp_&gt; хотя у меня есть ещё одна идея<br>
+&lt;sgp_&gt; смогут ли clsag кошельки с мультиподписью тратить выходные данные clsag и создавать новые выходы для triptych ненадёжным способом?<br>
+&lt;ArticMine&gt; А что случится, если отправить транзакцию из CLSAG кошелька в кошелёк Triptych?<br>
+&lt;sarang&gt; sgp_: да, смогут<br>
+&lt;sarang&gt; Сама конструкция выходов идентична в обоих случаях<br>
+&lt;sarang&gt; Разница заключается в том, как вычисляются сами образы ключей<br>
+&lt;UkoeHB__&gt; sarang, а на каком этапе в данной схеме (<a href="https://github.com/monero-project/research-lab/issues/72">https://github.com/monero-project/research-lab/issues/72</a>) участникам становиться известен приватный ключ?<br>
+&lt;sgp_&gt; отлично, значит, у нас есть резервный вариант, пусть и не самый лучший<br>
+&lt;sgp_&gt; мы можем сделать проверку адреса при отправке и выводить уведомление, что получатель использует устаревшую версию<br>
+&lt;sarang&gt; Прошу прощения, но мне нужно уходить<br>
+&lt;sarang&gt; Эта встреча длилась намного дольше, чем я ожидал<br>
+&lt;u29601mg6ba93j[m&gt; &lt;sarang &ldquo;Прошу прощения, но мне нужно уходить&rdquo;&gt; Спасибо за участие!<br>
+&lt;ArticMine&gt; Я предлагаю встретиться через неделю<br>
+&lt;sgp_&gt; да, это было супер<br>
+&lt;gingeropolous&gt; согласен<br>
+&lt;ArticMine&gt; Хорошо, значит на следующей неделе?<br>
+&lt;dEBRUYNE&gt; Да, отлично</p>
+<hr>
+<p><em>Источник: <a href="http://irc//chat.freenode.net/#monero-research-lab">IRC #monero-research-lab</a></em></p>
+<p><em>Перевод: <a href="https://t.me/v1docq47">Mr. Pickles</a></em><br>
+<em>Коррекция: <a href="https://t.me/Kukima">Kukima</a></em></p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B8/" rel="tag">Журнал встречи</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 .
+			<span class="footer__copyright-credits">Информационно-новостной сайт русскоязычного сообщества Monero. <a href="/services/#_поддержать-xmrru_" rel="nofollow noopener" target="_blank">Пожертвовать</a>  на развитие проекта XMR.RU.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

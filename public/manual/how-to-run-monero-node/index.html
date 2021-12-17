@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Запуск узла Monero (упрощённая версия руководства) - </title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Запуск узла Monero (упрощённая версия руководства)" />
+<meta property="og:description" content="Введение​ Принимая во внимание постоянные атаки на сеть Monero, настало время пользователям задуматься о создании собственных узлов.
+В этом коротком посте я подробно напишу, как можно без труда запустить узел Monero на сервере Linux, наиболее часто используемой для создания виртуальных приватных серверов (VPS) операционной системы. В качестве дистрибутива Linux я настоятельно рекомендую использовать Debian или Ubuntu. По крайней мере, в рамках данного руководства предполагается, что вы пользуетесь одним из них." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/manual/how-to-run-monero-node/" /><meta property="article:section" content="manual" />
+
+
+
+
+		<meta itemprop="name" content="Запуск узла Monero (упрощённая версия руководства)">
+<meta itemprop="description" content="Введение​ Принимая во внимание постоянные атаки на сеть Monero, настало время пользователям задуматься о создании собственных узлов.
+В этом коротком посте я подробно напишу, как можно без труда запустить узел Monero на сервере Linux, наиболее часто используемой для создания виртуальных приватных серверов (VPS) операционной системы. В качестве дистрибутива Linux я настоятельно рекомендую использовать Debian или Ubuntu. По крайней мере, в рамках данного руководства предполагается, что вы пользуетесь одним из них.">
+
+<meta itemprop="wordCount" content="1878">
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Запуск узла Monero (упрощённая версия руководства)"/>
+<meta name="twitter:description" content="Введение​ Принимая во внимание постоянные атаки на сеть Monero, настало время пользователям задуматься о создании собственных узлов.
+В этом коротком посте я подробно напишу, как можно без труда запустить узел Monero на сервере Linux, наиболее часто используемой для создания виртуальных приватных серверов (VPS) операционной системы. В качестве дистрибутива Linux я настоятельно рекомендую использовать Debian или Ubuntu. По крайней мере, в рамках данного руководства предполагается, что вы пользуетесь одним из них."/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/logo.png">
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Меню</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">Что такое Monero (XMR)?</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/news/">
+				
+				<span class="menu__text">Новости</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/articles/">
+				
+				<span class="menu__text">Статьи</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/library/">
+				
+				<span class="menu__text">Библиотека</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/manuals/">
+				
+				<span class="menu__text">Руководства и инструкции</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/services/">
+				
+				<span class="menu__text">Полезные ссылки и сервисы</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Запуск узла Monero (упрощённая версия руководства)</h1>
+			<div class="post__meta meta"><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0/" rel="category">Руководства</a>
+	</span>
+</div></div>
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">Содержимое страницы</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#_введение_"><em>Введение​</em></a></li>
+    <li><a href="#_рекомендуемые-параметры-аппаратного-обеспечения_"><em>Рекомендуемые параметры аппаратного обеспечения​</em></a></li>
+    <li><a href="#_зачем-запускать-собственный-узел-monero_"><em>Зачем запускать собственный узел Monero?​</em></a></li>
+    <li><a href="#_обновление-и-установка-необходимых-пакетов_"><em>Обновление и установка необходимых пакетов​</em></a></li>
+    <li><a href="#_начальное-усиление-защиты-посредством-ufw_"><em>Начальное усиление защиты посредством UFW​</em></a></li>
+    <li><a href="#_загрузка-и-установка-monero-посредством-docker_"><em>Загрузка и установка Monero посредством Docker​</em></a></li>
+    <li><a href="#_обновление-узла-monero_"><em>Обновление узла Monero​</em></a></li>
+    <li><a href="#_передача-команд-вашему-узлу_"><em>Передача команд вашему узлу​</em></a></li>
+    <li><a href="#_перенаправление-портов_"><em>Перенаправление портов​</em></a></li>
+    <li><a href="#_использование-анонимных-сетей_"><em>Использование анонимных сетей​</em></a>
+      <ul>
+        <li><a href="#_tor_"><em>Tor</em></a></li>
+      </ul>
+    </li>
+    <li><a href="#_подключение-к-вашему-новому-удалённому-узлу_"><em>Подключение к вашему новому удалённому узлу​</em></a></li>
+    <li><a href="#_несколько-полезных-cli-инструментов-linux_"><em>Несколько полезных CLI инструментов Linux​</em></a></li>
+    <li><a href="#_заключение_"><em>Заключение​</em></a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h2 id="_введение_"><em>Введение​</em></h2>
+<p>Принимая во внимание <a href="https://sethforprivacy.com/posts/moneros-ongoing-network-attack/">постоянные атаки на сеть Monero</a>, настало время пользователям задуматься о создании <a href="https://www.monerooutreach.org/monero_best_practices/your_own_node.html">собственных узлов</a>.</p>
+<p>В этом коротком посте я подробно напишу, как можно без труда запустить узел Monero на сервере Linux, наиболее часто используемой для создания виртуальных приватных серверов (VPS) операционной системы. В качестве дистрибутива Linux я настоятельно рекомендую использовать Debian или Ubuntu. По крайней мере, в рамках данного руководства предполагается, что вы пользуетесь одним из них.</p>
+<p>Также в этом руководстве допускается, что вы купили и применили SSH к выбранному вами VPS/хосту. Тем не менее, если вам требуется помощь, чтобы начать, вот несколько хороших ссылок, которые помогут вам:</p>
+<ul>
+<li><a href="https://www.getmonero.org/community/merchants/#hosting">Хостинг сервисов, принимающих Monero</a>
+<ul>
+<li>Возможные опции хостинга VPS при сохранении возможности оплаты в Monero с указанием всех «за» и «против» для каждой такой опции</li>
+</ul>
+</li>
+<li><a href="https://www.hetzner.com/dedicated-rootserver">Выделенные серверы Hetzner</a>
+<ul>
+<li>Надёжный и недорогой сервер в Германии. Провайдер (пока что!) не принимает Monero, но предлагает широкий выбор быстрых узлов.</li>
+</ul>
+</li>
+<li><a href="https://www.pragmaticlinux.com/2020/07/setup-a-minimal-debian-10-buster-server-as-a-linode-vps/">Простое руководство по развёртыванию Linode</a>
+<ul>
+<li>Если вы используете Linode, пожалуйста, воспользуйтесь моей <a href="https://www.linode.com/?r=c956dbb75d14063251557a0e5003efb5ceacc74d">реферальной ссылкой</a>, и мы вместе получим соответствующий бонус.</li>
+</ul>
+</li>
+</ul>
+<p>Если вы пользуетесь собственным домашним оборудованием, это руководство в целом касается и вас, если на этом оборудовании установлена Ubuntu/Debian.</p>
+<h2 id="_рекомендуемые-параметры-аппаратного-обеспечения_"><em>Рекомендуемые параметры аппаратного обеспечения​</em></h2>
+<p>Полный узел:</p>
+<ul>
+<li>2+ vCPU/ядра;</li>
+<li>4GB+ RAM;</li>
+<li>175GB+ SSD.</li>
+</ul>
+<p>Обрезанный узел <em>(*)</em>:</p>
+<ul>
+<li>2+ vCPU/ядра;</li>
+<li>4GB+ RAM;</li>
+<li>75GB+ SSD.</li>
+</ul>
+<p><em>(*) Вариант с обрезанным узлом позволяет создать собственный узел Monero и не тратить при этом много дискового пространства. Более подробная информация содержится в статье Moneropedia, посвящённой обрезанию.</em></p>
+<p><em><strong>Примечание:</strong> Если у вас есть возможность обеспечить неограниченную пропускную способность, не забудьте увеличить значения ограничения пропускной способности в конфигурационных файлах, что ускорит начальную синхронизацию и повысит общую пропускную способность всей сети Monero.​</em></p>
+<h2 id="_зачем-запускать-собственный-узел-monero_"><em>Зачем запускать собственный узел Monero?​</em></h2>
+<p>В основе сети Monero лежит распределённая сеть узлов Monero, каждый из которых подтверждает транзакции и транслирует их остальным участникам сети, а также помогает новым узлам просто и быстро синхронизироваться согласно текущему состоянию сети.</p>
+<p>Запуск собственного узла Monero помогает не только усилить гарантии своей приватности на сетевом уровне, но также и повысить уровень децентрализации, стабильность и скорость сети Monero.</p>
+<p>Каждый узел может реализовывать два разных сервиса, каждый из которых уникальным образом положительно влияет на работу сети:</p>
+<ul>
+<li>одноранговый (p2p) порт (18080 по умолчанию): этот порт позволяет другим узлам сети соединяться с вашим узлом, чтобы скачать блокчейн и отправить вам транзакции, которые прошли валидацию и которых у вас ещё нет. Это также повышает уровень приватности сети, так как узел участвует в трансляции транзакции в соответствии с протоколом <a href="https://www.monerooutreach.org/stories/dandelion.html">Dandelion++</a>;</li>
+<li>порт удаленного вызова процедур (RPC) (18089 по умолчанию с ограниченным доступом): доступ к этому порту (особенно с аргументом публичного узла) позволяет другим пользователям сети, особенно тем, которые используют мобильные кошельки или GUI-кошелёк в «простом» режиме, подключаться к вашему узлу, чтобы синхронизировать свои кошельки, не запуская при этом собственный полный узел локально.</li>
+</ul>
+<p>В данном руководстве мною приводятся только те конфигурационные файлы и команды Docker, которые открывают порт p2p, поскольку это ключевым образом помогает сети. Вы можете смело использовать один из указанных ниже конфигурационных файлов с аргументом публичного узла, если вы также хотите, чтобы другие тоже узнали о вашем порте RPC с ограниченным доступом.</p>
+<p>Вы можете либо развернуть <code>monerod</code> <a href="https://sethforprivacy.com/guides/run-a-monero-node/">в виде контейнера Docker</a>, либо настроить узел посредством systemd и при помощи «официальных» двоичных файлов, указанных ниже.</p>
+<p>Развёртывание через Docker имеет несколько ключевых преимуществ, а именно предполагает простую установку, подходящую для разных ОС, и автоматическое обновление через <a href="https://containrrr.dev/watchtower/">Watchtower</a>.</p>
+<p><em><strong>Примечание:</strong> Примечание: если вы хотите развернуть узел, но это руководство всё ещё представляется слишком продвинутым для вас, зайдите на <a href="https://xmrcannon.net/">xmrcannon.net</a>. Это отличный ресурс сообщества, где вам создадут узел за некоторую плату в Monero.</em>
+​</p>
+<h2 id="_обновление-и-установка-необходимых-пакетов_"><em>Обновление и установка необходимых пакетов​</em></h2>
+<p>Прежде всего нам потребуется установить несколько инструментов, которые понадобятся нам позже:</p>
+<pre tabindex="0"><code>sudo apt-get update &amp;&amp; sudo apt-get upgrade -y
+sudo apt-get install -y ufw gpg wget
+</code></pre><p>Затем необходимо установить Docker:</p>
+<pre tabindex="0"><code>curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker $USER
+su - $USER
+</code></pre><p><em><strong>Примечание:</strong> Эта команда загружает скрипт и запускается из корневой директории Docker. Следует быть уверенным в том, что у вас получится сделать это, и осторожным, если используется персональный компьютер. Если вы не хотите делать этого, следуйте официальной документации по установке, опубликованной в репозитории.</em></p>
+<h2 id="_начальное-усиление-защиты-посредством-ufw_"><em>Начальное усиление защиты посредством UFW​</em></h2>
+<p>Мы гарантируем простую защиту системы, ограничивая брандмауэр доступом только к тем портам, что необходимы для SSH и <code>monerod</code>, используя UFW.</p>
+<p>Отличная инструкция, которая поможет начать работу с UFW, опубликована на сайте <a href="https://www.digitalocean.com/community/tutorials/how-to-setup-a-firewall-with-ufw-on-an-ubuntu-and-debian-cloud-server">DigitalOcean</a>.</p>
+<p>Чтобы добавить некоторые основные правила UFW и включить брандмауэр, выполните следующие команды:</p>
+<pre tabindex="0"><code># Отключение всех не обозначенных в качестве разрешённых портов
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+
+# Открытие доступа SSH
+sudo ufw allow ssh
+
+# Открытие доступа к p2p порту monerod
+sudo ufw allow 18080/tcp
+
+# Открытие ограниченного доступа к RPC порту monerod
+sudo ufw allow 18089/tcp
+
+# Включение UFW
+sudo ufw enable
+</code></pre><h2 id="_загрузка-и-установка-monero-посредством-docker_"><em>Загрузка и установка Monero посредством Docker​</em></h2>
+<p>Выберите соответствующий набор команд из приведённых ниже в зависимости от того, хотите ли вы запустить полный узел или обрезанный, а также хотите ли вы, чтобы другие пользователи знали о вашем публичном узле RPC с ограниченным доступом и могли синхронизировать свои кошельки с помощью этого узла:</p>
+<p>Альтернативный вариант реализации Docker также можно найти на <a href="https://github.com/lalanza808/docker-monero-node">GitHub</a>. Он даже включает в себя собственные визуальные представления Grafana. Я планировал сделать данное руководство максимально простым, поэтому остановлюсь только на <code>monerod</code>.</p>
+<p>Если вы хотите проверить исходный код опубликованного здесь образа или написать его самостоятельно, перейдите по ссылкам, которые приведены ниже:</p>
+<p>Репозиторий с <a href="https://github.com/sethforprivacy/simple-monerod-docker">исходным кодом</a> и <a href="https://hub.docker.com/r/sethsimmons/simple-monerod">образы Docker Hub</a></p>
+<p><em><strong>Примечание:</strong> Рекомендуемые мной команды автоматически отображаются полностью ниже, но по необходимости вы можете выбрать один из трёх других вариантов.</em></p>
+<p><strong><em>Конфигурационный файл monerod Docker c ограниченным доступом к PRC</em></strong></p>
+<pre tabindex="0"><code>docker run -d --restart unless-stopped --name=&quot;monerod&quot; -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --no-igd --no-zmq --enable-dns-blocklist
+docker run -d \
+    --name watchtower --restart unless-stopped \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    containrrr/watchtower --cleanup \
+    monerod tor
+</code></pre><p><strong><em>Конфигурационный файл monerod Docker с публичным доступом к PRC</em></strong></p>
+<pre tabindex="0"><code>docker run -d --restart unless-stopped --name=&quot;monerod&quot; -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --public-node --no-igd --no-zmq --enable-dns-blocklist
+docker run -d \
+    --name watchtower --restart unless-stopped \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    containrrr/watchtower --cleanup \
+    monerod tor
+</code></pre><p><strong><em>Конфигурационный файл monerod Docker c ограниченным доступом к PRC (обрезанный узел)</em></strong></p>
+<pre tabindex="0"><code>docker run -d --restart unless-stopped --name=&quot;monerod&quot; -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --no-igd --no-zmq --enable-dns-blocklist --prune-blockchain
+docker run -d \
+    --name watchtower --restart unless-stopped \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    containrrr/watchtower --cleanup \
+    monerod tor
+</code></pre><p><strong><em>Конфигурационный файл monerod Docker с публичным доступом к PRC (обрезанный узел)</em></strong></p>
+<pre tabindex="0"><code>docker run -d --restart unless-stopped --name=&quot;monerod&quot; -p 18080:18080 -p 18089:18089 -v bitmonero:/home/monero sethsimmons/simple-monerod:latest --rpc-restricted-bind-ip=0.0.0.0 --rpc-restricted-bind-port=18089 --public-node --no-igd --no-zmq --enable-dns-blocklist --prune-blockchain
+docker run -d \
+    --name watchtower --restart unless-stopped \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    containrrr/watchtower --cleanup \
+    monerod tor
+</code></pre><p>Чтобы посмотреть записи журналов для <code>monerod</code>, просто введите:
+<code>docker logs --follow monerod</code></p>
+<h2 id="_обновление-узла-monero_"><em>Обновление узла Monero​</em></h2>
+<p>Каждый раз при выходе новой версии вы стараетесь как можно быстрее обновить своё программное обеспечение, чтобы получить самые последние исправления, улучшения и функции.</p>
+<p>Загрузите новые двоичные файлы:</p>
+<pre tabindex="0"><code>cd ~
+./download_monero_binaries.sh
+</code></pre><p>Установите новые двоичные файлы и перезагрузите <code>monerod</code>:</p>
+<pre tabindex="0"><code>rm -rf monero-x86_64-linux-gnu-*
+
+tar xvf monero-linux-*.tar.bz2
+rm monero-linux-*.tar.bz2
+sudo systemctl stop monerod
+sudo cp -r monero-x86_64-linux-gnu-*/* /usr/local/bin/
+sudo chown -R monero:monero /usr/local/bin/monero*
+sudo systemctl start monerod
+</code></pre><p>Выполнение этих команд позволит вам скачать самую последнюю версию двоичных файлов, заменить ими старые и перезапустить <code>monerod</code> в его новой версии!</p>
+<h2 id="_передача-команд-вашему-узлу_"><em>Передача команд вашему узлу​</em></h2>
+<p><code>monerod</code> поддерживает локальную отправку команд, что позволяет получать дополнительную информацию о статусе <code>monerod</code>, задавать ограничения пропускной способности, ограничения для одноранговых узлов и т. д.</p>
+<p>Полный список команд, начиная с версии <code>v0.17.1.8</code>, можно найти ниже или воспользовавшись <code>monerod</code> help:.</p>
+<p><strong><em>Вывод команды monerod help</em></strong></p>
+<pre tabindex="0"><code>Monero 'Oxygen Orion' (v0.17.1.8-release)
+
+Commands:
+  alt_chain_info [blockhash]
+  apropos &lt;keyword&gt; [&lt;keyword&gt; ...]
+  ban [&lt;IP&gt;|@&lt;filename&gt;] [&lt;seconds&gt;]
+  banned &lt;address&gt;
+  bans
+  bc_dyn_stats &lt;last_block_count&gt;
+  check_blockchain_pruning
+  diff
+  exit
+  flush_cache [bad-txs] [bad-blocks]
+  flush_txpool [&lt;txid&gt;]
+  hard_fork_info
+  help [&lt;command&gt;]
+  hide_hr
+  in_peers &lt;max_number&gt;
+  is_key_image_spent &lt;key_image&gt;
+  limit [&lt;kB/s&gt;]
+  limit_down [&lt;kB/s&gt;]
+  limit_up [&lt;kB/s&gt;]
+  mining_status
+  out_peers &lt;max_number&gt;
+  output_histogram [@&lt;amount&gt;] &lt;min_count&gt; [&lt;max_count&gt;]
+  pop_blocks &lt;nblocks&gt;
+  print_bc &lt;begin_height&gt; [&lt;end_height&gt;]
+  print_block &lt;block_hash&gt; | &lt;block_height&gt;
+  print_cn
+  print_coinbase_tx_sum &lt;start_height&gt; [&lt;block_count&gt;]
+  print_height
+  print_net_stats
+  print_pl [white] [gray] [pruned] [publicrpc] [&lt;limit&gt;]
+  print_pl_stats
+  print_pool
+  print_pool_sh
+  print_pool_stats
+  print_status
+  print_tx &lt;transaction_hash&gt; [+hex] [+json]
+  prune_blockchain
+  relay_tx &lt;txid&gt;
+  rpc_payments
+  save
+  set_bootstrap_daemon (auto | none | host[:port] [username] [password])
+  set_log &lt;level&gt;|&lt;{+,-,}categories&gt;
+  show_hr
+  start_mining &lt;addr&gt; [&lt;threads&gt;|auto] [do_background_mining] [ignore_battery]
+  status
+  stop_daemon
+  stop_mining
+  sync_info
+  unban &lt;address&gt;
+  update (check|download)
+  version
+</code></pre><p>Если вы хотите ввести команду, просто запустите <code>docker exec monerod/usr/local/bin/monerod name_of_command</code>, и он автоматически подключится к демону, выполнит команду и распечатает результаты выполнения этой команды в инструменте командной строки.
+Вот несколько команд, которые я использую наиболее часто:</p>
+<ul>
+<li><code>docker exec monerod /usr/local/bin/monerod status</code>: получение краткой информации о состоянии <code>monerod</code>, включая информацию о количестве пиров (как входящих, так и исходящих), высоте блока, состоянии синхронизации и версии;</li>
+<li><code>docker exec monerod /usr/local/bin/monerod sync_info</code>: отображение списка пиров с информацией об их состоянии и о том, как ваш узел синхронизируется с ними;</li>
+<li><code>docker exec monerod /usr/local/bin/monerod print_net_stats</code>: отображение сетевой статистики с момента запуска <code>monerod</code>, включая информацию об общем объёме входящего и исходящего трафика, средней скорости и заданных ограничениях;</li>
+<li><code>docker exec monerod /usr/local/bin/monerod update check</code>: проверка наличия обновлённой версии <code>monerod</code>.</li>
+</ul>
+<h2 id="_перенаправление-портов_"><em>Перенаправление портов​</em></h2>
+<p>Если вы решите воспользоваться этим руководством, создавая узел на устройстве в своей домашней сети, вам необходимо обязательно перенаправить порты <code>18080/tcp</code> и <code>18089/tcp</code> посредством маршрутизатора или же <a href="https://blog.sethforprivacy.com/guides/run-a-monero-node/#tor">используя анонимную сеть, такую как Tor</a>.</p>
+<p>Хороший основной сайт с множеством руководств по конкретным маршрутизаторам можно найти по адресу <a href="https://portforward.com/router.htm">portforward.com</a>. Просто следует убедиться в том, что вы выбрали правильную марку и модель маршрутизатора, а затем открыть порты 18080/18089, но только для TCP.</p>
+<h2 id="_использование-анонимных-сетей_"><em>Использование анонимных сетей​</em></h2>
+<h3 id="_tor_"><em>Tor</em></h3>
+<p>Если вы хотите также открыть доступ к своему RPC порту через Tor в качестве скрытого сервиса (Hidden Service), выполните несколько приведённых ниже команд. Это обеспечивает доступ к вашему порту RPC через Tor, минуя выходные узлы.</p>
+<ul>
+<li>Установка контейнера Docker Tor</li>
+</ul>
+<pre tabindex="0"><code>docker run -d --restart unless-stopped --link monerod:monerod --name tor --volume tor-keys:/var/lib/tor/hidden_service/ goldy/tor-hidden-service
+</code></pre><ul>
+<li>Получение адреса HiddenService</li>
+</ul>
+<pre tabindex="0"><code>docker exec -ti tor onions
+</code></pre><p><em><strong>Примечание:</strong> Чтобы проверить возможность подключения, просто зайдите на http://replacewithnewonionaddress:18089/get_info и убедитесь, что текстовый блок был получен вами обратно.​</em></p>
+<h2 id="_подключение-к-вашему-новому-удалённому-узлу_"><em>Подключение к вашему новому удалённому узлу​</em></h2>
+<p>Тут всё будет зависеть от кошелька, выбранного вами для использования. Но обычно это просто подразумевает указание IP-адреса вашего узла (либо вашего домашнего IP-адреса, либо адреса вашего хоста, выделенного VPS) или лукового адреса.</p>
+<p>Здесь вы найдёте <a href="https://www.getmonero.org/resources/user-guides/remote_node_gui.html">пример</a> того, как это сделать, в основном десктоп-кошельке.</p>
+<h2 id="_несколько-полезных-cli-инструментов-linux_"><em>Несколько полезных CLI инструментов Linux​</em></h2>
+<p>Ниже приведены некоторые из моих любимых инструментов для общего использования CLI под Linux. Надеюсь, они помогут вам в обращении с CLI и позволят более внимательно следить за своим узлом!</p>
+<ul>
+<li><a href="https://ohmyz.sh/">Oh My Zsh</a> - Будучи превосходной заменой оболочек bash/sh, Oh My Zsh обеспечивает гораздо лучше выделение информации, усовершенствованные функции и поддерживает автоматические обновления через git.</li>
+<li><a href="https://humdi.net/vnstat/">vnstat</a> - Простой CLI инструмент для наблюдения и просмотра показателей использования пропускной способности.</li>
+<li><a href="https://htop.dev/">htop</a> - Обеспечивает отличную общую картину использования системных ресурсов процессами и гораздо более читабелен, чем <code>top</code>.</li>
+<li><a href="https://www.vanheusden.com/multitail/">multitail</a> - Гораздо более полнофункциональный способ просмотра журналов (в частности, имеется возможность просмотра более одного журнала за раз).</li>
+</ul>
+<h2 id="_заключение_"><em>Заключение​</em></h2>
+<p>Надеюсь, это руководство сделает процесс создания удаленного узла на VPS проще для вас. Также вскоре мною планируется публикация других подобных руководств.</p>
+<p>Я использовал команды и информацию, содержащиеся в данном руководстве, чтобы запустить новые удалённые узлы на Linode и Hetzner. Вы можете свободно пользоваться им для синхронизации своего кошелька, добавить его в качестве приоритетного узла и т. д.:
+<code>node-1.sethforprivacy.com:18089</code> (высокопроизводительный узел на Hetzner, расположенный во Франкфурте, Германия)</p>
+<p>Также доступен как HiddenService в сети Tor по адресу:
+<code>rbpgdckle3h3vi4wwwrh75usqtoc5r3alohy7yyx57isynvay63nacyd.onion:18089</code></p>
+<p>Если у вас есть какие-либо вопросы, если вы считаете, что какой-либо шаг требует дополнительного разъяснения, или же вам нужна помощь в настройке и запуске, вы можете связаться со мной через <a href="https://sethforprivacy.com/about/#how-to-contact-me">Twitter, Matrix или по электронной почте</a>.</p>
+
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/manual/how-to-run-monero-node-over-i2p-with-i2p-zero/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Назад</span>
+			<p class="pager__title">Запуск узла Monero через I2P при помощи I2P-zero</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/manual/how-to-run-monero-node-advanced/" rel="next">
+			<span class="pager__subtitle">Вперед&thinsp;»</span>
+			<p class="pager__title">Запуск узла Monero (продвинутая версия руководства)</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar">
+<div class="widget-recent widget">
+	<h4 class="widget__title">Недавние публикации</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/2021-12-06-vulnerability-multisig/">В коде multisig-кошелька Monero обнаружена ошибка</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-12-04-monero-gui-0.17.3.0-released/">Доработанная версия Monero GUI 0.17.3.0 Oxygen Orion</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-12-04-monero-0.17.3.0-released/">Доработанная промежуточная версия Monero 0.17.3.0 Oxygen Orion</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-11-19-kraken-delist-monero-for-uk-customers/">Kraken планирует исключить Monero из списка поддерживаемых в Великобритании валют уже к концу ноября</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-11-05-p2pool-1.3.1-released/">Релиз P2Pool v1.3.1</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Категории</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B8/">Журнал встречи</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8/">Новости</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0/">Руководства</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/">Статьи</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Теги</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/breaking-monero/" title="Breaking Monero">Breaking Monero</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cake-wallet/" title="Cake Wallet">Cake Wallet</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ccs/" title="CCS">CCS</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cdc-36c3/" title="CDC 36c3">CDC 36c3</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ciphertrace/" title="CipherTrace">CipherTrace</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/def-con-2021/" title="DEF CON 2021">DEF CON 2021</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/farcaster/" title="Farcaster">Farcaster</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/feather-wallet/" title="Feather Wallet">Feather Wallet</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/haveno/" title="Haveno">Haveno</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/konferenco/" title="Konferenco">Konferenco</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/monero-gui/" title="Monero GUI">Monero GUI</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/monero-outreach/" title="Monero Outreach">Monero Outreach</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/monerujo/" title="Monerujo">Monerujo</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mpwg/" title="MPWG">MPWG</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/p2pool/" title="P2Pool">P2Pool</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B0%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D1%81%D0%B2%D0%BE%D0%BF%D1%8B/" title="Атомарные свопы">Атомарные свопы</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B2%D0%B7%D0%BB%D0%BE%D0%BC/" title="Взлом">Взлом</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B2%D0%B8%D1%80%D1%83%D1%81/" title="Вирус">Вирус</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B8/" title="Журнал встречи">Журнал встречи</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D0%BE-%D1%84%D0%B0%D0%BD%D1%82%D0%B0%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D1%80%D0%B0%D1%81%D1%81%D0%BA%D0%B0%D0%B7/" title="Научно-фантастический рассказ">Научно-фантастический рассказ</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0/" title="Ошибка">Ошибка</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 .
+			<span class="footer__copyright-credits">Информационно-новостной сайт русскоязычного сообщества Monero. <a href="/services/#_поддержать-xmrru_" rel="nofollow noopener" target="_blank">Пожертвовать</a>  на развитие проекта XMR.RU.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

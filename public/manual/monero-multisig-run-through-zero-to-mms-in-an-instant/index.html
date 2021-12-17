@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Коротко о мультиподписях Monero: как мгновенно создать MMS с нуля - </title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Коротко о мультиподписях Monero: как мгновенно создать MMS с нуля" />
+<meta property="og:description" content="Мультиподписи Monero только кажутся страшными. Чтобы показать, насколько быстро они создаются, я воспользуюсь отрывком из соответствующего руководства пользователя и на его основе создам собственное, пожалуй, самое краткое руководство по мультиподписям Monero.
+Установка и конфигурирование PyBitmessage​ Представим, что протокол Bitmessage — это чат-рум, где ваши клиенты Monero собираются, чтобы обменяться информацией, необходимой для каждого последующего шага. Мы настраиваем её как демон, который сможет использовать monero-wallet-cli.
+# Install required applications (example for Arch Linux) sudo pacman -S python2 openssl git # Download PyBitmessage git clone https://github." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/manual/monero-multisig-run-through-zero-to-mms-in-an-instant/" /><meta property="article:section" content="manual" />
+
+
+
+
+		<meta itemprop="name" content="Коротко о мультиподписях Monero: как мгновенно создать MMS с нуля">
+<meta itemprop="description" content="Мультиподписи Monero только кажутся страшными. Чтобы показать, насколько быстро они создаются, я воспользуюсь отрывком из соответствующего руководства пользователя и на его основе создам собственное, пожалуй, самое краткое руководство по мультиподписям Monero.
+Установка и конфигурирование PyBitmessage​ Представим, что протокол Bitmessage — это чат-рум, где ваши клиенты Monero собираются, чтобы обменяться информацией, необходимой для каждого последующего шага. Мы настраиваем её как демон, который сможет использовать monero-wallet-cli.
+# Install required applications (example for Arch Linux) sudo pacman -S python2 openssl git # Download PyBitmessage git clone https://github.">
+
+<meta itemprop="wordCount" content="572">
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Коротко о мультиподписях Monero: как мгновенно создать MMS с нуля"/>
+<meta name="twitter:description" content="Мультиподписи Monero только кажутся страшными. Чтобы показать, насколько быстро они создаются, я воспользуюсь отрывком из соответствующего руководства пользователя и на его основе создам собственное, пожалуй, самое краткое руководство по мультиподписям Monero.
+Установка и конфигурирование PyBitmessage​ Представим, что протокол Bitmessage — это чат-рум, где ваши клиенты Monero собираются, чтобы обменяться информацией, необходимой для каждого последующего шага. Мы настраиваем её как демон, который сможет использовать monero-wallet-cli.
+# Install required applications (example for Arch Linux) sudo pacman -S python2 openssl git # Download PyBitmessage git clone https://github."/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/logo.png">
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Меню</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">Что такое Monero (XMR)?</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/news/">
+				
+				<span class="menu__text">Новости</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/articles/">
+				
+				<span class="menu__text">Статьи</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/library/">
+				
+				<span class="menu__text">Библиотека</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/manuals/">
+				
+				<span class="menu__text">Руководства и инструкции</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/services/">
+				
+				<span class="menu__text">Полезные ссылки и сервисы</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Коротко о мультиподписях Monero: как мгновенно создать MMS с нуля</h1>
+			<div class="post__meta meta"><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0/" rel="category">Руководства</a>
+	</span>
+</div></div>
+		</header>
+		
+	<figure class="post__thumbnail thumbnail">
+		
+		<img class="thumbnail__image" src="/img/manuals/monero-multisig-run-through-zero-to-mms-in-an-instant/01.png" alt="Коротко о мультиподписях Monero: как мгновенно создать MMS с нуля">
+		
+	</figure>
+<div class="post__toc toc">
+	<div class="toc__title">Содержимое страницы</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#_установка-и-конфигурирование-pybitmessage_"><em>Установка и конфигурирование PyBitmessage​</em></a></li>
+    <li><a href="#_настройка-multisig-кошелька-клиент-monero-со-стороны-элис_"><em>Настройка multisig-кошелька (клиент Monero со стороны Элис)​</em></a>
+      <ul>
+        <li><a href="#_снижение-уровня-интерактивности-monero-wallet-cli_"><em>Снижение уровня интерактивности monero-wallet-cli</em></a></li>
+        <li><a href="#_инициализация-multisig-элис_"><em>Инициализация multisig Элис</em></a></li>
+      </ul>
+    </li>
+    <li><a href="#_настройка-multisig-кошелька-со-стороны-боба_"><em>Настройка multisig-кошелька (со стороны Боба)​</em></a>
+      <ul>
+        <li><a href="#_снижение-уровня-интерактивности-клиента-monero-со-стороны-боба_"><em>Снижение уровня интерактивности клиента Monero со стороны Боба</em></a></li>
+        <li><a href="#_инициализация-multisig-со-стороны-боба_"><em>Инициализация multisig со стороны Боба</em></a></li>
+      </ul>
+    </li>
+    <li><a href="#_элис-отправка-необходимых-данных-подписантам-посредством-bitmessage_"><em>Элис: отправка необходимых данных подписантам посредством Bitmessage​</em></a></li>
+    <li><a href="#_боб-отправка-необходимых-данных-посредством-bitmessage_"><em>Боб: отправка необходимых данных посредством Bitmessage​</em></a></li>
+    <li><a href="#_элис-отправка-необходимых-данных-подписантам-посредством-bitmessage_-1"><em>Элис: отправка необходимых данных подписантам посредством Bitmessage​</em></a></li>
+    <li><a href="#_ваша-первая-multisig-транзакция_"><em>Ваша первая multisig-транзакция​</em></a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>Мультиподписи Monero только кажутся страшными. Чтобы показать, насколько быстро они создаются, я воспользуюсь отрывком из соответствующего руководства пользователя и на его основе создам собственное, пожалуй, самое краткое руководство по мультиподписям Monero.</p>
+<h2 id="_установка-и-конфигурирование-pybitmessage_"><em>Установка и конфигурирование PyBitmessage​</em></h2>
+<p>Представим, что протокол <em>Bitmessage</em> — это чат-рум, где ваши клиенты Monero собираются, чтобы обменяться информацией, необходимой для каждого последующего шага. Мы настраиваем её как демон, который сможет использовать monero-wallet-cli.</p>
+<pre tabindex="0"><code># Install required applications (example for Arch Linux)
+sudo pacman -S python2 openssl git
+
+# Download PyBitmessage
+git clone https://github.com/Bitmessage/PyBitmessage.git
+cd PyBitmessage
+
+# Check if core dependencies are met.
+# You may disregard any warnings about missing Qt.
+python2 checkdeps.py
+
+# Install PyBitmessage
+python2 setup.py install --user
+
+# Execute PyBitmessage once to generate config files
+python2 ~/.local/bin/pybitmessage -h
+
+# Enable daemon mode and disable Dandelion
+[ -z $XDG_CONFIG_HOME ] &amp;&amp; XDG_CONFIG_HOME=&quot;$HOME/.config&quot;
+echo 'daemon = true\n[network]\ndandelion = 0' &gt;&gt; ${XDG_CONFIG_HOME}/PyBitmessage/keys.dat
+
+# Execute PyBitmessage
+python2 ~/.local/bin/pybitmessage
+
+# Generate your Bitmessage address
+python_code='import xmlrpclib, json, time ;
+api = xmlrpclib.ServerProxy(&quot;http://username:password@localhost:8442/&quot;) ;
+print api.createRandomAddress(&quot;&quot;)'
+transport_address=`echo ${python_code} | python2`
+echo ${transport_address}
+</code></pre><p>Придерживаясь вышеупомянутой аналогии с чат-румом, ваш транспортный адрес можно рассматривать в качестве псевдонима, которым вы пользуетесь в чате Bitmessage. Нашим следующим шагом является раскрытие этого псевдонима клиенту Monero.</p>
+<h2 id="_настройка-multisig-кошелька-клиент-monero-со-стороны-элис_"><em>Настройка multisig-кошелька (клиент Monero со стороны Элис)​</em></h2>
+<p>В случае с monero-wallet-cli используются следующие команды.</p>
+<h3 id="_снижение-уровня-интерактивности-monero-wallet-cli_"><em>Снижение уровня интерактивности monero-wallet-cli</em></h3>
+<pre tabindex="0"><code>set ask-password 0
+set inactivity-lock-timeout 0
+</code></pre><h3 id="_инициализация-multisig-элис_"><em>Инициализация multisig Элис</em></h3>
+<p>Укажите необходимый вам тип мультиподписи и назовите дополнительных подписантов.</p>
+<pre tabindex="0"><code>mms init 2/2 alice PUT_ALICES_TRANSPORT_ADDRESS_HERE
+mms set auto-send 1
+mms signer 2 bob
+mms start_auto_config
+</code></pre><p>После ввода последней команды вы увидите токен в формате <em>mmsXXXXXXXX</em>. Необходимо передать этот токен Бобу. Он понадобится ему на следующем этапе.</p>
+<h2 id="_настройка-multisig-кошелька-со-стороны-боба_"><em>Настройка multisig-кошелька (со стороны Боба)​</em></h2>
+<p>Как и Элис, Бобу необходимо настроить PyBitmessage (см. выше), а затем создать Bitmessage адрес:</p>
+<pre tabindex="0"><code>python_code='import xmlrpclib, json, time ;
+
+api = xmlrpclib.ServerProxy(&quot;http://username:password@localhost:8442/&quot;) ;
+print api.createRandomAddress(&quot;&quot;)'
+echo ${python_code} | python2
+</code></pre><h3 id="_снижение-уровня-интерактивности-клиента-monero-со-стороны-боба_"><em>Снижение уровня интерактивности клиента Monero со стороны Боба</em></h3>
+<pre tabindex="0"><code>set ask-password 0
+set inactivity-lock-timeout 0
+</code></pre><h3 id="_инициализация-multisig-со-стороны-боба_"><em>Инициализация multisig со стороны Боба</em></h3>
+<p>Необходимо использовать следующие команды, вставив правильный адрес Боба и заменив mmsXXXXXXXX на токен, полученный от Элис.</p>
+<pre tabindex="0"><code>mms init 2/2 bob   PUT_BOBS_TRANSPORT_ADDRESS_HERE
+mms set auto-send 1
+mms auto_config mmsXXXXXXXX
+</code></pre><h2 id="_элис-отправка-необходимых-данных-подписантам-посредством-bitmessage_"><em>Элис: отправка необходимых данных подписантам посредством Bitmessage​</em></h2>
+<p>Как только MMS получит новое сообщение на клиент Monero Элис, следует дважды ввести команду mms next:</p>
+<pre tabindex="0"><code>mms next
+mms next
+</code></pre><p>После первой команды будут отправлены данные конфигурации подписанта, а после второй — набор ключей.</p>
+<h2 id="_боб-отправка-необходимых-данных-посредством-bitmessage_"><em>Боб: отправка необходимых данных посредством Bitmessage​</em></h2>
+<p>Как только MMS получит новое сообщение на клиент Monero Боба, следует трижды ввести команду mms next:</p>
+<pre tabindex="0"><code>mms next
+mms next
+mms next
+</code></pre><p>После первой команды будут обработаны данные конфигурации подписанта, после второй — отправлен набор ключей, а после третьей команды будет завершено создание multisig-адреса для Боба.</p>
+<h2 id="_элис-отправка-необходимых-данных-подписантам-посредством-bitmessage_-1"><em>Элис: отправка необходимых данных подписантам посредством Bitmessage​</em></h2>
+<p>Необходимо ещё раз ввести mms next:</p>
+<pre tabindex="0"><code>mms next
+</code></pre><p>Ввод этой команды завершит создание multisig-адреса для Элис.</p>
+<h2 id="_ваша-первая-multisig-транзакция_"><em>Ваша первая multisig-транзакция​</em></h2>
+<p>Теперь отображаемый адрес Monero должен поменяться на новый, который будет одинаковым для клиентов Боба и Элис.</p>
+<p><strong>Как только на этот счёт поступят какие-либо средства (то есть как только вы положите на него сколько-нибудь XMR), вы сможете отправлять средства другим пользователям.</strong></p>
+<p>Для запуска передачи следует использовать команду mms transfer RECIPIENT_ADDRESS AMOUNT. Затем с обеих сторон необходимо вводить команду mms next до тех пор, пока команда не обозначит, что уже больше ничего делать не требуется.</p>
+<p>Следует отметить, что доставка сообщений Bitmessage обычно задерживается на несколько минут. Если произойдёт «затор», следует использовать команду mms list, которая покажет, должно ли на этом этапе прийти очередное сообщение.</p>
+
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/manual/how-to-connect-your-local-wallet-over-tor/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Назад</span>
+			<p class="pager__title">Номиналы в Monero</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/manual/how-to-generate-a-trezor-monero-wallet-with-the-cli/" rel="next">
+			<span class="pager__subtitle">Вперед&thinsp;»</span>
+			<p class="pager__title">Как создать кошелёк Trezor Monero с помощью CLI</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar">
+<div class="widget-recent widget">
+	<h4 class="widget__title">Недавние публикации</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/2021-12-06-vulnerability-multisig/">В коде multisig-кошелька Monero обнаружена ошибка</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-12-04-monero-gui-0.17.3.0-released/">Доработанная версия Monero GUI 0.17.3.0 Oxygen Orion</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-12-04-monero-0.17.3.0-released/">Доработанная промежуточная версия Monero 0.17.3.0 Oxygen Orion</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-11-19-kraken-delist-monero-for-uk-customers/">Kraken планирует исключить Monero из списка поддерживаемых в Великобритании валют уже к концу ноября</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-11-05-p2pool-1.3.1-released/">Релиз P2Pool v1.3.1</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Категории</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B8/">Журнал встречи</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8/">Новости</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0/">Руководства</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/">Статьи</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Теги</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/breaking-monero/" title="Breaking Monero">Breaking Monero</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cake-wallet/" title="Cake Wallet">Cake Wallet</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ccs/" title="CCS">CCS</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cdc-36c3/" title="CDC 36c3">CDC 36c3</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ciphertrace/" title="CipherTrace">CipherTrace</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/def-con-2021/" title="DEF CON 2021">DEF CON 2021</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/farcaster/" title="Farcaster">Farcaster</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/feather-wallet/" title="Feather Wallet">Feather Wallet</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/haveno/" title="Haveno">Haveno</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/konferenco/" title="Konferenco">Konferenco</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/monero-gui/" title="Monero GUI">Monero GUI</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/monero-outreach/" title="Monero Outreach">Monero Outreach</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/monerujo/" title="Monerujo">Monerujo</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mpwg/" title="MPWG">MPWG</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/p2pool/" title="P2Pool">P2Pool</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B0%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D1%81%D0%B2%D0%BE%D0%BF%D1%8B/" title="Атомарные свопы">Атомарные свопы</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B2%D0%B7%D0%BB%D0%BE%D0%BC/" title="Взлом">Взлом</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B2%D0%B8%D1%80%D1%83%D1%81/" title="Вирус">Вирус</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B8/" title="Журнал встречи">Журнал встречи</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D0%BE-%D1%84%D0%B0%D0%BD%D1%82%D0%B0%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D1%80%D0%B0%D1%81%D1%81%D0%BA%D0%B0%D0%B7/" title="Научно-фантастический рассказ">Научно-фантастический рассказ</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0/" title="Ошибка">Ошибка</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 .
+			<span class="footer__copyright-credits">Информационно-новостной сайт русскоязычного сообщества Monero. <a href="/services/#_поддержать-xmrru_" rel="nofollow noopener" target="_blank">Пожертвовать</a>  на развитие проекта XMR.RU.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

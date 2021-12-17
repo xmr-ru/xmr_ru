@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Уязвимости во временной блокировке Monero - </title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Уязвимости во временной блокировке Monero" />
+<meta property="og:description" content="Помимо кода, активирующего новый алгоритм подписи CLSAG, версия v0.17.0.0 также содержит патч, устраняющий ошибки защиты. В примечаниях к версии патч указан как Deterministic Unlock Times (детерминированное время разблокировки). Причина появления этой новой функции ранее не сообщалась, что привело к появлению некоторых слухов относительно её природы. И вот теперь мы приводим объяснение в этой статье, а также в заявлении HackerOne. Это уже моя вторая статья из серии, посвящённой времени разблокирования в Monero." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/copyright/2020-09-19-monero-unlock-time-vulns/" /><meta property="article:section" content="copyright" />
+<meta property="article:published_time" content="2020-09-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-09-19T00:00:00+00:00" />
+
+
+		<meta itemprop="name" content="Уязвимости во временной блокировке Monero">
+<meta itemprop="description" content="Помимо кода, активирующего новый алгоритм подписи CLSAG, версия v0.17.0.0 также содержит патч, устраняющий ошибки защиты. В примечаниях к версии патч указан как Deterministic Unlock Times (детерминированное время разблокировки). Причина появления этой новой функции ранее не сообщалась, что привело к появлению некоторых слухов относительно её природы. И вот теперь мы приводим объяснение в этой статье, а также в заявлении HackerOne. Это уже моя вторая статья из серии, посвящённой времени разблокирования в Monero."><meta itemprop="datePublished" content="2020-09-19T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-09-19T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1462">
+<meta itemprop="keywords" content="," />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Уязвимости во временной блокировке Monero"/>
+<meta name="twitter:description" content="Помимо кода, активирующего новый алгоритм подписи CLSAG, версия v0.17.0.0 также содержит патч, устраняющий ошибки защиты. В примечаниях к версии патч указан как Deterministic Unlock Times (детерминированное время разблокировки). Причина появления этой новой функции ранее не сообщалась, что привело к появлению некоторых слухов относительно её природы. И вот теперь мы приводим объяснение в этой статье, а также в заявлении HackerOne. Это уже моя вторая статья из серии, посвящённой времени разблокирования в Monero."/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/logo.png">
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Меню</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">Что такое Monero (XMR)?</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/news/">
+				
+				<span class="menu__text">Новости</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/articles/">
+				
+				<span class="menu__text">Статьи</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/library/">
+				
+				<span class="menu__text">Библиотека</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/manuals/">
+				
+				<span class="menu__text">Руководства и инструкции</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/services/">
+				
+				<span class="menu__text">Полезные ссылки и сервисы</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Уязвимости во временной блокировке Monero</h1>
+			<p class="post__lead">В случае с Monero, да и в целом с криптовалютами, в основе которых лежит протокол Cryptonote, значения unlock_time транзакций интерпретировались в соответствии с местным временем, что позволяло использовать множество некритических эксплойтов, нацеленных на целостность блокчейна. Проблема была исправлена в версии 0.17.0.0 Monero. Никакого ущерба в отношении средств пользователей обнаружено не было.</p>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-09-19T00:00:00Z">2020-09-19</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/" rel="category">Статьи</a>
+	</span>
+</div></div>
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">Содержимое страницы</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#_описание_"><em>Описание</em></a></li>
+    <li><a href="#_эксплойты_"><em>Эксплойты</em></a></li>
+    <li><a href="#_некоторые-факторы-и-данные-позволяющие-избежать-проблемы_"><em>Некоторые факторы и данные, позволяющие избежать проблемы</em></a></li>
+    <li><a href="#_разрешение_"><em>Разрешение</em></a></li>
+    <li><a href="#_заключительные-замечания-по-коду-monero_"><em>Заключительные замечания по коду Monero</em></a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>Помимо кода, активирующего новый алгоритм подписи CLSAG, версия v0.17.0.0 также содержит патч, устраняющий ошибки защиты. В примечаниях к версии патч указан как Deterministic Unlock Times (детерминированное время разблокировки). Причина появления этой новой функции ранее не сообщалась, что привело к появлению некоторых слухов относительно её природы. И вот теперь мы приводим объяснение в этой статье, а также в заявлении HackerOne. Это уже моя вторая статья из серии, посвящённой времени разблокирования в Monero. Первую статью можно найти <a href="https://thecharlatan.ch/Wallet-Timelock">здесь</a>.</p>
+<h2 id="_описание_"><em>Описание</em></h2>
+<p>Давайте коротко вспомним, что примерно содержит транзакция Monero. Как и у Bitcoin, транзакции Monero содержат входы и выходы. В выходах указаны суммы, которые потенциально можно потратить, а входы представляют собой уже потраченные выходы предыдущей транзакции. Кроме того, при создании транзакции Monero в качестве входа выбирается один выход из n выходов предшествующей транзакции (из участников кольца), а кольцевая подпись подтверждает, что автор транзакции действительно владеет одним из них. Затем автор транзакции из этих входов создаёт новые выходы и при помощи криптографии доказывает, что суммы сбалансированы.</p>
+<p>Поле unlock_time в транзакции Monero указывает, когда монеты из созданной транзакции можно будет снова потратить или, если говорить точнее, когда можно будет снова потратить выходы, содержащиеся в транзакции. Эти выходы нельзя будет использовать при создании какой-либо иной транзакции до тех пор, пока не истечёт время блокировки. Деньги, передаваемые в транзакциях с временной блокировкой, можно тратить только спустя какое-то определённое время.</p>
+<p>Правило исполняется в соответствии с кодом консенсуса (<a href="https://github.com/monero-project/monero/blob/release-v0.16/src/cryptonote_core/blockchain.cpp#L3554">src/cryptonote_core/blockchain.cpp</a>) и состоит из двух частей. Если значение unlock_time будет ниже 500’000’000, оно будет истолковано как высота блока и будет сравниваться с текущей высотой блока. Если значение unlock_time предыдущего выхода, на котором основан вход транзакции, будет ниже текущей высоты блока, транзакция, использующая такой выход, считается действительной. В противном случае она таковой считаться не будет и не будет ретранслироваться.</p>
+<p>Если время разблокировки превышает значение 500’000’000, оно интерпретируется как время Unix в секундах, а не как высота блока. Удивительно, но эти временные значения unlock_times не сравниваются с сетевым временем или временем создания блока, но сравниваются с локальным временем машины, на которой запущен узел Monero. Такое сравнение с локальным временем представляет собой проблему. В процессе верификации транзакций узлам приходится использовать максимально возможный объём общих данных блокчейна, или, если выразить мысль кратко, правилам консенсуса приходится учитывать переменные консенсуса. Так как у разных машин время будет разным, это значение не является переменной консенсуса.</p>
+<p>Я обсудил этот вопрос с постоянным контрибьютором Исследовательской лаборатории Monero Ithmus (известным в Twitter как <a href="https://twitter.com/Mitchellpkt0">@Mitchellpkt0</a>), и мы вместе исследовали возможные уязвимости. Я считаю их достаточно серьёзными, чтобы написать отчёт и соблюдать некоторую степень секретности, но я не рассматриваю их в качестве критических или опасных.</p>
+<h2 id="_эксплойты_"><em>Эксплойты</em></h2>
+<p>Используя выходы, заблокированные при помощи тщательно подобранного значения unlock_time, можно узнавать локальное время других узлов. Злоумышленник может создать любое количество транзакций с самым широким диапазоном значений unlock_time, например, со значением unlock_time 20 блоков на время ожидаемого в будущем блока, а затем распределить это по секундным интервалам. Затем злоумышленник создаёт транзакции с этими заблокированными выходами и соединяет два узла с узлом, за которым собирается следить. Он проводит транзакцию с одного из узлов на узел, за которым будет следить, а затем проверяет, получил ли другой узел эту транзакцию. Если использованное значение unlock_time будет недействительным для злоумышленника и большей части сети в соответствии с правилами консенсуса, но действительным для узла, за которым ведётся наблюдение, транзакция злоумышленника будет ретранслирована также и на другой его узел. А это будет означать, что локальное время узла, за которым ведётся слежка, совпадает с временем транзакции злоумышленника. Используя метод двоичного поиска, злоумышленник сможет определить время узла с точностью до секунд.</p>
+<p>Если время такого узла будет другим (более ранним или поздним) или же если злоумышленник сможет манипулировать локальным временем узла через другой канал, то, как мы выяснили, есть два дополнительных способа использования валидации значения unlock_time.</p>
+<p>Предположим, время узла более позднее (более высокое значение времени Unix). Злоумышленник создаёт транзакцию, используя по крайней мере один выход с таким достаточно высоким значением unlock_time, чтобы оно было недействительным для большинства узлов в сети, но действительным для узла, временное значение которого выше. Если злоумышленник ретранслирует эту транзакцию на узел жертвы, тот подтвердит её как действительную транзакцию. Это, в частности, полезно для злоумышленника в контексте майнинга. Например, если узел жертвы является большим майнинговым пулом, его можно использовать, чтобы узел занимался бесполезной работой с блоком, который не является действительным и включает в себя заблокированную транзакцию согласно правилам остальной сети. Если злоумышленник сам является майнинговым пулом, он может воспользоваться этим с выгодой для себя самого.</p>
+<p>Если время узла будет более ранним (более низкое значение времени Unix), транзакции, использующие выходы с недавно истекшим временем блокировки, будут действительными и доступными для майнинга другими узлами сети, но не будут таковыми для узлов с более низким значением локального времени Unix. Фактически любой узел с более низким значением локального времени Unix отклонит любую транзакцию и любой блок, содержащий транзакции с выходами, которые ещё заблокированы с его точки зрения. Объяснение может показаться несколько запутанным, но, предположим, некто создаёт транзакцию с выходом со значением unlock_time, равным 1500000020, когда фактическое значение времени Unix на тот момент составляет 1500000040. Узлы Monero, запущенные на системе с правильным фактическим временем Unix, примут эту транзакцию, поскольку время блокировки unlock_time истекло. Узлы с более низким значением локального времени Unix, скажем, 1500000000, не примут эту транзакцию. С их точки зрения время unlock_time ещё не истекло, что делает транзакцию недействительной.</p>
+<p>Злоумышленник может непрерывно передавать транзакции с выходом, значение unlock_time которого будет чуть позже времени узла жертвы, и это гарантирует, что узел никогда не достигнет конца наилучшей цепочки сети. Этим можно воспользоваться для проведения краткосрочной атаки Eclipse, и даже потенциально это даёт злоумышленнику достаточно времени для того, чтобы создать более «медленную» вредоносную цепочку. Как только в конечном счёте время узла пройдёт значение unlock_time, узел снова сможет принять блок, содержащий заблокированную по времени транзакцию, из наилучшей цепочки. Так как соединения с одноранговыми узлами обрываются, если они выдают «недействительные» блоки, нельзя сказать, как долго будет поддерживаться атака, так как узлу сначала, возможно, придётся восстанавливать соединения с другими одноранговыми узлами. Эту форму атаки Eclipse можно применить против биржи (если время узла биржи будет неверным) для проведения двойной траты.</p>
+<h2 id="_некоторые-факторы-и-данные-позволяющие-избежать-проблемы_"><em>Некоторые факторы и данные, позволяющие избежать проблемы</em></h2>
+<p>Чтобы оценить риск, связанный с этой угрозой, без дальнейшего использования времени NTP и без манипуляций с временем машины, мною был составлен следующий график:</p>
+<p><img src="/img/copyright/2020-09-19-monero-unlock-time-vulns/01.png" alt="01"></p>
+<p>На нём показана разница между временными метками двух последовательных блоков. Отрицательное значение времени указывает на то, что по крайней мере у одного из двух блоков временная метка блока отличается от фактического времени. Блоки, созданные в прошлом, не могут появляться после новых блоков! Мы можем воспользоваться этими отрицательными разностными значениями в качестве грубой оценки (в отрыве от любого реального понимания статистической основы) для блоков, созданных машиной со значительным временным расхождением. Это относится примерно к 2,6% всех созданных блоков, что даёт нам предположительную оценку количества майнеров, уязвимых для вышеописанного эксплойта, без дальнейших манипуляций со временем.</p>
+<h2 id="_разрешение_"><em>Разрешение</em></h2>
+<p>После того как нами была обнаружена эта угроза, мы отправили отчёт HackerOne, где описали вышеуказанные проблемы и возможные исправления, необходимые для её решения.</p>
+<p>Подобная проблема также существовала в случае с полем nlocktime Bitcoin. Тем не менее на тот момент она была менее серьёзной, поскольку семантика nlocktime отличается от семантики поля unlock_time Monero (nlocktime влияет на завершённость самой транзакции, но не на последующие транзакции), а также потому, что вместо локального времени использовалась временная метка блока. Проблема была решена посредством BIP113, и сейчас используется среднее значение временной метки за последние 11 блоков, что позволяет определить является ли время блокировки действительным. Исправление также потребовало этапа с применением кодов операции CSV и CLTV, что позволило применить схожий механизм блокировки выходов к полю unlock_time Monero.</p>
+<p>Самая последняя версия Monero содержит изменение в правилах консенсуса, что делает время блокировки на базе времени Unix зависимым от временных меток предыдущих блоков. На создание оригинального патча сильно повлияло то, как обрабатываются значения времени разблокировки в случае с Bitcoin. Берётся среднее значение временной метки за последние 60 блоков и сравнивается со значением времени разблокировки.</p>
+<p>Затем данный патч был расширен другими рецензентами до следующей формулы:</p>
+<p><em>минимум (средне значение (временные метки последних 60 блоков)) + 61 минута, временная метка текущего конечного блока + 2 минуты)</em></p>
+<p>Здесь цель состоит в более точном представлении текущего времени.</p>
+<p>Полное содержание и обсуждение вопроса <a href="https://github.com/monero-project/monero/pull/6745">можно найти на GitHub</a>. Эти новые правила валидации были введены при реализации последнего хардфорка Monero наряду с введением схемы подписи транзакций CLSAG и валидацией формата.</p>
+<h2 id="_заключительные-замечания-по-коду-monero_"><em>Заключительные замечания по коду Monero</em></h2>
+<p>Интересен тот факт, что код уже содержал функцию get_adjusted_time, которая выдавала локальное время системы, на которой работает monerod. Были некоторые зловещие комментарии, в которых отмечалось , что это не было её <a href="https://github.com/monero-project/monero/blob/release-v0.16/src/cryptonote_core/blockchain.cpp#L3638">заданной формой</a>. Теперь задача функции изменилась, и она используется для вычисления этого фактического «откорректированного» времени.</p>
+<p>Я обнаружил эту уязвимость, когда читал комментарии TODO в коде. Monero унаследовала значительную часть некомментированного кода от разработчиков Cryptonote. В частности, сомнительные места комментируются либо //TODO, либо //FIXME. Я бы настоятельно рекомендовал другим исследователям вопросов безопасности также ознакомиться с этим. Имеется примерно 120 TODO и 30 FIXME, так что ещё есть чем заняться.</p>
+<hr>
+<p><em>Источник: <a href="https://thecharlatan.ch/Monero-Unlock-Time-Vulns/">Monero timelock vulnerabilities</a></em></p>
+<p><em>Перевод: <a href="https://t.me/v1docq47">Mr. Pickles</a></em><br>
+<em>Коррекция: <a href="https://t.me/Kukima">Kukima</a></em></p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags//" rel="tag"></a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/copyright/2021-09-09-the-monero-project-should-actively-recruit-technical-talent-from-universities/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Назад</span>
+			<p class="pager__title">Почему проекту Monero следует активно привлекать технические таланты из университетов</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/copyright/2020-10-10-monero-unlock-time-privacy/" rel="next">
+			<span class="pager__subtitle">Вперед&thinsp;»</span>
+			<p class="pager__title">Проблемы с временем разблокировки Monero</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar">
+<div class="widget-recent widget">
+	<h4 class="widget__title">Недавние публикации</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/2021-12-06-vulnerability-multisig/">В коде multisig-кошелька Monero обнаружена ошибка</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-12-04-monero-gui-0.17.3.0-released/">Доработанная версия Monero GUI 0.17.3.0 Oxygen Orion</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-12-04-monero-0.17.3.0-released/">Доработанная промежуточная версия Monero 0.17.3.0 Oxygen Orion</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-11-19-kraken-delist-monero-for-uk-customers/">Kraken планирует исключить Monero из списка поддерживаемых в Великобритании валют уже к концу ноября</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/2021-11-05-p2pool-1.3.1-released/">Релиз P2Pool v1.3.1</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Категории</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B8/">Журнал встречи</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8/">Новости</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0/">Руководства</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/">Статьи</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Теги</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/breaking-monero/" title="Breaking Monero">Breaking Monero</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cake-wallet/" title="Cake Wallet">Cake Wallet</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ccs/" title="CCS">CCS</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cdc-36c3/" title="CDC 36c3">CDC 36c3</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ciphertrace/" title="CipherTrace">CipherTrace</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/def-con-2021/" title="DEF CON 2021">DEF CON 2021</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/farcaster/" title="Farcaster">Farcaster</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/feather-wallet/" title="Feather Wallet">Feather Wallet</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/haveno/" title="Haveno">Haveno</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/konferenco/" title="Konferenco">Konferenco</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/monero-gui/" title="Monero GUI">Monero GUI</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/monero-outreach/" title="Monero Outreach">Monero Outreach</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/monerujo/" title="Monerujo">Monerujo</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mpwg/" title="MPWG">MPWG</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/p2pool/" title="P2Pool">P2Pool</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B0%D1%82%D0%BE%D0%BC%D0%B0%D1%80%D0%BD%D1%8B%D0%B5-%D1%81%D0%B2%D0%BE%D0%BF%D1%8B/" title="Атомарные свопы">Атомарные свопы</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B2%D0%B7%D0%BB%D0%BE%D0%BC/" title="Взлом">Взлом</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B2%D0%B8%D1%80%D1%83%D1%81/" title="Вирус">Вирус</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB-%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B8/" title="Журнал встречи">Журнал встречи</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D0%BE-%D1%84%D0%B0%D0%BD%D1%82%D0%B0%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D1%80%D0%B0%D1%81%D1%81%D0%BA%D0%B0%D0%B7/" title="Научно-фантастический рассказ">Научно-фантастический рассказ</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0/" title="Ошибка">Ошибка</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 .
+			<span class="footer__copyright-credits">Информационно-новостной сайт русскоязычного сообщества Monero. <a href="/services/#_поддержать-xmrru_" rel="nofollow noopener" target="_blank">Пожертвовать</a>  на развитие проекта XMR.RU.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

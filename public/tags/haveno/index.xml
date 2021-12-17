@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Haveno on </title>
+    <link>/tags/haveno/</link>
+    <description>Recent content in Haveno on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/haveno/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Что нового у Haveno? Делимся новостями!</title>
+      <link>/post/2021-09-01-whats-new-in-haveno-some-updates/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021-09-01-whats-new-in-haveno-some-updates/</guid>
+      <description>Сначала нам бы хотелось поблагодарить наших спонсоров и контрибьюторов, чьи пожертвования и активная поддержка имеют решающее значение для того, чтобы Haveno стала реальностью! Большое вам спасибо!
+Окончательная версия протокола торговли Мы доработали наш протокол торговли и сейчас работаем над его реализацией в коде. Чтобы это стало возможным, мы добавили некоторые функции в monero-wallet-rpc (замораживание и размораживание выходов)
+Протокол торговли можно найти по этой ссылке: https://github.com/haveno-dex/haveno/blob/master/docs/trade_protocol/trade-protocol.pdf, а пул-реквест по его реализации выложен здесь: https://github.</description>
+    </item>
+    
+  </channel>
+</rss>
