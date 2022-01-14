@@ -56,7 +56,7 @@ RogueMaven представил проект Monero Ilaro. Monero Ilaro — эт
 Проект Monero «с избытком» фигурирует в старом видео на YouTube от [Наоми SexyCyborg Ву](https://www.youtube.com/channel/UCh_ugKacslKhsGGdXP0cRRA), которое снова набирает популярность. У Наоми на YouTube 1,5 миллиона подписчиков. Видео можно посмотреть [здесь](https://www.youtube.com/watch?v=JOfpG37WCLk).
 
 ![02](/img/post/2021-12-23-the-monero-moon-25/02.png)
-_https://www.youtube.com/watch?v=JOfpG37WCLk_
+https://www.youtube.com/watch?v=JOfpG37WCLk
 
 Контрибьютор Monero Джастин Эренхофер, в [своём сообщении](https://twitter.com/JEhrenhofer/status/1464240109461643275?s=20) в Twitter отмечает, что Финансовая корпорация Америки (FCA) не выдавала Kraken или какой-либо другой фирме никаких конкретных инструкций в отношении Monero.
 
@@ -64,9 +64,8 @@ _https://www.youtube.com/watch?v=JOfpG37WCLk_
 
 Monero Talk недавно взяли интервью у Шри Аравинды Кришнана, постдока в области прикладной криптографии Университета Карнеги-Меллона, также являющегося соавтором различных документов, послуживших основой для разработки второго уровня Monero, известного как платёжные каналы и подобного lighning-сети Bitcoin. Видео можно посмотреть ниже.
 
+{{< youtube id="8r9i2mTecSA" autoplay="false" >}}
 Monero Talk
-
-https://youtu.be/8r9i2mTecSA
 
 Сет Симмонс [опубликовал пост](https://blog.sethforprivacy.com/posts/dispelling-monero-fud/#conclusion) под названием «Развеиваем опасения, неуверенность и сомнения, связанные с Monero» (Dispelling Monero FUD), в котором рассматриваются распространённые FUD и даются ответы для каждого из них, а также приводятся ссылки на соответствующие ресурсы. Это отличная статья, которую стоит прочитать и поделиться со всеми теми, кто скептически воспринимает Monero.
 
@@ -75,7 +74,7 @@ https://youtu.be/8r9i2mTecSA
 Monero фигурирует в [недавней статье Slate](https://slate.com/technology/2021/11/monero-privacy-coin-racists-cybercriminals.html) под названием «Конкурент Bitcoin, полюбившийся альтернативным правым и преступникам» (The Bitcoin Competitor Beloved by the Alt-Right and Criminals). В статье Monero осуждается, и автор пытается связать её с преступными и экстремистскими группировками, но при этом никак не освещает положительные аспекты Monero или тот факт, что, если кто-то желает обеспечить собственную приватность, это вовсе не означает, что этот кто-то - преступник.
 
 ![03](/img/post/2021-12-23-the-monero-moon-25/03.png)
-_https://slate.com/technology/2021/11/monero-privacy-coin-racists-cybercriminals.html_
+https://slate.com/technology/2021/11/monero-privacy-coin-racists-cybercriminals.html
 
 Хотите подарить Monero кому-то на Рождество? Воспользуйтесь этим [печатным шаблоном](https://www.reddit.com/r/Monero/comments/riurmj/monero_gift_printable/) от phloating_man.
 
@@ -106,34 +105,38 @@ https://www.reddit.com/r/Monero/comments/rm36jo/mullvad_vpn_to_add_monero_in_202
 [BackDownBear](https://www.tradingview.com/u/BackDownBear/) представил биржевые спекуляции в форме фрактального графика относительно возможного пути XMR к цене $4000 USD. Соответствующий пост размещён [здесь](https://www.tradingview.com/chart/XMRUSDT/7AV2fUOF-XMR-To-4K-The-Age-Of-Privacy/).
 
 ![05](/img/post/2021-12-23-the-monero-moon-25/05.png)
-_https://www.tradingview.com/chart/XMRUSDT/7AV2fUOF-XMR-To-4K-The-Age-Of-Privacy/_
+https://www.tradingview.com/chart/XMRUSDT/7AV2fUOF-XMR-To-4K-The-Age-Of-Privacy/
 
 _**Показатели**_
-Общее количество Monero в обращении — 18 051 278 XMR
-Общая рыночная капитализация Monero — $3 778 307 145 USD
-Цена XMR/USD — $208 USD
-Цена XMR/BTC — 0,00409 BTC
-Цена на LocalMonero.co — $237 USD
-Средний размер комиссии за проведение транзакции — 0,00013 XMR ($0,027)
-Хешрейт — 2,952 Ghash/s
-Распределение хешрейта между пулами для майнинга Monero
-
+- Общее количество Monero в обращении — 18 051 278 XMR
+- Общая рыночная капитализация Monero — $3 778 307 145 USD
+- Цена XMR/USD — $208 USD
+- Цена XMR/BTC — 0,00409 BTC
+- Цена на LocalMonero.co — $237 USD
+- Средний размер комиссии за проведение транзакции — 0,00013 XMR ($0,027)
+- Хешрейт — 2,952 Ghash/s
+- Распределение хешрейта между майнинг-пулами Monero
 ![06](/img/post/2021-12-23-the-monero-moon-25/06.png)
 
 ### _Для развлечения_
 
 ![07](/img/post/2021-12-23-the-monero-moon-25/07.jpg)
+https://www.reddit.com/r/Monero/comments/qzyhcn/monero_sign_private_and_untraceable/
 
 ![08](/img/post/2021-12-23-the-monero-moon-25/08.jpg)
+https://www.reddit.com/r/Monero/comments/p992vc/remember/
 
 ![09](/img/post/2021-12-23-the-monero-moon-25/09.jpg)
-_Надпись на транспаранте: «Частные и неотслеживаемые криптовалюты опасны для криминальных государств и препятствуют порабощению людей центральными банками» — https://www.reddit.com/r/Monero/comments/qzyhcn/monero_sign_private_and_untraceable/_
+Надпись на транспаранте: «Частные и неотслеживаемые криптовалюты опасны для криминальных государств и препятствуют порабощению людей центральными банками» — https://www.reddit.com/r/Monero/comments/qzyhcn/monero_sign_private_and_untraceable/
 
 ![10](/img/post/2021-12-23-the-monero-moon-25/10.jpg)
+https://twitter.com/MoneroMoney/status/1472587936453599238/photo/1
 
-![11](/img/post/2021-12-23-the-monero-moon-25/11.jpg)
+![11](/img/post/2021-12-23-the-monero-moon-25/11.png)
+https://i.4cdn.org/biz/1639598905250.png
 
 ![12](/img/post/2021-12-23-the-monero-moon-25/12.jpg)
+https://i.4cdn.org/biz/1639526618413.jpg
 
 ---
 
