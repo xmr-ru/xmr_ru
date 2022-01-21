@@ -46,6 +46,7 @@ toc: true
 - [Руководство пользователя мобильного Android кошелька Monerujo](/manual/monerujo-wallet-android-user-guide/)
 - [Как восстановить ваш кошелёк Monerujo на другом телефоне](/manual/how-to-restore-your-monerujo-wallet-on-a-different-phone/)
 - [Как перенести кошелёк Monerujo с одного телефона на другой](/manual/how-to-move-your-monerujo-wallets-from-one-phone-to-another/)
+- [Как мнемоническая фраза и фраза-пароль для смещения работают в Monerujo](/manual/how-a-mnemonic-seed-with-offset-passphrase-works-in-monerujo/)
 
 ### _Аппаратные кошельки (Ledger / Trezor)_
 - [Как создать кошелёк Ledger Monero с помощью GUI (monero-wallet-gui)](/manual/how-to-generate-a-ledger-monero-wallet-with-the-gui/)
