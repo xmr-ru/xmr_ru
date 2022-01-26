@@ -32,6 +32,8 @@ toc: true
 
 ## _Взаимодействие и работа с кошельками Monero_
 
+- [Как выбрать кошелёк Monero](/manual/how-to-choose-a-monero-wallet/)
+
 ### _Десктопные версии кошельков_
 - [Руководство пользователя кошелька Monero GUI Windows](/manual/monero-wallet-gui-windows/)
 - [Руководство пользователя кошелька Monero GUI Linux](/manual/monero-wallet-gui-linux/)
