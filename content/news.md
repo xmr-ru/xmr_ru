@@ -7,7 +7,7 @@ menu:
 toc: false
 ---
 
-- [Встречайте Monero.com от Cake Wallet! Бесплатный, открытый, не кастодиальный специализированный кошелёк Monero для iOS и Android!](/post/2022-01-08-announcing-monerocom-by-cake-wallet-a-moneroonly/)  
+- [Встречайте Monero.com от Cake Wallet! Бесплатный, открытый, некастодиальный специализированный кошелёк Monero для iOS и Android!](/post/2022-01-08-announcing-monerocom-by-cake-wallet-a-moneroonly/)  
   _**Краткая аннотация:**_ Мы невыразимо счастливы сообщить о появлении Monero.com, форка Cake Wallet, предназначенного исключительно для Monero!  
   _Дата публикации:_ 08.01.2022
 
