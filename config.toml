@@ -39,7 +39,7 @@ theme = "mainroad"
   home = "right"
   list = "right"
   single = false
-  widgets = ["recent", "categories", "taglist", "social"]
+  widgets = ["taglist", "social"]
 
 [Params.widgets]
   recent_num = 5
