@@ -65,5 +65,6 @@ toc: true
 - [Часто задаваемые вопросы (FAQ) об организации приёма платежей в Monero](/manual/monero_merchant_faq/)
 - [Руководство пользователя по мультиподписям Monero](/manual/monero-multisig-users-guide/)
 - [Коротко о мультиподписях Monero: как мгновенно создать MMS с нуля](/manual/monero-multisig-run-through-zero-to-mms-in-an-instant/)
+- [Первые шаги в обеспечении собственной приватности](/manual/privacy-first-steps/)
 - [Номиналы в Monero](/manual/monero-denominations/)
 - [MoneroPulse](/manual/moneropulse/)
