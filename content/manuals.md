@@ -13,6 +13,7 @@ toc: true
 - [Как начать соло-майнинг в Monero GUI](/manual/solo-mine-with-gui/)
 - [Запуск и майнинг с помощью узла P2Pool](/manual/how-run-and-mining-p2pool/)
 - [Часто задаваемые новичками вопросы о майнинг-пулах, шарах и сложности](/manual/beginner-faq-about-mining-pools-shares-difficulty/)
+- [Автозапуск майнинга в P2Pool (с программным пакетом systemd)](/manual/autostart-mining-on-p2pool-with-systemd/)
 
 ---
 
