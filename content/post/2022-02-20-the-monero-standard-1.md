@@ -108,7 +108,7 @@ Sech1, контрибьютор Monero, даже арендовал 4MH/s хеш
 
 Как сообщили [/u/unstoppableswap](https://libreddit.de/u/unstoppableswap) в [своём посте](https://old.reddit.com/slvy2a) на Reddit, уже вышла первая [альфа-версия UnstoppableSwap-GUI](https://github.com/UnstoppableSwap/unstoppableswap-gui) и мейнтейнеры ищут [тестировщиков из состава сообщества](http://unstoppableswap.aidaform.com/feedback).
 
-## _[CCS идеи и предложения](https://ccs.getmonero.org/)_
+## _CCS идеи и предложения_
 
 *Идеи CCS*
 
