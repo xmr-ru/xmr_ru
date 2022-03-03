@@ -1,11 +1,11 @@
 ---
 title: "The Monero Standard #1"
-date: "2022-02-02"
+date: "2022-02-20"
 categories:
   - "Новости"
 tags:
   - "The Monero Standard"
-thumbnail: "img/post/2022-02-02-the-monero-standard-1/01.jpg"  
+thumbnail: "img/post/2022-02-20-the-monero-standard-1/01.jpg"  
 lead: "The Monero Standard — это еженедельный информационный бюллетень от p2p торговой платформы LocalMonero обо всём, что касается Monero."
 pager: true
 toc: true
@@ -45,7 +45,7 @@ Sech1, контрибьютор Monero, даже арендовал 4MH/s хеш
 
 [/u/CryptoniteClub](https://libreddit.de/u/CryptoniteClub) разместил [ироничное видео](https://libreddit.de/su6rx0) под названием «Monero говорит НЕТ!», в котором демонстрируется, как транзакции в блокчейне Monero защищены от любопытных глаз.
 
-![02](/img/post/2022-02-02-the-monero-standard-1/02.png)
+![02](/img/post/2022-02-20-the-monero-standard-1/02.png)
 
 В конце января разработчики с членами сообщества обсудили и согласовали планы по реализации [очередного хардфорка (v15)](https://github.com/monero-project/meta/issues/630) с переходом к использованию протокола Fluorine Fermi. Предполагается внесение следующих изменений:
 - [размер кольца будет увеличен с 11 до 16](https://github.com/monero-project/monero/pull/8178);
@@ -74,7 +74,7 @@ Sech1, контрибьютор Monero, даже арендовал 4MH/s хеш
 
 Благодаря SideKick можно использовать старый и ненужный кошелёк с установленной системой Android (а такой, вероятно, найдётся практически у каждого) в качестве автономного (airgapped) кошелька, в котором в безопасности будут храниться ваши приватные ключи и который можно будет без труда использовать для подписания транзакций.
 
-![3](/img/post/2022-02-02-the-monero-standard-1/03.jpg)
+![3](/img/post/2022-02-20-the-monero-standard-1/03.jpg)
 
 Функция PocketChange, создание дополнительных выходов одним щелчком мыши, также находится на стадии разработки.
 
@@ -124,7 +124,7 @@ Sech1, контрибьютор Monero, даже арендовал 4MH/s хеш
 
 ## *Мем недели*
 
-![04](/img/post/2022-02-02-the-monero-standard-1/04.jpg)
+![04](/img/post/2022-02-20-the-monero-standard-1/04.jpg)
 
 ## _Познавательная страничка_
 
@@ -153,7 +153,7 @@ Sech1, контрибьютор Monero, даже арендовал 4MH/s хеш
 
 ---
 
-_Источник: [The Monero Moon (Issue 31)](https://medium.com/themoneromoon/the-monero-moon-issue-31-39f3fbe6db5a)_
+_Источник: [The Monero Standard #1: 30 January 2022 - 20 February 2022](https://localmonero.co/the-monero-standard/weekly/1)_
 
 _Перевод: [Mr. Pickles](https://t.me/v1docq47)_  
 _Коррекция: [Kukima](https://t.me/Kukima)_

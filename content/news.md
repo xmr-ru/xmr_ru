@@ -6,6 +6,9 @@ menu:
     weight: 2
 toc: false
 ---
+- [The Monero Standard #1](/post/2022-02-20-the-monero-standard-1/)  
+  _**Краткая аннотация:**_ The Monero Standard — это еженедельный информационный бюллетень от p2p торговой платформы LocalMonero обо всём, что касается Monero.  
+  _Дата публикации:_ 20.02.2022
 
 - [The Monero Moon (выпуск 31)](/post/2022-02-17-the-monero-moon-31/)  
   _**Краткая аннотация:**_ The Monero Moon - это курируемый еженедельный информационный бюллетень обо всём, что касается Monero.  
