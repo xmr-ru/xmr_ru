@@ -122,7 +122,7 @@ Monero всё более активно используется сервисо�
 ![17](/img/post/2022-02-10-the-monero-moon-30/17.png)
 *https://twitter.com/coincards/status/1489760991818633216*
 
-![18](/img/post/2022-02-10-the-monero-moon-30/18.png)
+![18](/img/post/2022-02-10-the-monero-moon-30/18.jpg)
 *https://twitter.com/AnarkioC/status/1488919145106350082/photo/1*
 
 ### _Краудфандинговая система сообщества (CCS)_
