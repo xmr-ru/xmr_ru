@@ -1,5 +1,5 @@
 ---
-title: "The Monero Standard #1"
+title: "The Monero Standard #1 (30 января 2022 — 20 февраля 2022)"
 date: "2022-02-20"
 categories:
   - "Новости"
