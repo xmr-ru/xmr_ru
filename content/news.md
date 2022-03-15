@@ -7,6 +7,10 @@ menu:
 toc: false
 ---
 
+- [Релиз Monerujo v2.4.1 Baldaŭ](/post/2022-03-13-update-monerujo-v241-baldau-adding-support-for/)  
+  _**Краткая аннотация:**_ Состоялся выпуск нового именного релиза мобильного Android кошелька для Monero, Monerujo v2.4.1 Baldaŭ  
+  _Дата публикации:_ 13.03.2022
+
 - [The Monero Moon (выпуск 32)](/post/2022-03-02-the-monero-moon-32/)  
   _**Краткая аннотация:**_ The Monero Moon - это курируемый еженедельный информационный бюллетень обо всём, что касается Monero.  
   _Дата публикации:_ 02.03.2022
