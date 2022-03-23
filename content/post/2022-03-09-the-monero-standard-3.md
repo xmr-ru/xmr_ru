@@ -118,7 +118,7 @@ Mental Outlaw [разместил](https://yewtu.be/watch?v=F6ze6S1aDJs) нес�
 
 ---
 
-_Источник: [The Monero Standard #2: 20 February 2022 - 2 March 2022](https://localmonero.co/the-monero-standard/weekly/2)_
+_Источник: [The Monero Standard #3: 2 March 2022 - 9 March 2022](https://localmonero.co/the-monero-standard/weekly/3)_
 
 _Перевод: [Mr. Pickles](https://t.me/v1docq47)_  
 _Коррекция: [Kukima](https://t.me/Kukima)_

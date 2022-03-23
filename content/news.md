@@ -7,6 +7,10 @@ menu:
 toc: false
 ---
 
+- [The Monero Standard #4 (9 марта 2022 — 16 марта 2022)](/post/2022-03-16-the-monero-standard-4)  
+  _**Краткая аннотация:**_ The Monero Standard — это еженедельный информационный бюллетень от p2p торговой платформы LocalMonero обо всём, что касается Monero.  
+  _Дата публикации:_ 16.03.2022
+
 - [Релиз Monerujo v2.4.1 Baldaŭ](/post/2022-03-13-update-monerujo-v241-baldau-adding-support-for/)  
   _**Краткая аннотация:**_ Состоялся выпуск нового именного релиза мобильного Android кошелька для Monero, Monerujo v2.4.1 Baldaŭ.  
   _Дата публикации:_ 13.03.2022
