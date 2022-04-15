@@ -37,9 +37,9 @@ widgets:
 
 Вышла версия v4.3.9 Cake Wallet. Подробности можно узнать из твита, опубликованного ниже.
 
-[The Monero Observer](https://www.monero.observer/monero-dev-activity-report-week-12-2022/) опубликовали новый отчёт по разработке.
-
 ![04](/img/post/2022-04-07-the-monero-moon-37/04.png)  
+
+[The Monero Observer](https://www.monero.observer/monero-dev-activity-report-week-12-2022/) опубликовали новый отчёт по разработке.
 
 Ознакомившись с ним, вы получите обширную картину того, что происходит в сфере разработки Monero. Найти отчёт можно по [этой ссылке](https://www.monero.observer/monero-dev-activity-report-week-13-2022/).
 
