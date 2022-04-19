@@ -100,7 +100,7 @@ widgets:
 
 ---
 
-_Источник: [The Monero Standard #7: 30 March 2022 - 6 April 2022](https://localmonero.co/the-monero-standard/weekly/7)_
+_Источник: [The Monero Standard #8: 6 April 2022 - 13 April 2022](https://localmonero.co/the-monero-standard/weekly/8)_
 
 _Перевод: [Mr. Pickles](https://t.me/v1docq47)_  
 _Коррекция: [Kukima](https://t.me/Kukima)_
