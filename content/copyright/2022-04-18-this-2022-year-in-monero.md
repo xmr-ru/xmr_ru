@@ -181,7 +181,7 @@ _Рост по сравнению с предыдущим годом_
 
 ---
 
-_Источник: [5 Undeniable Reasons Why Bitcoin Will Never Work](https://cryptowhale.medium.com/5-undeniable-reasons-why-bitcoin-will-never-work-d8e8f84f0e51)_
+_Источник: [This Year in Monero - 2022](https://www.getmonero.org/2022/04/18/this-year-in-monero.html)_
 
 _Перевод: [Mr. Pickles](https://t.me/v1docq47)_  
 _Коррекция: [Kukima](https://t.me/Kukima)_
