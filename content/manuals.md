@@ -60,6 +60,7 @@ toc: true
 ---
 
 ## _Прочие руководства и инструкции_
+- [Как принимать Monero с помощью BTCPay Server](/manual/accepting-monero-via-btcpay-server/)
 - [Как мне проверить, что моя транзакция действительно пришла?](/manual/how-do-i-as-a-recipient-verify-that-my-transaction-actually-arrived/)
 - [Я отправил транзакцию несколько часов назад, но она «застряла» / находится в статусе «ожидание»](/manual/transaction-stuck-as-pending-in-the-gui/)
 - [Как создать "красивый" адрес Monero](/manual/how-to-create-beautiful-monero-address/)
