@@ -2,7 +2,7 @@
 title: koe - Seraphis Tx Protocol
 date: "2022-05-11"
 categories:
-  - "Transcription"
+  - ""
 tags:
   - ""
 lead: "Koe, a Monero contributor and the lead developer on the Seraphis project and primary author of Zero to Monero, speaks about Seraphis Transaction Protocol, at the Monerotopia 2022 #XMR4ALL event!"

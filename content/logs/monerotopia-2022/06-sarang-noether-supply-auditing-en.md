@@ -2,7 +2,7 @@
 title: "Aaron Feickert (Sarang Noether) - Supply Auditing"
 date: "2022-05-11"
 categories:
-  - "Transcription"
+  - ""
 tags:
   - ""
 lead: "Aaron Feickert (Sarang Noether), a Research Contributor speaks about Supply Auditing: What it is (and isn't), at the Monerotopia 2022 #XMR4ALL event!"
