@@ -5,7 +5,7 @@ categories:
   - "Стенограмма"
 tags:
   - "Monerotopia 2022"
-lead: "Aaron Feickert (Sarang Noether), a Research Contributor speaks about Supply Auditing: What it is (and isn't), at the Monerotopia 2022 #XMR4ALL event!"
+lead: "Аарон Фейкерт (Саранг Нётер), исследователь, рассказывает об аудите денежной массы, что это такое (и чем не является) на основной сцене мероприятия Monerotopia 2022 #XMR4ALL!"
 pager: true
 toc: false
 sidebar: "right"

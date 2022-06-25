@@ -5,7 +5,7 @@ categories:
   - "Стенограмма"
 tags:
   - "Monerotopia 2022"
-lead: "Koe, участник проекта Monero и ведущий разработчик проекта Seraphis, автор книги Zero to Monero, рассказывает о протоколе транзакций Seraphis на основной сцены мероприятия Monerotopia 2022 #XMR4ALL!"
+lead: "Koe, участник проекта Monero и ведущий разработчик проекта Seraphis, автор книги Zero to Monero, рассказывает о протоколе транзакций Seraphis на основной сцене мероприятия Monerotopia 2022 #XMR4ALL!"
 pager: true
 toc: false
 sidebar: "right"
