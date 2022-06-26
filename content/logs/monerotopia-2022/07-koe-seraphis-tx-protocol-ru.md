@@ -1,5 +1,5 @@
 ---
-title: koe - Протокол транзакций Seraphis
+title: "koe - Протокол транзакций Seraphis"
 date: "2022-05-11"
 categories:
   - "Стенограмма"
