@@ -5,7 +5,7 @@ categories:
   - ""
 tags:
   - ""
-lead: "Quantum Computing enthusiast, speaks on Monero Post-Quantum: An overview of the Monero labs post-quantum audit and the future of blockchain technology in the post-quantum paradigm, at the Monerotopia 2022 #XMR4ALL event!"
+lead: "Adam Corbo, a Physicist, Cryptography and Quantum Computing enthusiast, speaks on Monero Post-Quantum: An overview of the Monero labs post-quantum audit and the future of blockchain technology in the post-quantum paradigm, at the Monerotopia 2022 #XMR4ALL event!"
 pager: true
 toc: false
 sidebar: "right"
