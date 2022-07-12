@@ -5,6 +5,7 @@ toc: false
 
 #### Выступления на Monerotopia 2022:
 - [Марта Буэно - Как Monero проложит путь к свободе и повергнет авторитарный режим](/logs/monerotopia-2022/01-martha-bueno-how-monero-is-going-to-usher-in-freedom-ru/) [[EN](/logs/monerotopia-2022/01-martha-bueno-how-monero-is-going-to-usher-in-freedom-en/)]
+- [Рэйчел-Роуз О'Лири - Почему конфиденциальность имеет значение](/logs/monerotopia-2022/02-rachel-rose-o-leary-why-privacy-matters-ru/) [[EN](/logs/monerotopia-2022/02-rachel-rose-o-leary-why-privacy-matters-en/)]
 - [Люк Смит - Криптовалюта, которая позволит избежать дистопии](/logs/monerotopia-2022/03-luke-smith-why-monero-matters-ru/) [[EN](/logs/monerotopia-2022/03-luke-smith-why-monero-matters-en)]
 - [Саранг Ноезер - Аудит денежной массы: что это такое (и чем это не является)](/logs/monerotopia-2022/06-sarang-noether-supply-auditing-ru/) [[EN](/logs/monerotopia-2022/06-sarang-noether-supply-auditing-en/)]
 - [koe - Протокол транзакций Seraphis​](/logs/monerotopia-2022/07-koe-seraphis-tx-protocol-ru/) [[EN](/logs/monerotopia-2022/07-koe-seraphis-tx-protocol-en/)]

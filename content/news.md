@@ -7,6 +7,8 @@ menu:
 toc: false
 ---
 
+![news](/img/post/news.png)
+
 - [The Monero Moon (выпуск 48)](/post/2022-06-30-the-monero-moon-48/)  
   _**Краткая аннотация:**_ The Monero Moon - это курируемый еженедельный информационный бюллетень обо всём, что касается Monero.  
   _Дата публикации:_ 30.06.2022
