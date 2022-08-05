@@ -1,5 +1,5 @@
 ---
-title: "Rolf van Wegberg from Delft University of Technology on Monero & Dark Markets – Monerotopia 2022"
+title: "Rolf van Wegberg from Delft University of Technology on Monero & Dark Markets"
 date: "2022-05-11"
 categories:
   - ""

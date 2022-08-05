@@ -1,5 +1,5 @@
 ---
-title: "Koe, an Independent Researcher and a Monero contributor on Seraphis Tx Protocol – Monerotopia 2022"
+title: "Koe, an Independent Researcher and a Monero contributor on Seraphis Tx Protocol"
 date: "2022-05-11"
 categories:
   - ""

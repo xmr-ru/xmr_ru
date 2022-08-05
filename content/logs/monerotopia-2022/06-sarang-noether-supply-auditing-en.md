@@ -1,5 +1,5 @@
 ---
-title: "Aaron Feickert (Sarang Noether) - Supply Auditing"
+title: "Aaron Feickert “Sarang Noether” on Supply Auditing"
 date: "2022-05-11"
 categories:
   - ""

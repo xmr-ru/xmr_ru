@@ -1,5 +1,5 @@
 ---
-title: "Adam Corbo, a Physicist and Quantum Computing enthusiast on Monero Post-Quantum – Monerotopia 2022"
+title: "Adam Corbo, a Physicist and Quantum Computing enthusiast on Monero Post-Quantum"
 date: "2022-05-11"
 categories:
   - ""

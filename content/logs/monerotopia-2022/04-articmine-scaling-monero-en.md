@@ -1,5 +1,5 @@
 ---
-title: "Francisco Cabañas “ArticMine” on Scaling Monero – Monerotopia 2022"
+title: "Francisco Cabañas “ArticMine” on Scaling Monero"
 date: "2022-05-11"
 categories:
   - ""
