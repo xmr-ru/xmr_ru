@@ -13,3 +13,4 @@ toc: false
 - [koe - Протокол транзакций Seraphis​](/logs/monerotopia-2022/07-koe-seraphis-tx-protocol-ru/) [[EN](/logs/monerotopia-2022/07-koe-seraphis-tx-protocol-en/)]
 - [Адам Корбо - Постквантовое будущее Monero](/logs/monerotopia-2022/08-adam-corbo-monero-post-quantum-ru/) [[EN](/logs/monerotopia-2022/08-adam-corbo-monero-post-quantum-en/)]
 - [Рольф ван Вегберг - Нелегальные рынки и Monero](/logs/monerotopia-2022/09-rolf-van-wegberg-monero-and-dark-markets-ru/) [[EN](/logs/monerotopia-2022/09-rolf-van-wegberg-monero-and-dark-markets-en/)]
+- [Филипп Циммерман - Cохранение демократии с помощью криптографии](https://youtu.be/a4nOQCXVOzc) [[EN](/logs/monerotopia-2022/10-philip-zimmermann-preserving-democracy-with-cryptography-en/)]
