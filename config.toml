@@ -1,5 +1,5 @@
 baseurl = "/"
-title = "Сайт русскоязычного сообщества Monero"
+title = "Веб-сайт русскоязычного сообщества Monero"
 languageCode = "ru"
 paginate = "5"
 theme = "mainroad"
