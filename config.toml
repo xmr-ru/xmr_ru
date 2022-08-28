@@ -1,5 +1,5 @@
 baseurl = "/"
-title = ""
+title = "Веб-сайт русскоязычного сообщества Monero"
 languageCode = "ru"
 paginate = "5"
 theme = "mainroad"
@@ -12,7 +12,7 @@ theme = "mainroad"
   readmore = false
   authorbox = false
   pager = false
-  post_meta = ["author", "date", "categories", "translations"]
+  post_meta = ["author", "date", "categories", "translations", "links"]
   mainSections = ["post", "blog", "news"]
   dateformat = "2006-01-02"
   mathjax = true
@@ -30,7 +30,7 @@ theme = "mainroad"
 [Params.logo]
   image = "img/logo.png"
   title = ""
-  subtitle = "img/logo-small.png"
+  subtitle = ""
 
 [Params.thumbnail]
   visibility = ["list", "post"]
