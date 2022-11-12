@@ -83,7 +83,7 @@ Bitcoin против Monero!
 
 ---
 
-_Источник: [The Monero Standard #25: 19 October 2022 - 29 October 2022](https://localmonero.co/the-monero-standard/weekly/25)_
+_Источник: [The Monero Standard #26: 29 October 2022 - 3 November 2022](https://localmonero.co/the-monero-standard/weekly/26)_
 
 _Перевод: [Mr. Pickles](https://t.me/v1docq47)_  
 _Коррекция: [Kukima](https://t.me/Kukima)_
