@@ -1,5 +1,5 @@
 ---
-title: "The Monero Standard #27 (29 октября 2022 — 03 ноября 2022)"
+title: "The Monero Standard #27 (3 ноября 2022 — 9 ноября 2022)"
 date: "2022-11-09"
 categories:
   - "Новости"
