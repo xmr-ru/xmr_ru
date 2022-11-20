@@ -9,6 +9,10 @@ toc: false
 
 ![news](/img/post/news.png)
 
+- [The Monero Standard #28 (9 ноября 2022 — 17 ноября 2022)](/post/2022-11-17-the-monero-standard-28/)  
+  _**Краткая аннотация:**_ The Monero Standard — это еженедельный информационный бюллетень от p2p торговой платформы LocalMonero обо всём, что касается Monero.  
+  _Дата публикации:_ 17.10.2022
+
 - [The Monero Standard #27 (3 ноября 2022 — 9 ноября 2022)](/post/2022-11-09-the-monero-standard-27/)  
   _**Краткая аннотация:**_ The Monero Standard — это еженедельный информационный бюллетень от p2p торговой платформы LocalMonero обо всём, что касается Monero.  
   _Дата публикации:_ 09.10.2022
