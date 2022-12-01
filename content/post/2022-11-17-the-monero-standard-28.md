@@ -46,7 +46,6 @@ _Автор публикации: recanman_
 
 *Идеи*
 
-
 - [MoneroBro — покупка товаров за Monero](https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/360)
 - [j-berman — финансирование полной занятости j-berman (3 месяца, часть 4)](https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/359)
 - [plowsofff — независимый анализ Bulletproofs++](https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/358)
