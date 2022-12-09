@@ -1,5 +1,5 @@
 ---
-title: "The Monero Standard #30(24 ноября 2022 — 01 декабря 2022)"
+title: "The Monero Standard #30 (24 ноября 2022 — 01 декабря 2022)"
 date: "2022-12-01"
 categories:
   - "Новости"
@@ -27,7 +27,7 @@ _Автор публикации: recanman_
 - Очередная встреча Рабочей группы по разработке кошелька [Seraphis](https://github.com/seraphis-migration/) запланирована на 5 декабря 2022, 18:00 UTC. Она пройдёт на канале #no-wallet-left-behind в [Matrix](https://matrix.to/#/#no-wallet-left-behind-2:haveno.network/)/[IRC-Libera](irc://irc.libera.chat/#no-wallet-left-behind)..
 - Следующая планировочная встреча по проведению конференции MoneroKon 2023 состоится 10 декабря 2022 в 18:00 UTC. Присоединиться к ней можно в чатах #monero-events на каналах [Matrix](https://matrix.to/#/%23monero-events:monero.social)/IRC-Libera.
 - Следующая встреча Исследовательской лаборатории Monero запланирована на 7 декабря 2022, 17:00 UTC. Заходите на канал #monero-research-lab в [Matrix](https://matrix.to/#/%23monero-community:monero.social)/IRC-Libera.
-- 30 ноября сообщество Monero отпраздновало трёхлетие с момента реализации устойчивого к майнингу посредством ADSIC алгоритма [RandomX](https://github.com/tevador/RandomX). Подробнук.ю информацию о преимуществах RandomX можно найти [здесь](https://www.monerooutreach.org/stories/RandomX.html).
+- 30 ноября сообщество Monero отпраздновало трёхлетие с момента реализации устойчивого к майнингу посредством ASIC алгоритма [RandomX](https://github.com/tevador/RandomX). Подробнук.ю информацию о преимуществах RandomX можно найти [здесь](https://www.monerooutreach.org/stories/RandomX.html).
 - 27 ноября в системе CCS был опубликован запрос о проведении MoneroKon 2023. Проведение мероприятия обойдётся примерно в 164 000 €. Запрос охватывает около 35-40% общих затрат. Подробнее с запросом можно ознакомиться по следующей [ссылке](https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/362).
 
 ## _Забавные факты / руководства_
@@ -48,8 +48,8 @@ MoneroTopia — ежегодная конференция, посвящённа�
 
 *Идеи*
 
-- escapethe3RA — escapethe3RA, публикация Monero Observer (зима 2022)
-- ajs — проект: MoneroKon 2023
+- [escapethe3RA — escapethe3RA, публикация Monero Observer (зима 2022)](https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/363)
+- [ajs — проект: MoneroKon 2023](https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/362)
 - [rayatina — работа над rayatina-archive](https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/361)
 - [MoneroBro — покупка товаров за Monero](https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/360)
 - [plowsofff — независимый анализ Bulletproofs++](https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/358)
