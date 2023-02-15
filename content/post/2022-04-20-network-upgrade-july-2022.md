@@ -4,7 +4,7 @@ date: "2022-04-20"
 categories:
   - "Новости"
 tags:
-  - "Новости"
+  - ""
 thumbnail: "img/post/2022-04-20-network-upgrade-july-2022/01.png"  
 lead: "Обновление сети состоится 16 июля 2022 г. (на высоте блока 2 668 888)"
 pager: true
