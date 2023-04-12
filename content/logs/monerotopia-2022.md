@@ -3,14 +3,47 @@ title: Стенограммы выступлений Monerotopia 2022
 toc: false
 ---
 
-#### Выступления на Monerotopia 2022:
-- [Марта Буэно - Как Monero проложит путь к свободе и повергнет авторитарный режим](/logs/monerotopia-2022/01-martha-bueno-how-monero-is-going-to-usher-in-freedom-ru/) [[EN](/logs/monerotopia-2022/01-martha-bueno-how-monero-is-going-to-usher-in-freedom-en/)]
-- [Рэйчел-Роуз О'Лири - Почему конфиденциальность имеет значение](/logs/monerotopia-2022/02-rachel-rose-o-leary-why-privacy-matters-ru/) [[EN](/logs/monerotopia-2022/02-rachel-rose-o-leary-why-privacy-matters-en/)]
-- [Люк Смит - Криптовалюта, которая позволит избежать дистопии](/logs/monerotopia-2022/03-luke-smith-why-monero-matters-ru/) [[EN](/logs/monerotopia-2022/03-luke-smith-why-monero-matters-en)]
-- [Франсиско “ArticMine” Кабаньяс - Масшабирование Monero](/logs/monerotopia-2022/04-articmine-scaling-monero-ru/) [[EN](/logs/monerotopia-2022/04-articmine-scaling-monero-en)]
-- [Нам Сардар - Monero как инвестиция и основа портфеля в 2020 году](https://youtu.be/4pLuOMTLdQE) [[EN](/logs/monerotopia-2022/05-nam-sardar-monero-as-an-investment-and-cornerstones-of-2020-portfolio-en/)]
-- [Саранг Ноезер - Аудит денежной массы: что это такое (и чем это не является)](/logs/monerotopia-2022/06-sarang-noether-supply-auditing-ru/) [[EN](/logs/monerotopia-2022/06-sarang-noether-supply-auditing-en/)]
-- [koe - Протокол транзакций Seraphis​](/logs/monerotopia-2022/07-koe-seraphis-tx-protocol-ru/) [[EN](/logs/monerotopia-2022/07-koe-seraphis-tx-protocol-en/)]
-- [Адам Корбо - Постквантовое будущее Monero](/logs/monerotopia-2022/08-adam-corbo-monero-post-quantum-ru/) [[EN](/logs/monerotopia-2022/08-adam-corbo-monero-post-quantum-en/)]
-- [Рольф ван Вегберг - Нелегальные рынки и Monero](/logs/monerotopia-2022/09-rolf-van-wegberg-monero-and-dark-markets-ru/) [[EN](/logs/monerotopia-2022/09-rolf-van-wegberg-monero-and-dark-markets-en/)]
-- [Филипп Циммерман - Cохранение демократии с помощью криптографии](https://youtu.be/a4nOQCXVOzc) [[EN](/logs/monerotopia-2022/10-philip-zimmermann-preserving-democracy-with-cryptography-en/)]
+- [Марта Буэно - Как Monero проложит путь к свободе и повергнет авторитарный режим](/logs/monerotopia-2022/01-martha-bueno-how-monero-is-going-to-usher-in-freedom-ru/)  
+  _**Краткая аннотация:**_ Марта Буэно, кандидат на пост комиссара 10 округа Майами-Дейд, рассказывает о том, почему свобода настолько важна и как Monero собирается возвестить о свободе и свергнуть авторитарный режим на основной сцене мероприятия Monerotopia 2022 #XMR4ALL!  
+
+- [Рэйчел-Роуз О'Лири - Почему конфиденциальность имеет значение](/logs/monerotopia-2022/02-rachel-rose-o-leary-why-privacy-matters-ru/)  
+  _**Краткая аннотация:**_ Рэйчел-Роуз О'Лири, один из разработчиков DarkFi, говорит о том, почему конфиденциальность имеет значение, на основной сцене мероприятия Monerotopia 2022 #XMR4ALL!  
+
+- [Люк Смит - Криптовалюта, которая позволит избежать дистопии](/logs/monerotopia-2022/03-luke-smith-why-monero-matters-ru/)  
+  _**Краткая аннотация:**_ Люк Смит, защитник конфиденциальности и ярый сторонник FOSS, рассказывает о Monero как о способе избежать дистопии и о том, почему Monero имеет значение на основной сцене мероприятия Monerotopia 2022 #XMR4ALL!  
+
+- [Франсиско “ArticMine” Кабаньяс - Масшабирование Monero](/logs/monerotopia-2022/04-articmine-scaling-monero-ru/)  
+  _**Краткая аннотация:**_ Франсиско “ArticMine” Кабаньяс, участник основной команды Monero и эксперт по масштабированию XMR, рассказывает о масштабировании, применяемом в Monero, и потенциале роста XMR с учётом потенциальных ограничениях на основной сцене мероприятия Monerotopia 2022 #XMR4ALL!  
+
+- [Нам Сардар - Monero как инвестиция и основа портфеля в 2020 году](/logs/monerotopia-2022/05-nam-sardar-monero-as-an-investment-and-cornerstones-of-2020-portfolio-raw/)  
+  _**Краткая аннотация:**_ Нэм Сардар, основатель и генеральный директор Neel Capital, рассказывает о том, почему лучше всего инвестировать в Monero, и о краеугольных камнях криптовалютного портфеля 2020 года на основной сцене мероприятия Monerotopia 2022 #XMR4ALL!  
+
+- [Саранг Ноезер - Аудит денежной массы: что это такое (и чем это не является)](/logs/monerotopia-2022/06-sarang-noether-supply-auditing-ru/)  
+  _**Краткая аннотация:**_ Аарон Фейкерт (Саранг Нётер), исследователь, рассказывает об аудите денежной массы, что это такое (и чем не является) на основной сцене мероприятия Monerotopia 2022 #XMR4ALL!  
+
+- [koe - Протокол транзакций Seraphis​](/logs/monerotopia-2022/07-koe-seraphis-tx-protocol-ru/)  
+  _**Краткая аннотация:**_ Koe, участник проекта Monero и ведущий разработчик проекта Seraphis, автор книги Zero to Monero, рассказывает о протоколе транзакций Seraphis на основной сцене мероприятия Monerotopia 2022 #XMR4ALL!  
+
+- [Адам Корбо - Постквантовое будущее Monero](/logs/monerotopia-2022/08-adam-corbo-monero-post-quantum-ru/)  
+  _**Краткая аннотация:**_ Энтузиаст в сфере квантовых вычислений рассказывает о постквантовом будущем Monero: обзор постквантового аудита от Исследовательской лабораторий Monero и будущего технологии блокчейна в постквантовой парадигме на основной сцене мероприятия Monerotopia 2022 #XMR4ALL!  
+
+- [Рольф ван Вегберг - Нелегальные рынки и Monero](/logs/monerotopia-2022/09-rolf-van-wegberg-monero-and-dark-markets-ru/)  
+  _**Краткая аннотация:**_ Рольф ван Вегберг, доцент Делфтского технологического университета, рассказывает о том, как Monero заменит Bitcoin на нелегальных рынках, на основной сцене мероприятия Monerotopia 2022 #XMR4ALL!  
+
+- [Филипп Циммерман - Cохранение демократии с помощью криптографии](/logs/monerotopia-2022/10-philip-zimmermann-preserving-democracy-with-cryptography-raw)  
+  _**Краткая аннотация:**_ Филип Циммерманн, изобретатель PGP (Pretty Good Privacy), рассказывает о вариантах сохранения демократии с помощью криптографии на основной сцене мероприятия Monerotopia 2022 #XMR4ALL!  
+
+- [Элизабет Бинкс об атомарных свопах Ethereum-Monero и 2-ом уровне](/logs/monerotopia-2022/12-elizabeth-binks-ethereum-monero-atomic-swaps-and-layer-2-raw)  
+  _**Краткая аннотация:**_ Элизабет Бинкс, инженер-программист и разработчик протокола блокчейна с опытом работы более 4 лет, рассказывает об атомарных свопах Ethereum-Monero, совместимости Monero и 2-го уровня на основной сцене мероприятия Monerotopia 2022 #XMR4ALL!  
+
+- [Seth for Privacy о построении циркулярной экономики Monero с помощью инструментов конфиденциальности](/logs/monerotopia-2022/13-seth-for-privacy-building-moneros-circular-economy-via-privacy-tools-raw)  
+  _**Краткая аннотация:**_ Seth for Privacy, ведущий подкаста "Opt Out", о построении циркулярной экономики Monero с помощью инструментов конфиденциальности на основной сцене мероприятия Monerotopia 2022 #XMR4ALL!  
+
+- [Ли Кладжет о cокрытие колец: о важности P2P-шифрования в Monero](/logs/monerotopia-2022/15-lee-clagett-hiding-the-rings-the-importance-of-p2p-encryption-in-monero-raw)  
+  _**Краткая аннотация:**_ Ли Кладжет "VTnerd", разработчик и эксперт по P2P-сетям, применяемым в Monero, рассказывает о сокрытии колец и важность P2P-шифрования, применяемого в Monero, на основной сцене мероприятия Monerotopia 2022 #XMR4ALL!  
+
+- [Генри из Techlore о создании полезных инструментов конфиденциальности](/logs/monerotopia-2022/16-henry-of-techlore-building-usable-privacy-tools-raw)  
+  _**Краткая аннотация:**_ Генри (генеральный директор Techlore) рассказывает о создании полезных инструментов конфиденциальности или "Почему это не вина пользователя" на основной сцене мероприятия Monerotopia 2022 #XMR4ALL!  
+
+- [Чад Тэкрей о ценовом профиле Monero и почему это важно](/logs/monerotopia-2022/17-chad-thackray-on-moneros-price-profile-raw)  
+  _**Краткая аннотация:**_ Разработчик программного обеспечения Чад Тэкрей рассказывает о ценовом профиле Monero и о том, почему это важно, на основной сцене мероприятия Monerotopia 2022 #XMR4ALL!  

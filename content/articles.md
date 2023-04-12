@@ -14,7 +14,9 @@ toc: true
 
 В данном архиве вы сможете найти переводы различных статей и прочих материалов относящихся как Monero, так и к экосистеме проекта.
 
-- [Архив с переводами статей и прочих материалов о Monero](/copyright/articles-list/)
+- [Архив с переводами статей и прочих материалов о Monero](/copyright/articles)
+
+- [Архив с переводами цикла статей 'Cypherpunk Transmission'](/copyright/cypherpunk-transmission)
 
 ---
 
