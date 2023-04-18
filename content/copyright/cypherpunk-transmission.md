@@ -4,8 +4,6 @@ sidebar: false
 toc: false
 ---
 
-## _Переводы различных статей и прочих материалов_
-
 - [CT-001: Демистификация моделирования угроз](/copyright/cypherpunk-transmission/ct-001)  
   _**Краткая аннотация:**_ Демистификация моделирования угроз  
   _Дата публикации:_ 17.10.2022
@@ -30,20 +28,20 @@ toc: false
   _**Краткая аннотация:**_ Настройка публичного «лукового» сервиса  
   _Дата публикации:_ 21.11.2022
 
-- [CT-007: Monero view-only wallets](/copyright/cypherpunk-transmission/ct-007/)  
-  _**Краткая аннотация:**_ Monero view-only wallets  
+- [CT-007: Настройка публичного «лукового» сервиса](/copyright/cypherpunk-transmission/ct-007/)  
+  _**Краткая аннотация:**_ Настройка публичного «лукового» сервиса  
   _Дата публикации:_ 28.11.2022
 
-- [CT-008: Mitigating dusting attacks in Monero CLI](/copyright/cypherpunk-transmission/ct-008/)  
-  _**Краткая аннотация:**_ Mitigating dusting attacks in Monero CLI  
+- [CT-008: Как избежать «пылевой атаки» в Monero](/copyright/cypherpunk-transmission/ct-008/)  
+  _**Краткая аннотация:**_ Как избежать «пылевой атаки» в Monero  
   _Дата публикации:_ 05.12.2022
 
-- [CT-009: Running Tor obfs4 bridge relays](/copyright/cypherpunk-transmission/ct-009/)  
-  _**Краткая аннотация:**_ Running Tor obfs4 bridge relays  
+- [CT-009: Создание ретрансляторов obfs4 в Tor](/copyright/cypherpunk-transmission/ct-009/)  
+  _**Краткая аннотация:**_ Создание ретрансляторов obfs4 в Tor  
   _Дата публикации:_ 12.12.2022
 
-- [CT-010: Managing passwords, keys, and seeds](/copyright/cypherpunk-transmission/ct-010/)  
-  _**Краткая аннотация:**_ Managing passwords, keys, and seeds  
+- [CT-010: Управление паролями, ключами и мнемоническими фразами](/copyright/cypherpunk-transmission/ct-010/)  
+  _**Краткая аннотация:**_ Управление паролями, ключами и мнемоническими фразами  
   _Дата публикации:_ 26.12.2022
 
 - [CT-011: Decoy wallets with seed offset passphrase in Monero CLI](/copyright/cypherpunk-transmission/ct-011/)  

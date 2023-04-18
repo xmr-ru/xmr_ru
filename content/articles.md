@@ -14,7 +14,11 @@ toc: true
 
 В данном архиве вы сможете найти переводы различных статей и прочих материалов относящихся как Monero, так и к экосистеме проекта.
 
+### _Статьи и прочие материалы о Monero_
+
 - [Архив с переводами статей и прочих материалов о Monero](/copyright/articles)
+
+### _Cypherpunk Transmission_
 
 - [Архив с переводами цикла статей 'Cypherpunk Transmission'](/copyright/cypherpunk-transmission)
 
@@ -51,12 +55,7 @@ Breaking Monero (Взламывая Monero) - это эпизодические 
 Monero Konferenco - это ежегодная встреча поборников анонимности, шифропанков, учёных и философов в рамках экосистемы Monero.​
 
 - [Стенограммы выступлений Monero Konferenco 2019](/logs/konferenco-2019/)
-
-### _DEF CON_
-
-DEF CON — крупнейшая в мире конференция хакеров, каждый год проводящаяся в Лас-Вегасе, штат Невада.
-
-- [Стенограммы выступлений с Криптовалютной Деревни (Cryptocurrency Village) Monero на DEF CON 2021](/logs/cryptocurrency-village-def-con-2021/)
+- [Стенограммы выступлений Monero Konferenco 2022](/logs/konferenco-2022/)
 
 ### _Всемирный конгресс хакеров (ССС)_
 
