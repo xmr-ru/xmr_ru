@@ -44,8 +44,8 @@ toc: false
   _**Краткая аннотация:**_ Управление паролями, ключами и мнемоническими фразами  
   _Дата публикации:_ 26.12.2022
 
-- [CT-011: Decoy wallets with seed offset passphrase in Monero CLI](/copyright/cypherpunk-transmission/ct-011/)  
-  _**Краткая аннотация:**_ Decoy wallets with seed offset passphrase in Monero CLI  
+- [CT-011: Ложные кошельки с фразой-паролем смещения мнемонической фразы в CLI-кошельке Monero](/copyright/cypherpunk-transmission/ct-011/)  
+  _**Краткая аннотация:**_ Ложные кошельки с фразой-паролем смещения мнемонической фразы в CLI-кошельке Monero  
   _Дата публикации:_ 16.01.2023
 
 - [CT-012: Plausible deniability with VeraCrypt hidden volumes in Tails](/copyright/cypherpunk-transmission/ct-012/)  
