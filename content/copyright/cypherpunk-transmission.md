@@ -48,8 +48,8 @@ toc: false
   _**Краткая аннотация:**_ Ложные кошельки с фразой-паролем смещения мнемонической фразы в CLI-кошельке Monero  
   _Дата публикации:_ 16.01.2023
 
-- [CT-012: Plausible deniability with VeraCrypt hidden volumes in Tails](/copyright/cypherpunk-transmission/ct-012/)  
-  _**Краткая аннотация:**_ Plausible deniability with VeraCrypt hidden volumes in Tails  
+- [CT-012: Правдоподобное отрицание при сокрытии тома с помощью VeraCrypt в Tails](/copyright/cypherpunk-transmission/ct-012/)  
+  _**Краткая аннотация:**_ Правдоподобное отрицание при сокрытии тома с помощью VeraCrypt в Tails  
   _Дата публикации:_ 30.01.2023
 
 - [CT-013: Moneranoj: Unite or 'curb your cypherpunk'](/copyright/cypherpunk-transmission/ct-013/)  
