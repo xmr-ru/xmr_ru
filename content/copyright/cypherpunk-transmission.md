@@ -52,8 +52,8 @@ toc: false
   _**Краткая аннотация:**_ Правдоподобное отрицание при сокрытии тома с помощью VeraCrypt в Tails  
   _Дата публикации:_ 30.01.2023
 
-- [CT-013: Moneranoj: Unite or 'curb your cypherpunk'](/copyright/cypherpunk-transmission/ct-013/)  
-  _**Краткая аннотация:**_ Moneranoj: Unite or 'curb your cypherpunk'  
+- [CT-013: Moneranoj - объединяйтесь или «обуздайте шифропанк»](/copyright/cypherpunk-transmission/ct-013/)  
+  _**Краткая аннотация:**_ Moneranoj - объединяйтесь или «обуздайте шифропанк»
   _Дата публикации:_ 13.02.2023
 
 - [CT-014: Whonix virtual machines on Debian using KVM](/copyright/cypherpunk-transmission/ct-014/)  
