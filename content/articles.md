@@ -42,6 +42,8 @@ toc: true
 
 ---
 
+![02](/img/copyright/transcriptions.png)
+
 ## _Стенограммы выступлений_
 
 ### _Breaking Monero_
