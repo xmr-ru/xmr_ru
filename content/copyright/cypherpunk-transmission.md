@@ -56,9 +56,9 @@ toc: false
   _**Краткая аннотация:**_ Moneranoj - объединяйтесь или «обуздайте шифропанк»
   _Дата публикации:_ 13.02.2023
 
-- [CT-014: Whonix virtual machines on Debian using KVM](/copyright/cypherpunk-transmission/ct-014/)  
-  _**Краткая аннотация:**_ Whonix virtual machines on Debian using KVM  
-  _Дата публикации:_ 06.02.2023
+- [CT-014: Создание виртуальных машин Whonix в Debian с помощью KVM](/copyright/cypherpunk-transmission/ct-014/)  
+  _**Краткая аннотация:**_ Создание виртуальных машин Whonix в Debian с помощью KVM  
+  _Дата публикации:_ 06.03.2023
 
 - [CT-015: Monero lore compendium](/copyright/cypherpunk-transmission/ct-015/)  
   _**Краткая аннотация:**_ Monero lore compendium  
