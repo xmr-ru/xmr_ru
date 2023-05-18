@@ -60,6 +60,6 @@ toc: false
   _**Краткая аннотация:**_ Создание виртуальных машин Whonix в Debian с помощью KVM  
   _Дата публикации:_ 06.03.2023
 
-- [CT-015: Monero lore compendium](/copyright/cypherpunk-transmission/ct-015/)  
-  _**Краткая аннотация:**_ Monero lore compendium  
+- [CT-015: Monero в вопросах и ответах](/copyright/cypherpunk-transmission/ct-015/)  
+  _**Краткая аннотация:**_ Monero в вопросах и ответах
   _Дата публикации:_ 27.03.2023
