@@ -1,0 +1,19 @@
+---
+title: Monerotopia 2023
+toc: false
+---
+
+[Monerotopia](https://monerotopia.com/) - это независимая конференция, посвящённая конфиденциальности, технологиям обеспечения приватности и либертарианству, устраиваемая участником сообщества Monero, Дугласом Туманом и его супругой Сунитой.
+
+Monerotopia 2023 проводилась в период с 5 по 7 мая в Колония Рома, Мехико.
+
+#### _**Список выступлений первого дня конференции:**_
+- [Йессика Ортега - Архитектор и профессиональный боец, Королева бойцов Monero](/logs/monerotopia-2023/01-architect-and-professional-monero-fighting-queen-yessica-ortega-ru-raw/)
+- [Андрей Сабельников - Вопросы и ответы по истории протокола CryptoNote](/logs/monerotopia-2023/02-a-q-and-a-on-the-history-of-cryptonote-with-andrey-sabelnikov-ru-raw/)
+
+#### _**Список выступлений второго дня конференции:**_
+- [Люк Смит - Monero: криптовалюта для предотвращения антиутопии](/logs/monerotopia-2023/03-monero-crypto-for-dystopia-avoidance-with-luke-smith-ru-raw/)
+- [Андрес - Monero с нуля](/logs/monerotopia-2023/04-monero-desde-cero-with-anhdres-ru-raw/)
+- [Джастин Берман - Ключи просмотра баланса: приватные ключи для просмотра входящих и исходящих транзакций](/logs/monerotopia-2023/06-view-balance-keys-a-private-key-to-view-incoming-and-outgoing-transactions-w-jberman-ru-raw/)
+
+#### _**Список выступлений третьего дня конференции:**_
