@@ -16,5 +16,7 @@ Monerotopia 2023 проводилась в период с 5 по 7 мая в К
 - [Андрес - Monero с нуля](/logs/monerotopia-2023/04-monero-desde-cero-with-anhdres-ru-raw/)
 - [Koe - Разработка Seraphis: что изменилось за 2023 год](/logs/monerotopia-2023/05-seraphis-development-a-year-in-review-2023-with-koe-ru-raw)
 - [Джастин Берман - Ключи просмотра баланса: приватные ключи для просмотра входящих и исходящих транзакций](/logs/monerotopia-2023/06-view-balance-keys-a-private-key-to-view-incoming-and-outgoing-transactions-w-jberman-ru-raw/)
+- Sowle - Zarcanum: Схема доказательств со скрытыми суммами для конфиденциальных транзакций
+- [Капиль Амарасингх - Непростительное ощущение анонимности и свободы с децентрализованной биржей BasicSwap](/logs/monerotopia-2023/08-becoming-unapologetically-anonymousand-free-with-basicswap-dex-with-kapil-amarasinghe-ru-raw)
 
 #### _**Список выступлений третьего дня конференции:**_
