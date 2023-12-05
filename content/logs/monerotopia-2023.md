@@ -22,5 +22,6 @@ Monerotopia 2023 проводилась в период с 5 по 7 мая в К
 - [Капиль Амарасингх - Непростительное ощущение анонимности и свободы с децентрализованной биржей BasicSwap](/logs/monerotopia-2023/08-becoming-unapologetically-anonymousand-free-with-basicswap-dex-with-kapil-amarasinghe-ru-raw)
 - Франсиско 'ArticMine' Кабаньяс - Модель фундаментальной стоимости Monero
 - [Элизабет Бинкс - Атомарные свопы ETH-XMR](/logs/monerotopia-2023/10-eth-xmr-atomic-swaps-with-elizabeth-binks-ru-raw)
+- [Люк Паркер - Как сделать Monero всем, везде и сразу](/logs/monerotopia-2023/11-getting-monero-to-be-everything-everywhere-all-at-once-with-luke-parker-ru-raw)
 
 #### _**Список выступлений третьего дня конференции:**_
