@@ -24,9 +24,10 @@ Monerotopia 2023 проводилась в период с 5 по 7 мая в К
 - [Элизабет Бинкс - Атомарные свопы ETH-XMR](/logs/monerotopia-2023/10-eth-xmr-atomic-swaps-with-elizabeth-binks-ru-raw/)
 - [Люк Паркер - Как сделать Monero всем, везде и сразу](/logs/monerotopia-2023/11-getting-monero-to-be-everything-everywhere-all-at-once-with-luke-parker-ru-raw/)
 - Юрай Бендер - Как конфиденциальность, электронные деньги и технологии шифропанка усиливают наше право на свободу?
-- [Дэн Берман - Налоги - это грабёж](/logs/monerotopia-2023/14-dan-taxation-is-theft-behrman-ru-raw/)
+- [Дэн Берман - Налоги - это грабёж](/logs/monerotopia-2023/13-dan-taxation-is-theft-behrman-ru-raw/)
 - Рубен Яп - Эволюция протоколов конфиденциальности Firo: От Zerocoin до Spark
 - Джастин Эренхофер - Условия по обеспечению конфиденциальности в Bitcoin: хороший, плохой и ужасный
-- [Алекс Линтон - OXEN: экосистема приватных приложений](/logs/monerotopia-2023/17-oxen-private-app-ecosystem-with-alex-lipton-ru-raw/)
+- [Алекс Линтон - OXEN: экосистема приватных приложений](/logs/monerotopia-2023/16-oxen-private-app-ecosystem-with-alex-lipton-ru-raw/)
+- [Ки Джефферис - Monero и многое другое: реализация второго уровня и инфраструктуры доказательства доли владения на базе протокола CryptoNote](/logs/monerotopia-2023/17-monero-&-more-creating-l2-&-proof-of-stake-infrastructure-on-cryptonote-with-kee-jefferys-ru-raw/)
 
 #### _**Список выступлений третьего дня конференции:**_

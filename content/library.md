@@ -11,7 +11,7 @@ toc: true
 
 ![books](/img/library/books.png)
 
-* [От нуля к Monero: Второе издание v2.0.0 (русская версия)](https://github.com/v1docq47/Monero-RCT-report/blob/master/translations/ru/%D0%9E%D1%82%20%D0%BD%D1%83%D0%BB%D1%8F%20%D0%BA%20Monero%202.0.0.pdf)
+* [От нуля к Monero: Второе издание v2.0.0 (русская версия)](https://github.com/UkoeHB/Monero-RCT-report/blob/master/Zero-to-Monero-2-0-0-ru.pdf)
 
 _Опубликовано: [4 апреля 2020 года с исходным кодом LaTeX](https://github.com/UkoeHB/Monero-RCT-report)._
 
@@ -21,7 +21,7 @@ _**Аннотация**_: Комплексное концептуальное (�
 
 _Опубликовано: [26 июня 2018 года с исходным кодом LaTeX](https://github.com/UkoeHB/Monero-RCT-report)._
 
-* [Овладевая Monero (русская версия)](https://github.com/v1docq47/monerobook/tree/master/translations/ru)
+* [Овладевая Monero (русская версия)](https://github.com/monerobook/monerobook/tree/master/translations/ru)
 
 _Опубликовано: [26 июня 2020](https://github.com/monerobook/monerobook)._
 
