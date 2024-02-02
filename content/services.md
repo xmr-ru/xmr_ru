@@ -7,6 +7,8 @@ menu:
 toc: true
 ---
 
+![talk](/img/services/talk.png)
+
 ## _Общение и тематические каналы_
 
 ### _Telegram_
@@ -18,6 +20,8 @@ toc: true
 - [Matrix комната c ретрансляцией сообщений в общий канал Telegram XMR_RU](https://riot.im/app/#/room/#xmr.ru:matrix.org)
 
 ---
+
+![other-projects](/img/services/other-projects.png)
 
 ## _Сторонние проекты XMR.RU_
 
@@ -45,6 +49,8 @@ transfer donate.xmr.ru 0.01
 ```
 
 ---
+
+![exchange](/img/services/exchange.png)
 
 ## _Обменники, биржи и сервисы атомарного свопа_
 
@@ -105,6 +111,8 @@ P2P-сервисы и биржи криптовалют подразумеваю
 - [monero-vanity](https://github.com/hinto-janai/monero-vanity) - Утилита для оффлайн генерации адресов Monero
 
 ---
+
+![services](/img/services/services.png)
 
 ## _Сервисы со статистикой и информацией о состоянии сети_
 
