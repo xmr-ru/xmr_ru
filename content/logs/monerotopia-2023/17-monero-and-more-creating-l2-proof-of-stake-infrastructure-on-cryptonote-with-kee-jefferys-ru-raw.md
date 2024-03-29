@@ -1,17 +1,17 @@
 ---
 title: "Ки Джефферис - Monero и многое другое: реализация второго уровня и инфраструктуры доказательства доли владения на базе протокола CryptoNote"
-date: "2023-05-06"
+date: "2023-05-07"
 categories:
   - "Стенограмма"
 tags:
   - "Monerotopia 2023"
-lead: "Колония Рома, Мехико, Monerotopia 2023 - День 2"
+lead: "Колония Рома, Мехико, Monerotopia 2023 - День 3"
 pager: true
 toc: false
 sidebar: "right"
 ---
 
-{{< youtube id="zBCV2UvAYWY" autoplay="false" >}}
+{{< youtube id="Lkh0CCN9UBQ" autoplay="false" >}}
 
 ---
 

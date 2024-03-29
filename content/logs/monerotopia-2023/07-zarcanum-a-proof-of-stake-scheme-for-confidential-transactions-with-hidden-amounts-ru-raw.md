@@ -1,11 +1,11 @@
 ---
 title: "Sowle & Koe - Zarcanum: Использование схемы доказательства ставки при проведении конфиденциальных транзакций с сокрытием суммы"
-date: "2023-05-06"
+date: "2023-05-07"
 categories:
   - "Стенограмма"
 tags:
   - "Monerotopia 2023"
-lead: "Колония Рома, Мехико, Monerotopia 2023 - День 2"
+lead: "Колония Рома, Мехико, Monerotopia 2023 - День 3"
 pager: true
 toc: false
 sidebar: "right"
