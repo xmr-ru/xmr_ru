@@ -31,3 +31,4 @@ Monerotopia 2023 проводилась в период с 5 по 7 мая в К
 - [Алекс Линтон - OXEN: экосистема приватных приложений](/logs/monerotopia-2023/16-oxen-private-app-ecosystem-with-alex-lipton-ru-raw/)
 - [Капиль Амарасингх - Непростительное ощущение анонимности и свободы с децентрализованной биржей BasicSwap](/logs/monerotopia-2023/08-becoming-unapologetically-anonymousand-free-with-basicswap-dex-with-kapil-amarasinghe-ru-raw/)
 - [Ки Джефферис - Monero и многое другое: реализация второго уровня и инфраструктуры доказательства доли владения на базе протокола CryptoNote](/logs/monerotopia-2023/17-monero-and-more-creating-l2-proof-of-stake-infrastructure-on-cryptonote-with-kee-jefferys-ru-raw/)
+- [Дэниел Васкес - Повышение уровня приватность для всех и каждого](/logs/monerotopia-2023/18-enhancing-privacy-for-all-humanity-with-daniel-vazquez-ru-raw/)
