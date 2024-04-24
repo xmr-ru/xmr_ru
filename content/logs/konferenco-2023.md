@@ -16,3 +16,5 @@ Monero Konferenco - это ежегодная конференция по воп
 - [noot - Атомарные свопы ETH-XMR](/logs/konferenco-2023/noot-eth-xmr-atomic-swaps-ru-raw/)
 
 #### _**Список выступлений третьего дня конференции:**_
+
+- [Андреа - Регулирование Monero: Либертарианский стратегический анализ](/logs/konferenco-2023/andrea-regulating-monero-a-libertarian-strategic-analysis-ru-raw/)

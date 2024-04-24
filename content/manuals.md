@@ -7,6 +7,8 @@ menu:
 toc: true
 ---
 
+![news](/img/manuals/mining.png)
+
 ## _Майнинг Monero_
 - [Введение в майнинг](/manual/introduction-to-mining/)
 - [Как начать майнинг на пуле с помощью XMRig](/manual/mine-with-xmrig-to-pool/)
