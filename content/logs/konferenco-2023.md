@@ -14,6 +14,8 @@ Monero Konferenco - это ежегодная конференция по воп
 #### _**Список выступлений второго дня конференции:**_
 
 - [noot - Атомарные свопы ETH-XMR](/logs/konferenco-2023/noot-eth-xmr-atomic-swaps-ru-raw/)
+- [Юрай Беднар - Анализ трафика предпринимателей, использующих в расчётах Monero, с помощью простого метода анализа блокчейна](/logs/konferenco-2023/juraj-bednar-analysing-monero-merchants-traffic-using-simple-chainanalysis-ru-raw.md)
+- [Джастин Берман - Лёгкие кошельки Monero: сегодня и завтра](/logs/konferenco-2023/justin-berman-monero-light-wallets-today-and-in-the-future-ru-raw.md)
 
 #### _**Список выступлений третьего дня конференции:**_
 
