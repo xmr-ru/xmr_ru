@@ -199,7 +199,7 @@ widgets:
 
 ---
 
-_Источник: [Релиз Feather Wallet 2.6.6](https://featherwallet.org/changelog/)_
+_Источник: [ncident report: Denial-of-Service (28 April 2024)](https://featherwallet.org/changelog/)_
 
 _Перевод: [Mr. Pickles](https://t.me/v1docq47)_  
 _Коррекция: [Kukima](https://t.me/Kukima)_

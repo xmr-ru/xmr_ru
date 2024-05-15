@@ -64,7 +64,7 @@ LocalMonero существовала на протяжении большей ч
 
 ---
 
-_Источник: [ LocalMonero / AgoraDesk will be winding down it's operations](https://www.reddit.com/r/Monero/comments/1cmjgqg/localmonero_agoradesk_will_be_winding_down_its/)_
+_Источник: [LocalMonero / AgoraDesk will be winding down it's operations](https://www.reddit.com/r/Monero/comments/1cmjgqg/localmonero_agoradesk_will_be_winding_down_its/)_
 
 _Перевод: [Mr. Pickles](https://t.me/v1docq47)_  
 _Коррекция: [Kukima](https://t.me/Kukima)_
