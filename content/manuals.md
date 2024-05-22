@@ -33,8 +33,12 @@ toc: true
 
 ---
 
-## _Взаимодействие и работа с кошельками Monero_
+## _Биржи и обменные сервисы_
+- [Haveno DEX - Прямой обмен фиатной валюты на Monero](/manual/haveno-client-f2f/)
 
+---
+
+## _Взаимодействие и работа с кошельками Monero_
 - [Как выбрать кошелёк Monero](/manual/how-to-choose-a-monero-wallet/)
 
 ### _Десктопные версии кошельков_
@@ -47,7 +51,6 @@ toc: true
 - [Подключение локального кошелька к вашему демону через Tor](/manual/how-to-connect-your-local-wallet-over-tor/)
 
 ### _Мобильные кошельки (Monerujo / MyMonero / Cake Wallet)_
-
 - [Руководство пользователя мобильного Android кошелька Monerujo](/manual/monerujo-wallet-android-user-guide/)
 - [Как восстановить ваш кошелёк Monerujo на другом телефоне](/manual/how-to-restore-your-monerujo-wallet-on-a-different-phone/)
 - [Как перенести кошелёк Monerujo с одного телефона на другой](/manual/how-to-move-your-monerujo-wallets-from-one-phone-to-another/)
