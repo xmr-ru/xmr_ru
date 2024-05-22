@@ -135,7 +135,7 @@ May-14 18:22:44.527 [JavaFX Application Thread] INFO  h.c.a.HavenoSetup: walletI
 
 ![11](/img/manuals/haveno-client-f2f/11.png)
 
-## Фиатная валюта в Monero, прямая торговля (F2F)
+## _Обмен фиатной валюты на Monero, прямая торговля (F2F)_
 
 Первым шагом будет настройка вашего аккаунта для F2F-торговли:
 
