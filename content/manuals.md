@@ -35,6 +35,7 @@ toc: true
 
 ## _Биржи и обменные сервисы_
 - [Haveno DEX - Прямой обмен фиатной валюты на Monero](/manual/haveno-client-f2f/)
+- [Haveno DEX - Разрешение споров](/manual/haveno-arbitrator/)
 
 ---
 
