@@ -36,7 +36,9 @@ _Примечание: я не рекомендую использовать Fac
 
 Во-первых, нам нужно найти сеть Haveno, [Haveno Reto](https://monero.town/post/3143272) появилась одной из первых, как раз её мы и собираемся опробовать:
 
-Давайте возьмем двоичные файлы Haveno из [репозитория Reto на GitHub](https://github.com/retoaccess1/haveno-reto/actions) (который был разветвлен из [исходного репозитория Haveno](https://github.com/haveno-dex/haveno), поддерживаемого Woodser).
+Давайте возьмем двоичные файлы Haveno из [репозитория Reto на GitHub](https://github.com/retoaccess1/haveno-reto/releases) (который был разветвлен из [исходного репозитория Haveno](https://github.com/haveno-dex/haveno), поддерживаемого Woodser).
+
+**ОТКАЗ ОТ ОТВЕТСТВЕННОСТИ: НЕ СУЩЕСТВУЕТ ОФИЦИАЛЬНЫХ СЕТЕЙ HAVENO, ЕСТЬ ТОЛЬКО СТОРОННИЕ СЕТИ. ЕСЛИ ВЫ ВИДИТЕ, ЧТО HAVENO УТВЕРЖДАЕТ, ЧТО ЭТО ОФИЦИАЛЬНАЯ СЕТЬ, [КАК ЭТА](https://monero.town/post/3260716), НЕ ПОДДАВАЙТЕСЬ НА ИХ УЛОВКИ!**
 
 [Здесь](https://github.com/retoaccess1/haveno-reto/actions) вы можете просто выбрать последнюю успешную CI сборку, например вот [эту](https://github.com/retoaccess1/haveno-reto/actions/runs/9081479642):
 
