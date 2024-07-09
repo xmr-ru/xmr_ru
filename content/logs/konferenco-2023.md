@@ -20,6 +20,8 @@ Monero Konferenco - это ежегодная конференция по воп
 - [Юрай Беднар - Анализ трафика предпринимателей, использующих в расчётах Monero, с помощью простого метода анализа блокчейна](/logs/konferenco-2023/juraj-bednar-analysing-monero-merchants-traffic-using-simple-chainanalysis-ru-raw/)
 - [Джастин Берман - Лёгкие кошельки Monero: сегодня и завтра](/logs/konferenco-2023/justin-berman-monero-light-wallets-today-and-in-the-future-ru-raw/)
 - [Амир Тааки - Доказательства анонимных групп для колец с бесконечным количеством участников](/logs/konferenco-2023/amir-taaki-anonymous-set-proofs-for-infinite-ring-size-ru-raw/)
+- [anhdres - Добро пожаловать в «Сад»](/logs/konferenco-2023/anhdres-welcome-to-the-garden-ru-raw/)
+- [Доминик Шрёдер - PayMo: верифицируемые временные связываемые кольцевые подписи для построения масштабируемых платёжных каналов Monero](/logs/konferenco-2023/dominique-schroder-paymo-verifiable-timed-linkable-ring-signatures-for-scalable-payments-for-monero-ru-raw)
 
 #### _**Список выступлений третьего дня конференции:**_
 
