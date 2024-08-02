@@ -13,6 +13,7 @@ Monero Konferenco - это ежегодная конференция по воп
 - [Бен Бидерманн - Псевдонимности недостаточно: почему Monero «упускает из виду» проблему децентрализованной идентичности](/logs/konferenco-2023/ben-biedermann-pseudonymity-is-not-enough-why-monero-misses-out-on-decentralised-identity-ru-raw/)
 - [Павол Луптак - Monero и криптовалюты как самый мощный либерализующий инструмент глобального оппортунизма](/logs/konferenco-2023/pavol-luptak-monero-and-cryptocurrencies-as-the-most-powerful-liberalizing-tool-of-global-opportunism-ru-raw/)
 - [Аарон Фликерт - Spats: пользовательские конфиденциальные активы и токены](/logs/konferenco-2023/aaron-feickert-spats-user-defined-confidential-assets-and-tokens-ru-raw/)
+- [m2049r - Куда движется Monerujo?](/logs/konferenco-2023/m2049r-monerujo-quo-vadis-ru-raw/)
 
 #### _**Список выступлений второго дня конференции:**_
 
@@ -22,7 +23,9 @@ Monero Konferenco - это ежегодная конференция по воп
 - [Амир Тааки - Доказательства анонимных групп для колец с бесконечным количеством участников](/logs/konferenco-2023/amir-taaki-anonymous-set-proofs-for-infinite-ring-size-ru-raw/)
 - [anhdres - Добро пожаловать в «Сад»](/logs/konferenco-2023/anhdres-welcome-to-the-garden-ru-raw/)
 - [Доминик Шрёдер - PayMo: верифицируемые временные связываемые кольцевые подписи для построения масштабируемых платёжных каналов Monero](/logs/konferenco-2023/dominique-schroder-paymo-verifiable-timed-linkable-ring-signatures-for-scalable-payments-for-monero-ru-raw)
+- [koe - Бесшовная организация эскроу-торговли с помощью схемы мультиподписи Monero](/logs/konferenco-2023/koe-seamless-escrowed-markets-with-monero-multisig-ru-raw/)
 
 #### _**Список выступлений третьего дня конференции:**_
 
 - [Андреа - Регулирование Monero: Либертарианский стратегический анализ](/logs/konferenco-2023/andrea-regulating-monero-a-libertarian-strategic-analysis-ru-raw/)
+- [Кайл Шэррок - TariScript: неинтерактивные протоколы Mimblewimble](/logs/konferenco-2023/cayle-sharrock-tariscript-non-interactive-protocols-for-mimblewimble-ru-raw/)
