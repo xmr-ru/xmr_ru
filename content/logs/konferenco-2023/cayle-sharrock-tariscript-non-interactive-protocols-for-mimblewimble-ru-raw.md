@@ -1,10 +1,10 @@
 ---
 title: "Кайл Шэррок - TariScript: неинтерактивные протоколы Mimblewimble"
-date: "2023-06-23"
+date: "2023-06-25"
 categories:
   - "Стенограмма"
 tags:
-  - "Monerotopia 2022"
+  - "MoneroKon 2023"
 lead: "Monero Konferenco 2023 #MoneroKon2023 Прага - День 3"
 pager: true
 toc: false

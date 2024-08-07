@@ -4,7 +4,7 @@ date: "2023-06-25"
 categories:
   - "Стенограмма"
 tags:
-  - "Monerotopia 2022"
+  - "MoneroKon 2023"
 lead: "Monero Konferenco 2023 #MoneroKon2023 Прага - День 3"
 pager: true
 toc: false

@@ -2,7 +2,7 @@
 title: Слон в пуле
 lead: "Джетро является разработчиком Monero, разработчиком майнинг-пулов, разработчиком инструментальных средств и концепций и активно делится своим опытом, связанным с Monero, на Stack Exchange."
 tags:
-  - "Konferenco"
+  - "MoneroKon 2019"
 pager: true
 sidebar: "right"
 widgets:

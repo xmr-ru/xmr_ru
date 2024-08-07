@@ -19,7 +19,7 @@ Monero Konferenco - это ежегодная конференция по воп
 - [Нейт Бартрам из The New Oil - Финансовое давление и угнетение в истории](/logs/konferenco-2022/07-nathan-financial-oppression-throughout-history-ru-raw/)
 - [Генри из Techlore - Уменьшение точек трения Monero для широкого внедрения криптовалюты в массы](/logs/konferenco-2022/08-henry-reducing-monero-friction-points-for-rapid-widespread-adoption-ru-raw/)
 - [Андрес - Почему и зачем мы занимаемся Monerujo](/logs/konferenco-2022/09-andres-why-we-monerujo-ru-raw/)
-- [Эдвин ден Боер - Последствия консеквенциализма или как стрелочники погубили децентрализацию](/logs/konferenco-2022/0-edwin-den-boer-consequences-of-consequentialism-how-trolley-switchers-derailed-decentralization-ru-raw/)
+- [Эдвин ден Боер - Последствия консеквенциализма или как стрелочники погубили децентрализацию](/logs/konferenco-2022/10-edwin-den-boer-consequences-of-consequentialism-how-trolley-switchers-derailed-decentralization-ru-raw/)
 - [Симин Гесмати - Приватность блокчейна с точки зрения пользователей](/logs/konferenco-2022/11-simin-ghesmati-user-perceived-privacy-in-blockchain-ru-raw/)
 - Люк Паркер (kayabaNerve) - Фонд The MAGIC Monero или простой способ сделать пожертвование в Monero
 - Джастин Эренхофер - Что дальше? Кошельки для Monero Cake Wallet и Monero.com

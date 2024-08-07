@@ -4,7 +4,7 @@ date: "2022-06-19"
 categories:
   - "Стенограмма"
 tags:
-  - "Monerotopia 2022"
+  - "MoneroKon 2022"
 lead: "Monero Konferenco 2022 #MoneroKon2022 Лиссабон - День 2"
 pager: true
 toc: false

@@ -1,10 +1,10 @@
 ---
 title: "Джастин Берман - Лёгкие кошельки Monero: сегодня и завтра"
-date: "2023-06-22"
+date: "2023-06-24"
 categories:
   - "Стенограмма"
 tags:
-  - "Monerotopia 2022"
+  - "MoneroKon 2023"
 lead: "Monero Konferenco 2023 #MoneroKon2023 Прага - День 2"
 pager: true
 toc: false
