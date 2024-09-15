@@ -7,7 +7,7 @@ menu:
 toc: true
 ---
 
-![news](/img/manuals/mining.png)
+![mining](/img/manuals/mining.png)
 
 ## _Майнинг Monero_
 - [Введение в майнинг](/manual/introduction-to-mining/)
@@ -18,6 +18,8 @@ toc: true
 - [Автозапуск майнинга в P2Pool (с программным пакетом systemd)](/manual/autostart-mining-on-p2pool-with-systemd/)
 
 ---
+
+![nodes](/img/manuals/nodes.png)
 
 ## _Взаимодействие и работа с узлами Monero_
 - [Как подключиться к удаленному узлу в GUI кошельке](/manual/how-to-connect-gui-to-remote-node/)
