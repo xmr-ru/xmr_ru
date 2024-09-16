@@ -1,11 +1,11 @@
 ---
 title: "m2049r - Куда движется Monerujo?"
-date: "2023-06-23"
+date: "2023-06-24"
 categories:
   - "Стенограмма"
 tags:
   - "MoneroKon 2023"
-lead: "Monero Konferenco 2023 #MoneroKon2023 Прага - День 1"
+lead: "Monero Konferenco 2023 #MoneroKon2023 Прага - День 2"
 pager: true
 toc: false
 sidebar: "right"
