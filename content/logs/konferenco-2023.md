@@ -24,6 +24,7 @@ Monero Konferenco - это ежегодная конференция по воп
 - [anhdres - Добро пожаловать в «Сад»](/logs/konferenco-2023/anhdres-welcome-to-the-garden-ru-raw/)
 - [Франсуа-Ксавьер Вихт - Формальная оценка уровня приватности Monero](/logs/konferenco-2023/francois-xavier-wicht-a-formal-evaluation-of-privacy-in-monero-ru-raw.md)
 - [koe - Бесшовная организация эскроу-торговли с помощью схемы мультиподписи Monero](/logs/konferenco-2023/koe-seamless-escrowed-markets-with-monero-multisig-ru-raw/)
+- [Мартин Гандингер - Экономика конфиденциальности](/logs/konferenco-2023/martin-gundinger-the-economics-of-privacy-ru-raw/)
 - [Арам Джаванян - Текущее состояние Lelantus Spark и будущие улучшения](/logs/konferenco-2023/aram-jivanyan-lelantus-spark-state-of-the-art-and-future-improvements-ru-raw.md)
 - [Доминик Шрёдер - PayMo: верифицируемые временные связываемые кольцевые подписи для построения масштабируемых платёжных каналов Monero](/logs/konferenco-2023/dominique-schroder-paymo-verifiable-timed-linkable-ring-signatures-for-scalable-payments-for-monero-ru-raw)
 - [Альфредо Риаль - Создание анонимных учётных записей с помощью механизма порогового оформления](/logs/konferenco-2023/alfredo-rial-anonymous-credentials-with-threshold-issuance-ru-raw.md)
@@ -31,6 +32,7 @@ Monero Konferenco - это ежегодная конференция по воп
 - [noot - Атомарные свопы ETH-XMR](/logs/konferenco-2023/noot-eth-xmr-atomic-swaps-ru-raw/)
 - [Джастин Берман - Лёгкие кошельки Monero: сегодня и завтра](/logs/konferenco-2023/justin-berman-monero-light-wallets-today-and-in-the-future-ru-raw/)
 - [m2049r - Куда движется Monerujo?](/logs/konferenco-2023/m2049r-monerujo-quo-vadis-ru-raw/)
+
 
 #### _**Список выступлений третьего дня конференции:**_
 
