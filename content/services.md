@@ -25,10 +25,10 @@ toc: true
 ## Сторонние проекты XMR.RU
 
 ### YouTube канал
-- [Monero Russian Community](https://www.youtube.com/@MoneroRussianCommunity) - Наш YouTube канал, где мы публикуем еженедельные выпуски новостей из мира и экосистемы Monerо, так и прочий контент о том, что относиться к проекту Monero
+- [Monero Russian Community](https://www.youtube.com/@MoneroRussianCommunity) - наш YouTube канал, где мы публикуем еженедельные выпуски новостей из мира и экосистемы Monerо, так и прочий контент о том, что относиться к проекту Monero
 
 ### XMR.RU Wiki
-- [wiki.xmr.ru](https://wiki.xmr.ru/) - Русскоязычная энциклопедия о Monero. На wiki.xmr.ru мы пытаемся собрать воедино самую различную информацию о работе и прочих ключевых аспектах криптовалюты Monero
+- [wiki.xmr.ru](https://wiki.xmr.ru/) - русскоязычная энциклопедия о Monero. На wiki.xmr.ru мы пытаемся собрать воедино самую различную информацию о работе и прочих ключевых аспектах криптовалюты Monero
 
 ### Удаленный узел XMR.RU
 Удаленный узел Monero от XMR.RU, который можно использовать в качестве точки входа/синхронизации с блокчейном в кошельках Monero
