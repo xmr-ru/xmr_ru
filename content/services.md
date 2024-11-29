@@ -40,7 +40,7 @@ node.monero.net:18081
 
 Если Вы считаете, что сообщество [XMR.RU](https://xmr.ru) делает хорошее дело, то свою благодарность вы можете выразить, отправив XMR сюда:
 
-```42CxJrG1Q8HT9XiXJ1Cim4Sz18rM95UucEBeZ3x6YuLQUwTn6UWo9ozeA7jv13v8H1FvQn9dgw1Gw2VMUqdvVN1T9izzGEt```
+`42CxJrG1Q8HT9XiXJ1Cim4Sz18rM95UucEBeZ3x6YuLQUwTn6UWo9ozeA7jv13v8H1FvQn9dgw1Gw2VMUqdvVN1T9izzGEt`
 
 Ваши донаты будут расходоваться на переводы статей и озвучку, с английского на русский, написание авторских статей и руководств, которые будут полезны как новичкам, так и сообществу в целом.
 
