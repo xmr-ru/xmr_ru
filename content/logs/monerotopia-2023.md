@@ -36,3 +36,6 @@ Monerotopia 2023 проводилась в период с 5 по 7 мая в К
 - [Дэниел Васкес - Повышение уровня приватность для всех и каждого](/logs/monerotopia-2023/enhancing-privacy-for-all-humanity-with-daniel-vazquez-ru-raw/)
 - [Питер Тодд - Постэмиссия и налог на простой](/logs/monerotopia-2023/tail-emission-and-demurrage-with-peter-todd-ru-raw/)
 - [Грэфтон Кларк - Vexl](/logs/monerotopia-2023/vexl-with-grafton-clark-ru-raw/)
+- [Абдулла Хан - Monero Nodo](/logs/monerotopia-2023/monero-nodo-with-abdullah-khan-ru-raw/)
+- [Павол Луптак - Руководство глобального оппортуниста](/logs/monerotopia-2023/the-global-opportunists-handbook-with-pavol-luptak-ru-raw/)
+- [Aeon - Моделирование атаки 51%, проводимое государством](/logs/monerotopia-2023/threat-modelling-state-sponsored-51-attacks-with-aeon-ru-raw/)
