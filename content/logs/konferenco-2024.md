@@ -18,3 +18,5 @@ Monero Konferenco - это ежегодная конференция по воп
 
 - [Юрай Беднар - Шифропанк: прошлое, настоящее и будущее](/logs/konferenco-2024/juraj-bednar-cypherpunk-past-present-and-future-ru-raw/)
 - [Лиам Игэн - Bulletproofs++](/logs/konferenco-2024/liam-eagen-bulletproofs++-ru-raw/)
+- [Люк 'Kayaba' Паркер - Доказательства участия на основе полного блокчейна++](/logs/konferenco-2024/luke-kayaba-parker-full-chain-membership-proofs++-ru-raw/)
+- [Аарон Фейкерт - Как мы разрабатываем протоколы безопасности?](/logs/konferenco-2024/aaron-feickert-how-do-we-design-secure-protocols-ru-raw/)
