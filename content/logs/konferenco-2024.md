@@ -20,3 +20,5 @@ Monero Konferenco - это ежегодная конференция по воп
 - [Лиам Игэн - Bulletproofs++](/logs/konferenco-2024/liam-eagen-bulletproofs++-ru-raw/)
 - [Люк 'Kayaba' Паркер - Доказательства участия на основе полного блокчейна++](/logs/konferenco-2024/luke-kayaba-parker-full-chain-membership-proofs++-ru-raw/)
 - [Аарон Фейкерт - Как мы разрабатываем протоколы безопасности?](/logs/konferenco-2024/aaron-feickert-how-do-we-design-secure-protocols-ru-raw/)
+- [Compunero, PhD - Введение в криптографию на эллиптических кривых и её применение в Monero](/logs/konferenco-2024/compunero-phd-a-primer-on-elliptic-curve-cryptography-and-its-application-in-monero-ru-raw/)
+- [Люк 'Kayaba' Паркер - Применение неортодоксальных криптографических методов в контексте масштабирования Monero](/logs/konferenco-2024/luke-kayaba-parker-unorthodox-cryptography-to-scale-monero-ru-raw/)
