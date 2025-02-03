@@ -22,3 +22,7 @@ Monero Konferenco - это ежегодная конференция по воп
 - [Аарон Фейкерт - Как мы разрабатываем протоколы безопасности?](/logs/konferenco-2024/aaron-feickert-how-do-we-design-secure-protocols-ru-raw/)
 - [Compunero, PhD - Введение в криптографию на эллиптических кривых и её применение в Monero](/logs/konferenco-2024/compunero-phd-a-primer-on-elliptic-curve-cryptography-and-its-application-in-monero-ru-raw/)
 - [Люк 'Kayaba' Паркер - Применение неортодоксальных криптографических методов в контексте масштабирования Monero](/logs/konferenco-2024/luke-kayaba-parker-unorthodox-cryptography-to-scale-monero-ru-raw/)
+- [Джереми Рэнд - Присвоение понятных человеку имён адресам Monero с помощью не требующего доверия приватного подхода Namecoin](/logs/konferenco-2024/jeremy-rand-human-meaningful-trustless-anonymous-monero-addresses-aliases-with-namecoin-ru-raw/)
+- [Амир Тааки - Манифест теневого возрождения: анонимность как жёсткая наступательная сила](/logs/konferenco-2024/amir-taaki-manifesto-for-a-dark-renaissance-anonymity-as-hard-offensive-power-ru-raw)
+- [Стефанос Халиасос - Систематизация знаний: чего мы не знаем? Понимание уязвимостей в безопасности доказательств SNARKs](/logs/konferenco-2024/stefanos-chaliasos-sok-what-dont-we-know-understanding-security-vulnerabilities-in-snarks-ru-raw/)
+- [Джон Уинтер Мёрфи - Monero: свободное программное обеспечение с открытым исходным кодом](/logs/konferenco-2024/john-winter-murphy-monero-is-free-and-open-source-software-ru-raw/)
