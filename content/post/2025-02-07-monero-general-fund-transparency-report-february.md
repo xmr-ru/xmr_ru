@@ -6,7 +6,7 @@ categories:
 tags:
   - ""
 thumbnail: ""  
-lead: "Опубликован отчёт о состоянии / прозрачности Основного Фонда (General Fund) Monero по состоянию на февраль 2025 г."
+lead: "Опубликован отчёт о состоянии / прозрачности Общего фонда (General Fund) Monero по состоянию на февраль 2025 г."
 pager: true
 toc: true
 sidebar: "right"
@@ -64,7 +64,7 @@ widgets:
 
 ## Техническая информация
 
-Обратите внимание, что адрес для пожертвований в Основной фонд Monero остается `888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H`.
+Обратите внимание, что адрес для пожертвований в Общий фонд Monero остается `888tNkZrPN6JsEgekjMnABU4TBzc2Dt29EPAvkRxbANsAnjyPbb3iQ1YBRk1UXcdRsiKc9dhwMVgN5S9cQUiyoogDavup3H`.
 
 Информация ниже предназначена для проверки активности всех кошельков и непогашенных остатков.
 
