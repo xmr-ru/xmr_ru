@@ -1,6 +1,6 @@
 ---
 title: "CCS предложение от v1docq47 - озвучка выступлений с Monerotopia 2024 и работа над XMR.RU"
-date: "2025-12-31"
+date: "2025-02-10"
 categories:
   - "Новости"
 tags:
