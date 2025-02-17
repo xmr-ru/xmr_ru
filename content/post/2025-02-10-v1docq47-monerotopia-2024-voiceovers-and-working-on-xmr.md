@@ -24,7 +24,7 @@ widgets:
 Адрес кошелька CCS предложения для отправки пожертвований:  
 `89Ck8PdRvkAMUp6mJw5ajyNxHWvif5KUiFPk3aXcEnUWGLyyd69rZz47CH2igxBGpGaa5odfsVHg6G26xg1w7SQAFSwjqkq`
 
-На текущий момент (10.02.2025) собрано 11.41 из 45.6 XMR.
+На текущий момент (17.02.2025) собрано 26.61 из 45.6 XMR.
 
 
 ---
