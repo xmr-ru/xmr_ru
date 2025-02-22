@@ -9,9 +9,13 @@ toc: false
 
 ![news](/img/post/news.png)
 
+- [Релиз Cake Wallet v4.23.2 и Monero.com v1.20.2](/post/2025-02-20-cake-wallet-v4.23.2-released/)  
+  _**Краткая аннотация:**_ Состоялся обновленный релиз мобильного кошелька для Monero, Cake Wallet v4.23.2 и Monero.com v1.20.2   
+  _Дата публикации:_ 20.02.2025
+
 - [Отчёт о состоянии Общего фонда Monero на февраль 2025](/post/2025-02-07-monero-general-fund-transparency-report-february/)  
   _**Краткая аннотация:**_ Опубликован отчёт о состоянии / прозрачности Общего фонда (General Fund) Monero по состоянию на февраль 2025 г.  
-  _Дата публикации:_ 07.02.2023
+  _Дата публикации:_ 07.02.2025
 
 - [Релиз Monerujo v4.1.6 'Exolix'](/post/2025-02-06-monerujo-v4.1.6-released/)  
   _**Краткая аннотация:**_ Состоялся обновленный релиз мобильного Android кошелька для Monero, Monerujo v4.1.6 'Exolix'  
