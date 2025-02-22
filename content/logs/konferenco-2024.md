@@ -29,3 +29,4 @@ Monero Konferenco - это ежегодная конференция по воп
 - [Ариэль Габизон - Быстрое преобразование Фурье на проективной прямой и круговые доказательства STARKs](/logs/konferenco-2024/ariel-gabizon-ffts-on-the-projective-line-and-circle-starks-ru-raw)
 - [Павол Луптак - Спасут ли новые богатые и могущественные либертарианцы и криптоанархисты мир от антиутопии](/logs/konferenco-2024/pavol-luptak-will-new-rich-and-powerful-libertarians-and-cryptoanarchists-save-the-world-from-dystopia-ru-raw)
 - [Стерлин Луян - Возвращение к ценностям шифропанка](/logs/konferenco-2024/sterlin-lujan-a-return-to-cypherpunk-values-ru-raw)
+- [Майк (Stringhandler) - Обеспечение различных уровней конфиденциальности в Tari](/logs/konferenco-2024/mike-stringhandler-achieving-various-levels-of-confidentiality-in-tari-ru-raw)
