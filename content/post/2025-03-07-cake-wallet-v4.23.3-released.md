@@ -1,6 +1,6 @@
 ---
-title: "Релиз Cake Wallet v4.23.2 и Monero.com v1.20.2"
-date: "2025-02-20"
+title: "Релиз Cake Wallet v4.23.3 и Monero.com v1.20.3"
+date: "2025-03-07"
 categories:
   - "Новости"
 tags:
