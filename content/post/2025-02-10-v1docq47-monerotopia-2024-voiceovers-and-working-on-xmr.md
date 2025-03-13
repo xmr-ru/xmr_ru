@@ -1,6 +1,6 @@
 ---
 title: "CCS предложение от v1docq47 - озвучка выступлений с Monero Konferenco 2024 и работа над XMR.RU"
-date: "2025-02-10"
+date: "2025-03-13"
 categories:
   - "Новости"
 tags:
@@ -24,7 +24,7 @@ widgets:
 Адрес кошелька CCS предложения для отправки пожертвований:  
 `89Ck8PdRvkAMUp6mJw5ajyNxHWvif5KUiFPk3aXcEnUWGLyyd69rZz47CH2igxBGpGaa5odfsVHg6G26xg1w7SQAFSwjqkq`
 
-На текущий момент (17.02.2025) собрано 26.61 из 45.6 XMR.
+На текущий момент (13.03.2025) собрано 27.25 XMR из 45.6 XMR.
 
 
 ---
