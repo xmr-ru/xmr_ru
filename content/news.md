@@ -9,8 +9,12 @@ toc: false
 
 ![news](/img/post/news.png)
 
+- [Релиз Cuprated v0.0.1 Molybdenite](/post/2025-03-12-cuprated-0.0.1-molybdenite-released/)  
+  _**Краткая аннотация:**_ Состоялся первый общедоступный релиз альтернативной реализация узла Monero на Rust, Cuprated.  
+  _Дата публикации:_ 12.03.2025
+
 - [Релиз Cake Wallet v4.23.3 и Monero.com v1.20.3](/post/2025-03-07-cake-wallet-v4.23.3-released/)  
-  _**Краткая аннотация:**_ Состоялся обновленный релиз мобильного кошелька для Monero, Cake Wallet v4.23.3 и Monero.com v1.20.3   
+  _**Краткая аннотация:**_ Состоялся обновленный релиз мобильного кошелька для Monero, Cake Wallet v4.23.3 и Monero.com v1.20.3.  
   _Дата публикации:_ 07.03.2025
 
 - [Релиз P2Pool v4.4](/post/2025-03-02-p2pool-4.4-released/)  
@@ -18,7 +22,7 @@ toc: false
   _Дата публикации:_ 02.03.2024
 
 - [Релиз Cake Wallet v4.23.2 и Monero.com v1.20.2](/post/2025-02-20-cake-wallet-v4.23.2-released/)  
-  _**Краткая аннотация:**_ Состоялся обновленный релиз мобильного кошелька для Monero, Cake Wallet v4.23.2 и Monero.com v1.20.2   
+  _**Краткая аннотация:**_ Состоялся обновленный релиз мобильного кошелька для Monero, Cake Wallet v4.23.2 и Monero.com v1.20.2.  
   _Дата публикации:_ 20.02.2025
 
 - [Отчёт о состоянии Общего фонда Monero на февраль 2025](/post/2025-02-07-monero-general-fund-transparency-report-february/)  
@@ -26,11 +30,11 @@ toc: false
   _Дата публикации:_ 07.02.2025
 
 - [Релиз Monerujo v4.1.6 'Exolix'](/post/2025-02-06-monerujo-v4.1.6-released/)  
-  _**Краткая аннотация:**_ Состоялся обновленный релиз мобильного Android кошелька для Monero, Monerujo v4.1.6 'Exolix'  
+  _**Краткая аннотация:**_ Состоялся обновленный релиз мобильного Android кошелька для Monero, Monerujo v4.1.6 'Exolix'.  
   _Дата публикации:_ 06.02.2025
 
 - [Релиз Cake Wallet v4.23.0 и Monero.com v1.20.0](/post/2025-02-02-cake-wallet-v4.23.0-released/)  
-  _**Краткая аннотация:**_ Состоялся обновленный релиз мобильного кошелька для Monero, Cake Wallet v4.23.0 и Monero.com v1.20.0  
+  _**Краткая аннотация:**_ Состоялся обновленный релиз мобильного кошелька для Monero, Cake Wallet v4.23.0 и Monero.com v1.20.0.  
   _Дата публикации:_ 02.02.2025
 
 - [Релиз Haveno 1.0.18](/post/2025-01-19-haveno-v1.0.18-released/)  
