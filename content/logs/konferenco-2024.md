@@ -1,5 +1,5 @@
 ---
-title: Monero Konferenco 2023
+title: Monero Konferenco 2024
 toc: false
 ---
 
@@ -34,3 +34,5 @@ Monero Konferenco - это ежегодная конференция по воп
 - [Саша - P2P обмен данными по сети: децентрализованный подход с устойчивым ограничением скорости](/logs/konferenco-2024/sasha-p2p-networking-permissionless-approach-with-robust-rate-limiting-ru-raw/)
 - [Алексис Руссель - Сопротивление чрезмерному регулированию: дело Bity против FINMA](/logs/konferenco-2024/alexis-roussel-pushing-back-against-regulatory-overreach-the-case-of-bity-vs-finma-ru-raw/)
 - [Николай Сюсько - Web3Privacy Now: непрерывное обеспечение приватности](/logs/konferenco-2024/mykola-siusko-web3privacy-now-advocating-for-privacy-24-7-365-ru-raw/)
+- [Jeffro256 - Фильтрующие ключи и гибкие теги просмотра: более приватные и настраиваемые лёгкие кошельки](/logs/konferenco-2024/jeffro256-filter-assist-keys-and-flexible-view-tags-more-private-and-adjustable-light-wallets-ru-raw/)
+- [Люк 'Kayaba' Паркер - Serai: децентрализация обмена Monero](/logs/konferenco-2024/luke-kayaba-parker-serai-decentralizing-exchanges-for-monero-ru-raw/)
