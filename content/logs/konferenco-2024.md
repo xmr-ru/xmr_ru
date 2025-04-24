@@ -35,4 +35,5 @@ Monero Konferenco - это ежегодная конференция по воп
 - [Алексис Руссель - Сопротивление чрезмерному регулированию: дело Bity против FINMA](/logs/konferenco-2024/alexis-roussel-pushing-back-against-regulatory-overreach-the-case-of-bity-vs-finma-ru-raw/)
 - [Николай Сюсько - Web3Privacy Now: непрерывное обеспечение приватности](/logs/konferenco-2024/mykola-siusko-web3privacy-now-advocating-for-privacy-24-7-365-ru-raw/)
 - [Jeffro256 - Фильтрующие ключи и гибкие теги просмотра: более приватные и настраиваемые лёгкие кошельки](/logs/konferenco-2024/jeffro256-filter-assist-keys-and-flexible-view-tags-more-private-and-adjustable-light-wallets-ru-raw/)
+- [Марк Симкин - OCash: полностью анонимные платежи между лёгкими клиентами блокчейна](/logs/konferenco-2024/mark-simkin-ocash-fully-anonymous-payments-between-blockchain-light-clients-ru-raw/)
 - [Люк 'Kayaba' Паркер - Serai: децентрализация обмена Monero](/logs/konferenco-2024/luke-kayaba-parker-serai-decentralizing-exchanges-for-monero-ru-raw/)
