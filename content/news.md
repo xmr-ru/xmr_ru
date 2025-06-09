@@ -9,6 +9,18 @@ toc: false
 
 ![news](/img/post/news.png)
 
+- [Релиз Cuprate v0.0.4 Molybdenite](/post/2025-06-05-cuprated-0.0.4-molybdenite-released/)  
+  _**Краткая аннотация:**_ Состоялся обновленный релиз альтернативной реализации узла Monero на Rust, Cuprate.  
+  _Дата публикации:_ 05.06.2025
+
+- [Релиз xmrig v6.22.3](/post/2025-06-04-xmrig-v6.22.3-released.md/)
+  _**Краткая аннотация:**_ Состоялось обновление программного обеспечения майнера Monero, xmrig до v6.22.3.  
+  _Дата публикации:_ 04.06.2025
+
+- [Релиз Cuprate v0.0.3 Molybdenite](/post/2025-05-08-cuprated-0.0.3-molybdenite-released/)  
+  _**Краткая аннотация:**_ Состоялся обновленный релиз альтернативной реализации узла Monero на Rust, Cuprate.  
+  _Дата публикации:_ 08.05.2025
+
 - [Релиз P2Pool v4.6](/post/2025-05-30-p2pool-4.7-released/)  
   _**Краткая аннотация:**_ Состоялось обновление программного обеспечения децентрализованного майнинг пула P2Pool до v4.7.  
   _Дата публикации:_ 30.05.2024
@@ -29,8 +41,8 @@ toc: false
   _**Краткая аннотация:**_ Состоялся обновленный релиз мобильного кошелька для Monero, Cake Wallet и Monero.com v4.28.0.  
   _Дата публикации:_ 15.05.2025
 
-- [Релиз Cuprated v0.0.3 Molybdenite](/post/2025-05-08-cuprated-0.0.3-molybdenite-released/)  
-  _**Краткая аннотация:**_ Состоялся обновленный релиз альтернативной реализация узла Monero на Rust, Cuprated.  
+- [Релиз Cuprate v0.0.3 Molybdenite](/post/2025-05-08-cuprated-0.0.3-molybdenite-released/)  
+  _**Краткая аннотация:**_ Состоялся обновленный релиз альтернативной реализации узла Monero на Rust, Cuprate.  
   _Дата публикации:_ 08.05.2025
 
 - [Релиз P2Pool v4.5](/post/2025-05-04-p2pool-4.5-released/)  
@@ -65,8 +77,8 @@ toc: false
   _**Краткая аннотация:**_ Состоялся обновленный релиз мобильного кошелька для Monero, Cake Wallet и Monero.com v4.26.0.  
   _Дата публикации:_ 12.04.2025
 
-- [Релиз Cuprated v0.0.2 Molybdenite](/post/2025-04-10-cuprated-0.0.2-molybdenite-released/)  
-  _**Краткая аннотация:**_ Состоялся обновленный релиз альтернативной реализация узла Monero на Rust, Cuprated.  
+- [Релиз Cuprate v0.0.2 Molybdenite](/post/2025-04-10-cuprated-0.0.2-molybdenite-released/)  
+  _**Краткая аннотация:**_ Состоялся обновленный релиз альтернативной реализации узла Monero на Rust, Cuprate.  
   _Дата публикации:_ 10.03.2025
 
 - [OSPEAD - исследование оптимальной кольцевой подписи](/post/2025-04-05-ospead-optimal-ring-signature-research/)  
@@ -97,8 +109,8 @@ toc: false
   _**Краткая аннотация:**_ Состоялся обновленный релиз мобильного кошелька для Monero, Cake Wallet v4.24.0 и Monero.com v1.21.0.  
   _Дата публикации:_ 24.03.2025
 
-- [Релиз Cuprated v0.0.1 Molybdenite](/post/2025-03-12-cuprated-0.0.1-molybdenite-released/)  
-  _**Краткая аннотация:**_ Состоялся первый общедоступный релиз альтернативной реализация узла Monero на Rust, Cuprated.  
+- [Релиз Cuprate v0.0.1 Molybdenite](/post/2025-03-12-cuprated-0.0.1-molybdenite-released/)  
+  _**Краткая аннотация:**_ Состоялся первый общедоступный релиз альтернативной реализация узла Monero на Rust, Cuprate.  
   _Дата публикации:_ 12.03.2025
 
 - [Релиз Cake Wallet v4.23.3 и Monero.com v1.20.3](/post/2025-03-07-cake-wallet-v4.23.3-released/)  
