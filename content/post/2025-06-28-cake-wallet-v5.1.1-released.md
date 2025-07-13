@@ -72,7 +72,7 @@ a73c21d49546fa045bfcd6326394d4017e7ea73cdf7352ca4d4ee85f332e67f8
 
 ---
 
-_Источник: [Release Cake Wallet v5.0.1](https://github.com/cake-tech/cake_wallet/releases/tag/v5.0.1)_
+_Источник: [Release Cake Wallet v5.1.0](https://github.com/cake-tech/cake_wallet/releases/tag/v5.0.1)_
 
 _Перевод: [Mr. Pickles](https://t.me/v1docq47)_  
 _Коррекция: [Kukima](https://t.me/Kukima)_
