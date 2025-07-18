@@ -9,6 +9,10 @@ toc: false
 
 ![news](/img/post/news.png)
 
+- [Релиз Cuprate v0.0.5 Molybdenite](/post/2025-07-17-cuprated-0.0.5-molybdenite-released/)  
+  _**Краткая аннотация:**_ Состоялся обновленный релиз альтернативной реализации узла Monero на Rust, Cuprate.  
+  _Дата публикации:_ 17.07.2025
+
 - [Релиз Cake Wallet и Monero.com v5.1.2 ](/post/2025-07-12-cake-wallet-v5.1.2-released/)  
   _**Краткая аннотация:**_ Состоялся обновленный релиз мобильного кошелька для Monero, Cake Wallet и Monero.com v5.1.2.  
   _Дата публикации:_ 12.07.2025
