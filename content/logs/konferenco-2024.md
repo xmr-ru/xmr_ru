@@ -37,3 +37,7 @@ Monero Konferenco - это ежегодная конференция по воп
 - [Jeffro256 - Фильтрующие ключи и гибкие теги просмотра: более приватные и настраиваемые лёгкие кошельки](/logs/konferenco-2024/jeffro256-filter-assist-keys-and-flexible-view-tags-more-private-and-adjustable-light-wallets-ru-raw/)
 - [Марк Симкин - OCash: полностью анонимные платежи между лёгкими клиентами блокчейна](/logs/konferenco-2024/mark-simkin-ocash-fully-anonymous-payments-between-blockchain-light-clients-ru-raw/)
 - [Люк 'Kayaba' Паркер - Serai: децентрализация обмена Monero](/logs/konferenco-2024/luke-kayaba-parker-serai-decentralizing-exchanges-for-monero-ru-raw/)
+- [Райан - Monerica: директория циркулярной экономики](/logs/konferenco-2024/ryan-monerica-a-directory-for-a-monero-circular-economy-ru-raw/)
+- [Sowle - Реализация протокола конфиденциальных активов в приватном блокчейне на базе алгоритмов доказательства работы и доказательства доли владения: опыт Zano](/logs/konferenco-2024/sowle-implementing-confidential-assets-in-pow-pos-private-blockchain-the-zano-experience-ru-raw/)
+- [Маттиас Тарасевич - Развитие децентрализации в эпоху общедоступных цифровых ресурсов](/logs/konferenco-2024/matthias-tarasiewicz-nurturing-decentralization-in-the-age-of-digital-commons-ru-raw/)
+- [Франциско 'ArticMine' Кабаньяс - Масштабирование Monero как ответ на отслеживание данных в блокчейне](/logs/konferenco-2024/francisco-articmine-cabanas-scaling-monero-in-response-to-blockchain-surveillance-ru-raw/)
