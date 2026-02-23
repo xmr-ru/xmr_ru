@@ -9,6 +9,10 @@ toc: false
 
 ![news](/img/post/news.png)
 
+- [Релиз Cake Wallet и Monero.com v5.9.0](/post/2026-02-11-cake-wallet-v5.9.0-released/)  
+  _**Краткая аннотация:**_ Состоялся обновленный релиз мобильного кошелька для Monero, Cake Wallet и Monero.com v5.9.0.  
+  _Дата публикации:_ 11.02.2026
+
 - [Релиз Cake Wallet и Monero.com v5.8.0](/post/2026-01-21-cake-wallet-v5.8.0-released/)  
   _**Краткая аннотация:**_ Состоялся обновленный релиз мобильного кошелька для Monero, Cake Wallet и Monero.com v5.8.0.  
   _Дата публикации:_ 21.01.2026
