@@ -22,7 +22,7 @@ Monero Konferenco - это ежегодная конференция по воп
 - [Эдвин ден Боер - Последствия консеквенциализма или как стрелочники погубили децентрализацию](/logs/konferenco-2022/10-edwin-den-boer-consequences-of-consequentialism-how-trolley-switchers-derailed-decentralization-ru-raw/)
 - [Симин Гесмати - Приватность блокчейна с точки зрения пользователей](/logs/konferenco-2022/11-simin-ghesmati-user-perceived-privacy-in-blockchain-ru-raw/)
 - Люк Паркер (kayabaNerve) - Фонд The MAGIC Monero или простой способ сделать пожертвование в Monero
-- Джастин Эренхофер - Что дальше? Кошельки для Monero Cake Wallet и Monero.com
+- Джастин Эренхофер - Что дальше? Кошельки для Monero - Cake Wallet и Monero.com
 - [Харуто Ямамото - Частичные связываемые подписи спонтанной анонимной группы (PLSAG)](/logs/konferenco-2022/14-haruto-yamamoto-partial-linkable-spontaneous-anonymous-group-plsag-ru-raw/)
 - [Mr P, Libre, MRPT и Nala - Роль XMR в португальской свободной экономике](/logs/konferenco-2022/15-mr-p-libre-mrpt-and-nala-the-role-of-xmr-in-portuguese-freedom-based-economies-ru-raw/)
 - [Юрай Беднар - Сделаем Monero снова одноранговой!](/logs/konferenco-2022/16-juraj-bednar-make-monero-peer-to-peer-again-ru-raw/)
