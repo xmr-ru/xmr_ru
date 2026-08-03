@@ -19,3 +19,4 @@ Monero Konferenco - это ежегодная конференция по воп
 #### _**Список выступлений конференции:**_
 
 - [Rucknium - OSPEAD: алгоритм построения оптимальных кольцевых подписей](/logs/konferenco-2025/rucknium-ospead-optimal-ring-signatures-ru-raw/)
+- [Гарри Халпин - Как работает NymVPN: децентрализованный VPN и микснет, ориентированный на конфиденциальность](/logs/konferenco-2025/harry-halpin-how-nymvpn-works-a-decentralized-privacy-first-vpn-and-mixnet-ru-raw/)
