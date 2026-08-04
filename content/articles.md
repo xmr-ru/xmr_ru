@@ -42,6 +42,7 @@ Monero Konferenco - это ежегодная встреча поборнико�
 - [Стенограммы выступлений Monero Konferenco 2022](/logs/konferenco-2022/)
 - [Стенограммы выступлений Monero Konferenco 2023](/logs/konferenco-2023/)
 - [Стенограммы выступлений Monero Konferenco 2024](/logs/konferenco-2024/)
+- [Стенограммы выступлений Monero Konferenco 2025](/logs/konferenco-2025/)
 
 ### _Всемирный конгресс хакеров (ССС)_
 
