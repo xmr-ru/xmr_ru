@@ -85,6 +85,7 @@ Binance и Huobi исключили Monero из списка поддержив�
 К наиболее популярным централизованным биржам с поддержкой Monero можно отнести следующие площадки:
 
 - [TradeOgre](https://tradeogre.com/) - небольшая биржа, не требует верификации пользователей (KYC)
+- [AltQuick](https://altquick.com/market/monero-bitcoin/) - небольшая биржа с рынком XMR/BTC (работает с 2015 года), не требует верификации пользователей (KYC)
 - [Kucoin.com](https://www.kucoin.com/trade/XMR-USDT) - нужна верификация пользователя (KYC), также будьте осторожны с AML оценкой вашей крипты, будь-то USDT или BTC.
 - [Gate.io](https://www.gate.io/trade/XMR_USDT) - нужна верификация пользователя (KYC), также будьте осторожны с AML оценкой вашей крипты, будь-то USDT или BTC.
 - [Whitebit.com](https://whitebit.com/trade/XMR-USDT) - нужна верификация пользователя (KYC), также будьте осторожны с AML оценкой вашей крипты, будь-то USDT или BTC.
