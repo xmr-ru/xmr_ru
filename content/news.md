@@ -11,6 +11,10 @@ toc: false
 
 - [CCS предложение от v1docq47 - озвучка выступлений с Monero Konferenco 2026 и работа над XMR.RU](/post/2026-09-07-v1docq47-monerotopia-2026-voiceovers-and-working-on-xmr/)  
   _**Краткая аннотация:**_ Новое CCS предложение от v1docq47 по озвучке выступлений с Monero Konferenco 2026 и работе над XMR.RU.  
+  _Дата публикации:_ 26.11.2026
+
+- [Релиз xmrig v6.27.0](/post/2026-11-23-xmrig-v6.27.0-released/)  
+  _**Краткая аннотация:**_ Состоялось обновление программного обеспечения майнера Monero, xmrig до v6.27.0.  
   _Дата публикации:_ 23.11.2026
 
 - [Сайт Feather Wallet подозревают в распространении вредоносного ПО после взлома 1984 Hosting](/post/2026-11-20-feather-wallet-website-suspected-serving-malware-1984-hosting-breach/)  
